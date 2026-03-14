@@ -16,18 +16,22 @@ def get_client():
 def chat_with_assistant(user_message: str, history=None):
     client = get_client()
     
-    # 1. Broad retrieval
-    identity_memories = get_relevant_memories("Who is the user, spouse, wife, family, address, and current plans?", n_results=10)
+    # 1. Retrieve all family/identity context to help the search
+    family_memories = get_relevant_memories("Who are the user's children, family members, and kids?", n_results=5)
+    identity_memories = get_relevant_memories("My address and important contacts", n_results=5)
     topic_memories = get_relevant_memories(user_message, n_results=5)
-    memory_context = "\n".join(list(set(identity_memories + topic_memories)))
+    
+    all_memories = list(set(family_memories + identity_memories + topic_memories))
+    memory_context = "\n".join(all_memories) if all_memories else ""
     current_time = datetime.now().strftime("%A, %B %d, %Y %I:%M %p")
 
     # 2. ROUTER turn
     router_prompt = (
-        f"User Memories: {memory_context}\n"
+        f"User Memories (includes family info): {memory_context}\n"
         f"User message: '{user_message}'\n"
+        f"If this is about a family member or kid, use their names from memory to create better search terms.\n"
         f"Goal: Route to PERSONAL or WEB.\n"
-        f"Response format: ROUTE: [PERSONAL/WEB] | SEARCH_TERMS: [Specific investigation terms]"
+        f"Response format: ROUTE: [PERSONAL/WEB] | SEARCH_TERMS: [term1, term2, ...]"
     )
     route_res = client.models.generate_content(model=MODEL_ID, contents=router_prompt)
     decision = route_res.text.strip()
@@ -46,27 +50,26 @@ def chat_with_assistant(user_message: str, history=None):
         response = client.models.generate_content(model=MODEL_ID, contents=user_message, config=config)
         return response.text, [], "google_search"
     else:
-        # --- PERSONAL DATA & MEMORY SPECIALIST ---
+        # --- PERSONAL DATA SPECIALIST (Aggressive Searcher) ---
         config = types.GenerateContentConfig(
             system_instruction=(
-                f"You are a personal detective assistant. Current time: {current_time}. {memory_context}\n"
-                f"VERIFICATION RULES:\n"
-                f"1. VERIFY: Memory can be outdated. If you find a fact in 'search_memory' about a vet, doctor, or address, "
-                f"   ALWAYS cross-verify it by searching Gmail/Drive for the most recent confirmation.\n"
-                f"2. DELETE: If the user says a memory is WRONG, use 'delete_personal_fact' to remove it exactly as written in memory.\n"
-                f"3. SAVE: Use 'save_personal_fact' for new, verified info.\n"
-                f"4. SEARCH: Use 'search_gmail', 'search_drive', and 'search_memory' simultaneously."
+                f"You are a highly thorough personal assistant. Current time: {current_time}. {memory_context}\n"
+                f"RULES:\n"
+                f"1. AGGRESSIVE SEARCH: If searching for an appointment (dentist, doctor, school), try multiple variations. "
+                f"   Search for 'appointment', 'confirmation', 'dentist', and the specific names of family members: {memory_context}\n"
+                f"2. DEPTH: If you see an email that mentions a child's name, read the full message.\n"
+                f"3. NO GIVING UP: Search both Gmail and Drive before saying you can't find it."
             ),
             tools=[search_gmail, read_gmail_message, list_gmail_attachments, read_gmail_attachment, search_drive, read_drive_file, save_personal_fact, delete_personal_fact, search_memory]
         )
         chat = client.chats.create(model=MODEL_ID, config=config)
-        response = chat.send_message(f"Handle this: '{user_message}' (Investigation: {search_terms})")
+        response = chat.send_message(f"Answer this: '{user_message}' using search terms '{search_terms}'")
         
         while response.candidates[0].content.parts and response.candidates[0].content.parts[0].function_call:
             call = response.candidates[0].content.parts[0].function_call
             tool_name = call.name
             last_tool = tool_name
-            print(f"DEBUG: EXECUTION - '{tool_name}'")
+            print(f"DEBUG: EXECUTION - '{tool_name}' with args {call.args}")
             
             if tool_name == "search_memory": result = search_memory(**call.args)
             elif tool_name == "save_personal_fact": result = save_personal_fact(**call.args)
