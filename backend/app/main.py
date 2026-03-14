@@ -29,38 +29,30 @@ app.add_middleware(
 app.include_router(auth_router)
 
 def serialize_history(history):
-    """Converts Gemini history into a serializable list of dicts."""
+    """Converts the new google.genai history objects into a JSON-friendly format."""
     serialized = []
+    if not history: return []
+    
     for content in history:
+        role = content.role
         parts = []
         for part in content.parts:
-            # Check for different part types (text vs function_call)
+            # New SDK parts often have a direct .text attribute
             if hasattr(part, 'text') and part.text:
                 parts.append({"text": part.text})
-            elif hasattr(part, 'function_call') and part.function_call:
-                parts.append({
-                    "function_call": {
-                        "name": part.function_call.name,
-                        "args": {k: v for k, v in part.function_call.args.items()}
-                    }
-                })
-            elif hasattr(part, 'function_response') and part.function_response:
-                parts.append({
-                    "function_response": {
-                        "name": part.function_response.name,
-                        "response": part.function_response.response
-                    }
-                })
-        serialized.append({"role": content.role, "parts": parts})
+            # We don't need to send tool calls back to the frontend for UI rendering
+        if parts:
+            serialized.append({"role": role, "parts": parts})
     return serialized
 
 @app.post("/chat")
 async def chat(msg: ChatMessage):
     try:
-        response_text, updated_history = chat_with_assistant(msg.message, history=msg.history)
+        response_text, updated_history, last_tool = chat_with_assistant(msg.message, history=msg.history)
         return {
             "response": response_text, 
-            "history": serialize_history(updated_history)
+            "history": serialize_history(updated_history),
+            "task": last_tool
         }
     except Exception as e:
         import traceback
@@ -69,7 +61,7 @@ async def chat(msg: ChatMessage):
 
 @app.get("/")
 async def root():
-    return {"message": "AI Personal Assistant API is running"}
+    return {"message": "AI Personal Assistant API is running (Google-GenAI SDK)"}
 
 @app.get("/health")
 async def health_check():

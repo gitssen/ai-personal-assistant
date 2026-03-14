@@ -1,100 +1,89 @@
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 import os
 from datetime import datetime
 from app.tools import search_gmail, read_gmail_message, search_drive, read_drive_file
 from app.memory import get_relevant_memories, save_preference
 
-def get_chat_model(memories=None):
-    genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-    custom_tools = [search_gmail, read_gmail_message, search_drive, read_drive_file]
-    
-    current_time = datetime.now().strftime("%A, %B %d, %Y %I:%M %p")
-    memory_context = ""
-    if memories:
-        memory_context = "\nRELEVANT INFORMATION ABOUT THE USER:\n- " + "\n- ".join(memories)
-        
-    system_instruction = (
-        f"You are a helpful personal assistant with access to the user's Gmail and Google Drive. "
-        f"The current date and time is {current_time}. {memory_context}\n"
-        f"MANDATORY BEHAVIOR:\n"
-        f"1. SYNTHESIZE: Never show raw tool output, file IDs, or JSON-like structures to the user. "
-        f"   Instead, read the data and explain it in natural, friendly language.\n"
-        f"2. DATA-FIRST: Always search Gmail and Drive before answering general questions.\n"
-        f"3. NO LEAKS: If you find a file ID or message ID, use it internally. Never show IDs to the user unless they ask for a technical detail.\n"
-        f"4. GMAIL & DRIVE: Use the tools to find and read content. Summarize what you find clearly."
-    )
-    
-    model = genai.GenerativeModel(
-        model_name="models/gemini-2.5-flash",
-        tools=custom_tools,
-        system_instruction=system_instruction
-    )
-    return model
+MODEL_ID = "gemini-2.5-flash"
+
+def get_client():
+    return genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def chat_with_assistant(user_message: str, history=None):
-    memories = get_relevant_memories(user_message)
-    formatted_history = []
-    if history:
-        for entry in history:
-            formatted_history.append({"role": entry.get("role"), "parts": entry.get("parts")})
-
-    model = get_chat_model(memories=memories)
-    chat = model.start_chat(history=formatted_history)
+    client = get_client()
     
-    # Send the user message
-    try:
+    # 1. ENHANCED MEMORY RETRIEVAL
+    # We query for 'identity' specifically to ensure the address is ALWAYS found.
+    identity_memories = get_relevant_memories("My address and identity information", n_results=3)
+    # We also query for the user's actual question
+    topic_memories = get_relevant_memories(user_message, n_results=3)
+    
+    all_memories = list(set(identity_memories + topic_memories))
+    
+    memory_context = ""
+    if all_memories:
+        memory_context = "\nUSER CONTEXT (MEMORIES):\n- " + "\n- ".join(all_memories)
+
+    current_time = datetime.now().strftime("%A, %B %d, %Y %I:%M %p")
+
+    # 2. DECISION LOGIC
+    router_prompt = (
+        f"You are a routing agent. User Memories: {memory_context}\n"
+        f"User message: '{user_message}'\n"
+        f"Goal: re-write the user's request into a highly specific search query.\n"
+        f"If the user says 'local' or 'near me', you MUST include their address from Memory in the query.\n"
+        f"Response format: ROUTE: [PERSONAL/WEB] | QUERY: [Specific search query]"
+    )
+    route_res = client.models.generate_content(model=MODEL_ID, contents=router_prompt)
+    decision_text = route_res.text.strip()
+    print(f"DEBUG: DECISION -> {decision_text}")
+    
+    is_web = "WEB" in decision_text
+    rewritten_query = user_message
+    if "QUERY:" in decision_text:
+        rewritten_query = decision_text.split("QUERY:")[1].strip()
+
+    last_tool = None
+    final_text = ""
+    final_history = []
+
+    if is_web:
+        # --- WEB SEARCH (Strict Instruction) ---
+        print(f"DEBUG: Searching Web for: {rewritten_query}")
+        config = types.GenerateContentConfig(
+            system_instruction=(
+                f"You are a web-connected assistant. Current time: {current_time}.\n"
+                f"USER MEMORY: {memory_context}\n"
+                f"INSTRUCTION: Use Google Search to answer. The user's location is in the memory above. "
+                f"NEVER ask for their location if it is mentioned in the memory. Just perform the search."
+            ),
+            tools=[{"google_search": {}}]
+        )
+        response = client.models.generate_content(model=MODEL_ID, contents=rewritten_query, config=config)
+        final_text = response.text
+        last_tool = "google_search"
+    else:
+        # --- PERSONAL DATA ---
+        config = types.GenerateContentConfig(
+            system_instruction=f"Personal assistant. Time: {current_time}. {memory_context}",
+            tools=[search_gmail, read_gmail_message, search_drive, read_drive_file]
+        )
+        chat = client.chats.create(model=MODEL_ID, config=config)
         response = chat.send_message(user_message)
-    except Exception as e:
-        print(f"DEBUG: Initial send error: {e}")
-        return "I encountered an error starting the conversation. Could you try rephrasing your request?", chat.history
-    
-    # Process potential chain of tool calls
-    max_turns = 10
-    for _ in range(max_turns):
-        try:
-            # Check if the last response contains a function call
-            if not response.candidates or not response.candidates[0].content.parts:
-                break
-                
-            function_calls = [p.function_call for p in response.candidates[0].content.parts if p.function_call]
-            
-            if not function_calls:
-                break 
-                
-            function_responses = []
-            for call in function_calls:
-                tool_name = call.name
-                tool_args = {k: v for k, v in call.args.items()}
-                
-                print(f"DEBUG: EXECUTION - Gemini calling '{tool_name}'")
-                
-                # Sanitize numeric args for all tools
-                if "max_results" in tool_args:
-                    tool_args["max_results"] = int(float(tool_args["max_results"]))
-                
-                if tool_name == "search_gmail": result = search_gmail(**tool_args)
-                elif tool_name == "read_gmail_message": result = read_gmail_message(**tool_args)
-                elif tool_name == "search_drive": result = search_drive(**tool_args)
-                elif tool_name == "read_drive_file": result = read_drive_file(**tool_args)
-                else: result = f"Error: Tool '{tool_name}' not found."
-                
-                function_responses.append(
-                    genai.protos.Part(
-                        function_response=genai.protos.FunctionResponse(
-                            name=tool_name,
-                            response={'result': result}
-                        )
-                    )
-                )
-                
-            response = chat.send_message(genai.protos.Content(parts=function_responses))
-        except Exception as e:
-            print(f"DEBUG: Tool execution error: {e}")
-            return "I had trouble processing that request. Could you try asking in a different way?", chat.history
+        
+        while response.candidates[0].content.parts and response.candidates[0].content.parts[0].function_call:
+            call = response.candidates[0].content.parts[0].function_call
+            tool_name = call.name
+            last_tool = tool_name
+            if tool_name == "search_gmail": result = search_gmail(**call.args)
+            elif tool_name == "read_gmail_message": result = read_gmail_message(**call.args)
+            elif tool_name == "search_drive": result = search_drive(**call.args)
+            elif tool_name == "read_drive_file": result = read_drive_file(**call.args)
+            else: result = "Error"
+            response = chat.send_message(types.Content(parts=[types.Part(function_response=types.FunctionResponse(name=tool_name, response={"result": result}))]))
+        
+        final_text = response.text
+        final_history = getattr(chat, "_curated_history", [])
 
-    # After the loop, the final 'response' should contain synthesized text
-    try:
-        return response.text, chat.history
-    except ValueError:
-        # Fallback if the model is still stuck in a function turn
-        return "I've gathered the information from your files. What specific detail would you like to know?", chat.history
+    return final_text, final_history, last_tool

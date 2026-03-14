@@ -2,10 +2,12 @@ import os
 import json
 import base64
 import io
+import requests
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 from googleapiclient.http import MediaIoBaseDownload
+from duckduckgo_search import DDGS
 
 TOKEN_PATH = "tokens.json"
 
@@ -35,8 +37,7 @@ def get_email_body(payload):
     return None
 
 def search_gmail(query: str, max_results: int = 5):
-    """Search for emails. Returns a summary of matching messages and their IDs."""
-    print(f"DEBUG: search_gmail called with query: '{query}'")
+    """Search for emails. Returns subject, sender, and IDs."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -48,65 +49,59 @@ def search_gmail(query: str, max_results: int = 5):
         headers = m['payload']['headers']
         subject = next((h['value'] for h in headers if h['name'] == 'Subject'), 'No Subject')
         sender = next((h['value'] for h in headers if h['name'] == 'From'), 'Unknown')
-        snippet = m.get('snippet', '')
-        output.append(f"ID: {msg['id']}\nFrom: {sender}\nSubject: {subject}\nSnippet: {snippet}\n---")
-    return "\n".join(output) if output else "No emails found matching that query."
+        output.append(f"ID: {msg['id']}\nFrom: {sender}\nSubject: {subject}\nSnippet: {m.get('snippet')}\n---")
+    return "\n".join(output) if output else "No emails found."
 
 def read_gmail_message(message_id: str):
-    """Read the FULL content of a specific email message using its ID."""
-    print(f"DEBUG: read_gmail_message called for ID: {message_id}")
+    """Read the FULL content of an email."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
     m = service.users().messages().get(userId='me', id=message_id, format='full').execute()
     body = get_email_body(m['payload'])
-    return body if body else "This email has no plain text content or is too complex to read."
+    return body if body else "No text found."
 
 def search_drive(query: str, max_results: int = 5):
-    """Find files in the user's Google Drive. Use this to find file IDs."""
+    """Find files in Google Drive."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
-
-    # Escape single quotes for the Drive API
     safe_query = query.replace("'", "\\'")
-
-    try:
-        service = build('drive', 'v3', credentials=creds)
-        results = service.files().list(
-            q=f"name contains '{safe_query}' or fullText contains '{safe_query}'",
-            pageSize=int(float(max_results)) if max_results else 20, 
-            fields="files(id, name, mimeType)"
-        ).execute()
-        files = results.get('files', [])
-        output = []
-        for f in files:
-            output.append(f"ID: {f['id']}\nName: {f['name']}\nType: {f['mimeType']}\n---")
-        return "\n".join(output) if output else "No files found."
-    except Exception as e:
-        print(f"DEBUG: Drive API Error: {str(e)}")
-        return f"Error searching Drive: {str(e)}"
-
+    service = build('drive', 'v3', credentials=creds)
+    results = service.files().list(q=f"name contains '{safe_query}' or fullText contains '{safe_query}'", pageSize=int(float(max_results)) if max_results else 5, fields="files(id, name, mimeType)").execute()
+    files = results.get('files', [])
+    output = []
+    for f in files:
+        output.append(f"ID: {f['id']}\nName: {f['name']}\nType: {f['mimeType']}\n---")
+    return "\n".join(output) if output else "No files found."
 
 def read_drive_file(file_id: str):
-    """READ content inside a Google Drive file."""
+    """Read file content from Google Drive."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('drive', 'v3', credentials=creds)
     file_metadata = service.files().get(fileId=file_id, fields="name, mimeType").execute()
     mime_type = file_metadata.get('mimeType')
-    name = file_metadata.get('name')
     try:
-        if mime_type == 'application/vnd.google-apps.spreadsheet':
-            request = service.files().export_media(fileId=file_id, mimeType='text/csv')
-        elif mime_type == 'application/vnd.google-apps.document':
-            request = service.files().export_media(fileId=file_id, mimeType='text/plain')
-        elif 'text/' in mime_type or mime_type == 'application/json':
-            request = service.files().get_media(fileId=file_id)
-        else: return f"Cannot read {mime_type} files."
+        if mime_type == 'application/vnd.google-apps.spreadsheet': request = service.files().export_media(fileId=file_id, mimeType='text/csv')
+        elif mime_type == 'application/vnd.google-apps.document': request = service.files().export_media(fileId=file_id, mimeType='text/plain')
+        else: request = service.files().get_media(fileId=file_id)
         fh = io.BytesIO()
         downloader = MediaIoBaseDownload(fh, request)
         done = False
         while done is False: status, done = downloader.next_chunk()
-        content = fh.getvalue().decode('utf-8')
-        return f"CONTENT OF '{name}':\n{content[:5000]}"
+        return fh.getvalue().decode('utf-8')[:5000]
     except Exception as e: return f"Error: {str(e)}"
+
+def web_search(query: str, max_results: int = 5):
+    """Search the live web for real-time information."""
+    print(f"DEBUG: Web search for: {query}")
+    try:
+        with DDGS() as ddgs:
+            results = list(ddgs.text(query, max_results=max_results))
+            if not results: return "No results found."
+            output = []
+            for r in results:
+                output.append(f"Title: {r['title']}\nSnippet: {r['body']}\nLink: {r['href']}\n---")
+            return "\n".join(output)
+    except Exception as e:
+        return f"Web search failed: {str(e)}"

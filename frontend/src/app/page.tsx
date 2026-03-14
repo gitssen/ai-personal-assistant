@@ -8,6 +8,7 @@ export default function Home() {
   const [history, setHistory] = useState<any[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [currentTask, setCurrentTask] = useState<string | null>(null);
   const [authenticated, setAuthenticated] = useState<boolean | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -17,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [messages, loading]);
 
   const checkAuth = async () => {
     try {
@@ -39,40 +40,44 @@ export default function Home() {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setLoading(true);
+    setCurrentTask("Thinking...");
+
     try {
+      // In a real app with long operations, we'd use WebSockets for real-time task updates.
+      // Here, we simulate the 'Thinking' process until the response returns.
       const data = await sendMessage(input, history);
       setMessages((prev) => [...prev, { role: "assistant", content: data.response }]);
       setHistory(data.history);
     } catch (e) {
-      setMessages((prev) => [...prev, { role: "assistant", content: "Error: Could not reach the AI." }]);
+      setMessages((prev) => [...prev, { role: "assistant", content: "Error: AI disconnected." }]);
     } finally {
       setLoading(false);
+      setCurrentTask(null);
     }
   };
 
-  // Helper to render text with clickable links
+  const getTaskLabel = (task: string | null) => {
+    if (!task) return "Thinking...";
+    if (task.includes("search_gmail")) return "Searching your emails...";
+    if (task.includes("search_drive")) return "Searching your files...";
+    if (task.includes("read_drive_file")) return "Reading document content...";
+    if (task.includes("read_gmail_message")) return "Reading full email thread...";
+    if (task.includes("google_search")) return "Searching the web...";
+    return "Analyzing data...";
+  };
+
   const renderContent = (text: string) => {
     const urlRegex = /(https?:\/\/[^\s]+)/g;
     const parts = text.split(urlRegex);
     return parts.map((part, i) => {
       if (part.match(urlRegex)) {
-        return (
-          <a
-            key={i}
-            href={part}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-700 underline break-all hover:text-blue-900"
-          >
-            {part}
-          </a>
-        );
+        return <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-700 underline break-all font-bold">{part}</a>;
       }
       return part;
     });
   };
 
-  if (authenticated === null) return <div className="flex h-screen items-center justify-center">Loading...</div>;
+  if (authenticated === null) return <div className="flex h-screen items-center justify-center font-bold">Loading...</div>;
 
   if (!authenticated) {
     return (
@@ -89,48 +94,50 @@ export default function Home() {
     <div className="flex flex-col h-screen bg-white">
       <header className="p-4 border-b bg-slate-50 flex justify-between items-center">
         <h1 className="font-bold text-xl text-blue-600 uppercase tracking-tighter">AI Personal Assistant</h1>
-        <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full uppercase tracking-wider font-bold">Connected</span>
+        <div className="flex items-center gap-2">
+          {loading && <span className="text-xs font-black text-orange-500 animate-pulse uppercase tracking-widest">Processing...</span>}
+          <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full uppercase tracking-wider font-bold border border-green-200">Connected</span>
+        </div>
       </header>
 
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50/30">
         {messages.length === 0 && (
           <div className="text-center text-slate-400 mt-20">
-            <p className="text-lg font-bold">Ask me about your emails, drive, or photos!</p>
+            <p className="text-lg font-bold">What can I help you find today?</p>
           </div>
         )}
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
-            <div
-              className={`max-w-[80%] rounded-2xl p-4 shadow-sm border ${
-                m.role === "user" ? "bg-blue-600 text-white border-blue-700" : "bg-slate-100 text-black font-bold border-slate-300"
-              }`}
-            >
-              <p className="whitespace-pre-wrap leading-relaxed">{renderContent(m.content)}</p>
+            <div className={`max-w-[80%] rounded-2xl p-4 shadow-sm border ${m.role === "user" ? "bg-blue-600 text-white border-blue-700" : "bg-white text-black font-bold border-slate-200"}`}>
+              <p className="whitespace-pre-wrap leading-relaxed text-sm md:text-base">{renderContent(m.content)}</p>
             </div>
           </div>
         ))}
         {loading && (
           <div className="flex justify-start">
-            <div className="bg-slate-50 text-slate-400 p-4 rounded-2xl animate-pulse font-bold">Thinking...</div>
+            <div className="bg-white border-2 border-slate-100 text-slate-500 p-4 rounded-2xl flex items-center gap-3 shadow-sm">
+              <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+              <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+              <div className="w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+              <span className="font-bold text-sm ml-2 italic">{getTaskLabel(currentTask)}</span>
+            </div>
           </div>
         )}
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="p-4 border-t bg-white">
+      <div className="p-4 border-t bg-white shadow-inner">
         <div className="max-w-4xl mx-auto flex gap-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleSend()}
-            placeholder="Type your question..."
-            className="flex-1 border-2 border-slate-200 rounded-full px-6 py-3 focus:outline-none focus:border-blue-500 text-black font-semibold"
+            placeholder="Type your message..."
+            className="flex-1 border-2 border-slate-200 rounded-xl px-6 py-3 focus:outline-none focus:border-blue-500 text-black font-semibold shadow-sm transition-all"
           />
-          <button onClick={handleSend} disabled={loading} className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 w-12 h-12 flex items-center justify-center shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-            </svg>
+          <button onClick={handleSend} disabled={loading} className="bg-blue-600 hover:bg-blue-700 disabled:bg-slate-200 text-white rounded-xl px-6 py-3 font-bold transition-all shadow-md flex items-center justify-center">
+            {loading ? '...' : 'SEND'}
           </button>
         </div>
       </div>
