@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Force the project and quota project
+# Force Project and Quota
 PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID")
 if not PROJECT_ID:
     raise ValueError("GOOGLE_PROJECT_ID not set in .env file")
@@ -18,41 +18,37 @@ if not PROJECT_ID:
 os.environ["GOOGLE_CLOUD_PROJECT"] = PROJECT_ID
 os.environ["GOOGLE_CLOUD_QUOTA_PROJECT"] = PROJECT_ID
 
-print(f"DEBUG: Forcing Project & Quota to: {PROJECT_ID}")
-
-# Initialize GCP Project
-vertexai.init(project=PROJECT_ID, location="us-central1")
-
-# POINT TO THE CORRECT DATABASE: 'my-assistant-db'
+# Initialize Firestore
 db = firestore.Client(project=PROJECT_ID, database="my-assistant-db")
 
-# Load the embedding model
-embedding_model = TextEmbeddingModel.from_pretrained("text-embedding-004")
+# Initialize Vertex AI
+vertexai.init(project=PROJECT_ID, location="us-central1")
 
 def get_embedding(text: str):
-    """Generate a vector embedding using Vertex AI."""
+    """Generate a vector embedding using Vertex AI (Native SDK)."""
+    model = TextEmbeddingModel.from_pretrained("text-embedding-004")
     inputs = [TextEmbeddingInput(text, "RETRIEVAL_DOCUMENT")]
-    embeddings = embedding_model.get_embeddings(inputs)
+    embeddings = model.get_embeddings(inputs)
     return embeddings[0].values
 
 def save_preference(text: str):
-    """Save a preference to Google Cloud Firestore with a vector embedding."""
+    """Save a preference to Google Cloud Firestore."""
     print(f"DEBUG: Saving preference to Cloud Firestore: {text}")
-    vector_values = get_embedding(text)
-    
-    doc_id = str(uuid.uuid4())
-    db.collection("memories").document(doc_id).set({
-        "content": text,
-        "embedding": Vector(vector_values),
-        "timestamp": datetime.now()
-    })
+    try:
+        vector_values = get_embedding(text)
+        doc_id = str(uuid.uuid4())
+        db.collection("memories").document(doc_id).set({
+            "content": text,
+            "embedding": Vector(vector_values),
+            "timestamp": datetime.now()
+        })
+    except Exception as e:
+        print(f"DEBUG: Failed to save preference: {e}")
 
 def get_relevant_memories(query: str, n_results: int = 5):
     """Search Cloud Firestore using Vector Search (KNN)."""
     try:
         query_vector = get_embedding(query)
-        
-        # Perform Vector Search on 'my-assistant-db'
         collection = db.collection("memories")
         results = collection.find_nearest(
             vector_field="embedding",
@@ -65,3 +61,39 @@ def get_relevant_memories(query: str, n_results: int = 5):
     except Exception as e:
         print(f"DEBUG: Cloud Memory search failed: {e}")
         return []
+
+def delete_memory(text: str):
+    """Find and delete a specific memory by its exact content match."""
+    print(f"DEBUG: Attempting to delete memory: {text}")
+    try:
+        collection = db.collection("memories")
+        # Exact match delete
+        results = collection.where("content", "==", text).get()
+        deleted_count = 0
+        for doc in results:
+            doc.reference.delete()
+            deleted_count += 1
+            
+        if deleted_count > 0:
+            print(f"DEBUG: Deleted {deleted_count} memories.")
+            return True
+            
+        # If exact match fails, we try a semantic search to find the closest thing
+        print("DEBUG: No exact match found. Searching semantically to find item to delete...")
+        query_vector = get_embedding(text)
+        results = collection.find_nearest(
+            vector_field="embedding",
+            query_vector=Vector(query_vector),
+            distance_measure=DistanceMeasure.COSINE,
+            limit=1
+        ).get()
+        
+        for doc in results:
+            doc.reference.delete()
+            print(f"DEBUG: Deleted semantically similar memory: {doc.to_dict().get('content')}")
+            return True
+            
+        return False
+    except Exception as e:
+        print(f"DEBUG: Deletion failed: {e}")
+        return False

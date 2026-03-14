@@ -9,6 +9,7 @@ from google.auth.transport.requests import Request
 from googleapiclient.http import MediaIoBaseDownload
 from google import genai
 from google.genai import types
+from app.memory import save_preference, get_relevant_memories, delete_memory
 
 TOKEN_PATH = "tokens.json"
 
@@ -27,6 +28,24 @@ def get_google_creds():
         with open(TOKEN_PATH, 'w') as f: json.dump(creds_data, f)
     return creds
 
+def save_personal_fact(fact: str):
+    """Save a permanent fact about the user (preferences, identity, address, family) to Cloud Memory."""
+    print(f"DEBUG: Tool save_personal_fact called for: {fact}")
+    save_preference(fact)
+    return f"Success: I have remembered the fact: '{fact}'"
+
+def delete_personal_fact(fact: str):
+    """Delete an incorrect or outdated fact from the assistant's memory."""
+    print(f"DEBUG: Tool delete_personal_fact called for: {fact}")
+    success = delete_memory(fact)
+    return f"Success: I have forgotten the fact: '{fact}'" if success else f"Error: I couldn't find that specific fact to delete."
+
+def search_memory(query: str):
+    """Search the assistant's long-term cloud memory for personal facts, preferences, and history."""
+    print(f"DEBUG: Tool search_memory called for: {query}")
+    results = get_relevant_memories(query, n_results=5)
+    return "\n".join(results) if results else "No relevant memories found."
+
 def get_email_body(payload):
     if 'parts' in payload:
         for part in payload['parts']:
@@ -38,6 +57,7 @@ def get_email_body(payload):
     return None
 
 def search_gmail(query: str, max_results: int = 5):
+    """Search for emails. Returns subject, sender, and IDs."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -59,6 +79,7 @@ def search_gmail(query: str, max_results: int = 5):
     return "\n".join(output) if output else "No emails found."
 
 def read_gmail_message(message_id: str):
+    """Read the FULL text content of an email thread."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -66,6 +87,7 @@ def read_gmail_message(message_id: str):
     return get_email_body(m['payload']) or "No text found."
 
 def list_gmail_attachments(message_id: str):
+    """List all attachments for a specific email message."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -75,6 +97,7 @@ def list_gmail_attachments(message_id: str):
     return "\n".join(output) if output else "No attachments."
 
 def read_gmail_attachment(message_id: str, attachment_id: str, filename: str, mime_type: str):
+    """Download and parse an email attachment using AI."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -82,7 +105,7 @@ def read_gmail_attachment(message_id: str, attachment_id: str, filename: str, mi
     file_data = base64.urlsafe_b64decode(attachment['data'].encode('UTF-8'))
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
     try:
-        response = client.models.generate_content(model="gemini-2.0-flash", contents=[types.Part.from_bytes(data=file_data, mime_type=mime_type), f"Summarize {filename}"])
+        response = client.models.generate_content(model="gemini-2.5-flash", contents=[types.Part.from_bytes(data=file_data, mime_type=mime_type), f"Summarize {filename}"])
         return f"SUMMARY OF {filename}:\n{response.text}"
     except Exception as e: return f"Error: {str(e)}"
 
@@ -97,51 +120,22 @@ def search_drive(query: str, max_results: int = 5):
     return "\n".join(output) if output else "No files found."
 
 def read_drive_file(file_id: str):
-    """Read any Drive file (Doc, Sheet, PDF, Image) using AI parsing."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('drive', 'v3', credentials=creds)
-    
-    # 1. Get metadata
     file_metadata = service.files().get(fileId=file_id, fields="name, mimeType").execute()
     mime_type = file_metadata.get('mimeType')
-    name = file_metadata.get('name')
-    
-    print(f"DEBUG: Reading Drive file '{name}' ({mime_type})")
-    
     try:
-        # 2. Setup download request
-        if mime_type == 'application/vnd.google-apps.spreadsheet':
-            request = service.files().export_media(fileId=file_id, mimeType='text/csv')
-        elif mime_type == 'application/vnd.google-apps.document':
-            request = service.files().export_media(fileId=file_id, mimeType='text/plain')
-        else:
-            request = service.files().get_media(fileId=file_id)
-
-        # 3. Download to bytes
+        if mime_type == 'application/vnd.google-apps.spreadsheet': request = service.files().export_media(fileId=file_id, mimeType='text/csv')
+        elif mime_type == 'application/vnd.google-apps.document': request = service.files().export_media(fileId=file_id, mimeType='text/plain')
+        else: request = service.files().get_media(fileId=file_id)
         fh = io.BytesIO()
         downloader = MediaIoBaseDownload(fh, request)
         done = False
         while done is False: status, done = downloader.next_chunk()
         file_data = fh.getvalue()
-
-        # 4. Smart parsing based on type
-        if 'text/' in mime_type or 'csv' in mime_type or 'json' in mime_type:
-            # Regular text decoding
-            return f"CONTENT OF {name}:\n{file_data.decode('utf-8')[:5000]}"
-        else:
-            # BINARY PARSING (PDF, Image, etc.) using Gemini
-            client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-            # Use gemini-2.0-flash for multimodal speed
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=[
-                    types.Part.from_bytes(data=file_data, mime_type=mime_type),
-                    f"Analyze this file named '{name}' and extract all the key information."
-                ]
-            )
-            return f"AI ANALYSIS OF '{name}':\n{response.text}"
-            
-    except Exception as e:
-        print(f"DEBUG: Error in read_drive_file: {str(e)}")
-        return f"Error reading file '{name}': {str(e)}"
+        if 'text/' in mime_type or 'csv' in mime_type or 'json' in mime_type: return f"CONTENT OF {file_metadata['name']}:\n{file_data.decode('utf-8')[:5000]}"
+        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        response = client.models.generate_content(model="gemini-2.5-flash", contents=[types.Part.from_bytes(data=file_data, mime_type=mime_type), f"Analyze {file_metadata['name']}"])
+        return f"AI ANALYSIS:\n{response.text}"
+    except Exception as e: return f"Error: {str(e)}"
