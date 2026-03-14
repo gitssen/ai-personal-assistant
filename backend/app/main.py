@@ -1,14 +1,15 @@
+import os
+from dotenv import load_dotenv
+# Load environment variables before any other app imports
+load_dotenv()
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
-import os
-from dotenv import load_dotenv
 from app.auth import router as auth_router
 from app.chat import chat_with_assistant
-
-load_dotenv()
 
 app = FastAPI(title="AI Personal Assistant API")
 
