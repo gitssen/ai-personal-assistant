@@ -12,57 +12,46 @@ def get_client():
 
 def chat_with_assistant(user_message: str, history=None):
     client = get_client()
-    
-    # 1. ENHANCED MEMORY RETRIEVAL
-    # We query for 'identity' specifically to ensure the address is ALWAYS found.
     identity_memories = get_relevant_memories("My address and identity information", n_results=3)
-    # We also query for the user's actual question
     topic_memories = get_relevant_memories(user_message, n_results=3)
-    
     all_memories = list(set(identity_memories + topic_memories))
-    
-    memory_context = ""
-    if all_memories:
-        memory_context = "\nUSER CONTEXT (MEMORIES):\n- " + "\n- ".join(all_memories)
+    memory_context = "\n".join(all_memories) if all_memories else "No specific preferences saved yet."
 
     current_time = datetime.now().strftime("%A, %B %d, %Y %I:%M %p")
 
-    # 2. DECISION LOGIC
+    # 1. ROUTER Decision
     router_prompt = (
-        f"You are a routing agent. User Memories: {memory_context}\n"
+        f"User Memories: {memory_context}\n"
         f"User message: '{user_message}'\n"
-        f"Goal: re-write the user's request into a highly specific search query.\n"
-        f"If the user says 'local' or 'near me', you MUST include their address from Memory in the query.\n"
-        f"Response format: ROUTE: [PERSONAL/WEB] | QUERY: [Specific search query]"
+        f"If this is a local request (trails, food, weather), choose 'WEB' and include the user's address in the query.\n"
+        f"Format: ROUTE: [PERSONAL/WEB] | QUERY: [Specific search query]"
     )
     route_res = client.models.generate_content(model=MODEL_ID, contents=router_prompt)
-    decision_text = route_res.text.strip()
-    print(f"DEBUG: DECISION -> {decision_text}")
+    decision = route_res.text.strip()
+    print(f"DEBUG: ROUTER DECISION -> {decision}")
     
-    is_web = "WEB" in decision_text
+    is_web = "WEB" in decision
     rewritten_query = user_message
-    if "QUERY:" in decision_text:
-        rewritten_query = decision_text.split("QUERY:")[1].strip()
+    if "QUERY:" in decision:
+        rewritten_query = decision.split("QUERY:")[1].strip()
 
     last_tool = None
-    final_text = ""
-    final_history = []
-
     if is_web:
-        # --- WEB SEARCH (Strict Instruction) ---
-        print(f"DEBUG: Searching Web for: {rewritten_query}")
+        # --- WEB SEARCH ---
+        print(f"DEBUG: Performing Google Search for: {rewritten_query}")
         config = types.GenerateContentConfig(
             system_instruction=(
-                f"You are a web-connected assistant. Current time: {current_time}.\n"
-                f"USER MEMORY: {memory_context}\n"
-                f"INSTRUCTION: Use Google Search to answer. The user's location is in the memory above. "
-                f"NEVER ask for their location if it is mentioned in the memory. Just perform the search."
+                f"You are a helpful assistant with LIVE GOOGLE SEARCH ACCESS. "
+                f"Current time: {current_time}. User Location: {memory_context}\n"
+                f"RULES:\n"
+                f"1. You MUST use Google Search to find real-time info (trails, maps, news).\n"
+                f"2. NEVER apologize or say you cannot provide maps or recommendations. You have the tool to do it!\n"
+                f"3. Provide exactly what the user asked for (e.g., 5 trails with links)."
             ),
             tools=[{"google_search": {}}]
         )
         response = client.models.generate_content(model=MODEL_ID, contents=rewritten_query, config=config)
-        final_text = response.text
-        last_tool = "google_search"
+        return response.text, [], "google_search"
     else:
         # --- PERSONAL DATA ---
         config = types.GenerateContentConfig(
@@ -71,7 +60,6 @@ def chat_with_assistant(user_message: str, history=None):
         )
         chat = client.chats.create(model=MODEL_ID, config=config)
         response = chat.send_message(user_message)
-        
         while response.candidates[0].content.parts and response.candidates[0].content.parts[0].function_call:
             call = response.candidates[0].content.parts[0].function_call
             tool_name = call.name
@@ -80,10 +68,6 @@ def chat_with_assistant(user_message: str, history=None):
             elif tool_name == "read_gmail_message": result = read_gmail_message(**call.args)
             elif tool_name == "search_drive": result = search_drive(**call.args)
             elif tool_name == "read_drive_file": result = read_drive_file(**call.args)
-            else: result = "Error"
+            else: break
             response = chat.send_message(types.Content(parts=[types.Part(function_response=types.FunctionResponse(name=tool_name, response={"result": result}))]))
-        
-        final_text = response.text
-        final_history = getattr(chat, "_curated_history", [])
-
-    return final_text, final_history, last_tool
+        return response.text, getattr(chat, "_curated_history", []), last_tool
