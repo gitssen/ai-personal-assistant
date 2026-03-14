@@ -1,1 +1,28 @@
-backend/app/__pycache__
+# Environments
+.env
+.env.local
+.env.*.local
+
+# Python
+backend/venv/*
+backend/__pycache__/*
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.pytest_cache/
+backend/.ipynb_checkpoints/
+*.pyc
+backend/tokens.json
+# Node.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Sensitive Data
+backend/tokens.json
+backend/chroma_data/
+
+# OS Files
+.DS_Store
+Thumbs.db
