@@ -19,3 +19,8 @@ export async function getLoginUrl() {
   const response = await fetch(`${API_BASE}/auth/login`);
   return response.json();
 }
+
+export async function logout() {
+  const response = await fetch(`${API_BASE}/auth/logout`, { method: "POST" });
+  return response.json();
+}

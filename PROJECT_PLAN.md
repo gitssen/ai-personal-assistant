@@ -29,7 +29,7 @@ The assistant uses a "Router" pattern to bypass Gemini API restrictions:
 ## 3. Implementation Status
 - [x] **Step 1: Environment Setup:** GCP Project, OAuth, and SDKs.
 - [x] **Step 2: Backend Scaffolding:** FastAPI with modern `google-genai`.
-- [x] **Step 3: Google Service Integration:** Gmail (Search/Read) and Drive (Search/Read).
+- [x] **Step 3: Google Service Integration:** Gmail (Search/Read), Drive (Search/Read), and Calendar (List/Create).
 - [x] **Step 4: Cloud Memory Layer:** Firestore Vector Search + Vertex AI.
 - [x] **Step 5: Frontend Implementation:** High-contrast chat UI with "Thinking" task indicators.
 - [x] **Step 6: Smart Routing:** Context-aware switching between Personal Data and Web Search.

@@ -31,7 +31,7 @@ app.add_middleware(
 app.include_router(auth_router)
 
 def serialize_history(history):
-    """Converts the new google.genai history objects into a JSON-friendly format."""
+    """Converts the new google.genai history objects into a JSON-friendly format for persistent multi-turn tool use."""
     serialized = []
     if not history: return []
     
@@ -39,10 +39,25 @@ def serialize_history(history):
         role = content.role
         parts = []
         for part in content.parts:
-            # New SDK parts often have a direct .text attribute
+            # Handle text parts
             if hasattr(part, 'text') and part.text:
                 parts.append({"text": part.text})
-            # We don't need to send tool calls back to the frontend for UI rendering
+            # Handle tool calls
+            elif hasattr(part, 'function_call') and part.function_call:
+                parts.append({
+                    "function_call": {
+                        "name": part.function_call.name,
+                        "args": part.function_call.args
+                    }
+                })
+            # Handle tool responses
+            elif hasattr(part, 'function_response') and part.function_response:
+                parts.append({
+                    "function_response": {
+                        "name": part.function_response.name,
+                        "response": part.function_response.response
+                    }
+                })
         if parts:
             serialized.append({"role": role, "parts": parts})
     return serialized
