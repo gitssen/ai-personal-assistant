@@ -9,6 +9,7 @@ backend/__pycache__/*
 backend/*.pyc
 backend/*.pyo
 backend/*.pyd
+backend/logs/*
 backend/.pytest_cache/
 backend/.ipynb_checkpoints/
 *.pyc
@@ -18,6 +19,7 @@ frontend/node_modules/
 frontend/.next/
 frontend/out/
 frontend/build/
+frontend/logs/*
 
 # Sensitive Data
 backend/tokens.json

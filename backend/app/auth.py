@@ -3,6 +3,7 @@ from fastapi.responses import RedirectResponse
 from google_auth_oauthlib.flow import Flow
 import os
 import json
+from app.logger import logger
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 auth_state_store = {}
@@ -13,6 +14,7 @@ SCOPES = [
     'https://www.googleapis.com/auth/userinfo.profile',
     'https://www.googleapis.com/auth/gmail.readonly',
     'https://www.googleapis.com/auth/drive.readonly',
+    'https://www.googleapis.com/auth/forms.body.readonly',
     'https://www.googleapis.com/auth/photospicker.mediaitems.readonly'
 ]
 
@@ -74,7 +76,7 @@ async def callback(request: Request):
         return {"message": "Success! You are logged in."}
         
     except Exception as e:
-        print(f"DEBUG: OAUTH FETCH TOKEN ERROR: {str(e)}")
+        logger.error(f"DEBUG: OAUTH FETCH TOKEN ERROR: {str(e)}")
         # If redirect_uri_mismatch or invalid_client, it will show up here
         raise HTTPException(status_code=400, detail=f"Google Login Failed: {str(e)}")
 

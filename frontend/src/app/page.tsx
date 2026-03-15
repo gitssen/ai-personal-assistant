@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { sendMessage, getAuthStatus, getLoginUrl } from "@/lib/api";
+import { logger } from "@/lib/logger";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from "react-markdown";
 import { Send, User, Bot, Sparkles, Database, Search, Mail, FileText, Trash2, Palette } from "lucide-react";
@@ -18,11 +19,20 @@ export default function Home() {
   useEffect(() => { checkAuth(); }, []);
   useEffect(() => { messagesEndRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages, loading]);
 
-  const checkAuth = async () => {
+  const checkAuth = async (retries = 5) => {
     try {
       const status = await getAuthStatus();
       setAuthenticated(status.authenticated);
-    } catch (e) { setAuthenticated(false); }
+      logger.info(`Auth status: ${status.authenticated}`);
+    } catch (e) { 
+      if (retries > 0) {
+        logger.warn(`Backend not ready, retrying... (${retries} attempts left)`);
+        setTimeout(() => checkAuth(retries - 1), 2000);
+      } else {
+        logger.error("Auth check failed after multiple retries", e);
+        setAuthenticated(false); 
+      }
+    }
   };
 
   const handleSend = async () => {
@@ -32,10 +42,13 @@ export default function Home() {
     setInput("");
     setLoading(true);
     try {
+      logger.info(`Sending message: ${userMsg}`);
       const data = await sendMessage(userMsg, history);
       setMessages(prev => [...prev, { role: "assistant", content: data.response, task: data.task }]);
       setHistory(data.history);
+      logger.info(`Received AI response for: ${userMsg}`, { task: data.task });
     } catch (e) {
+      logger.error(`Failed to send message: ${userMsg}`, e);
       setMessages(prev => [...prev, { role: "assistant", content: "**Error:** AI connection lost." }]);
     } finally {
       setLoading(false);

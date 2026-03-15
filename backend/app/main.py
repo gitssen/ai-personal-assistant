@@ -1,8 +1,9 @@
 import os
 from dotenv import load_dotenv
-# Load environment variables before any other app imports
+# Load environment variables first
 load_dotenv()
 
+from app.logger import logger
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
@@ -10,6 +11,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 from app.auth import router as auth_router
 from app.chat import chat_with_assistant
+from app.logger import logger
 
 app = FastAPI(title="AI Personal Assistant API")
 
@@ -55,8 +57,7 @@ async def chat(msg: ChatMessage):
             "task": last_tool
         }
     except Exception as e:
-        import traceback
-        traceback.print_exc()
+        logger.exception(f"CHAT ERROR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/")

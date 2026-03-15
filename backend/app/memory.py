@@ -7,6 +7,7 @@ import os
 import uuid
 from datetime import datetime
 from dotenv import load_dotenv
+from app.logger import logger
 
 load_dotenv()
 
@@ -17,6 +18,8 @@ if not PROJECT_ID:
 
 os.environ["GOOGLE_CLOUD_PROJECT"] = PROJECT_ID
 os.environ["GOOGLE_CLOUD_QUOTA_PROJECT"] = PROJECT_ID
+
+logger.info(f"Forcing Project & Quota to: {PROJECT_ID}")
 
 # Initialize Firestore
 db = firestore.Client(project=PROJECT_ID, database="my-assistant-db")
@@ -33,7 +36,7 @@ def get_embedding(text: str):
 
 def save_preference(text: str):
     """Save a preference to Google Cloud Firestore."""
-    print(f"DEBUG: Saving preference to Cloud Firestore: {text}")
+    logger.info(f"Saving preference to Cloud Firestore: {text}")
     try:
         vector_values = get_embedding(text)
         doc_id = str(uuid.uuid4())
@@ -43,7 +46,7 @@ def save_preference(text: str):
             "timestamp": datetime.now()
         })
     except Exception as e:
-        print(f"DEBUG: Failed to save preference: {e}")
+        logger.error(f"Failed to save preference: {e}")
 
 def get_relevant_memories(query: str, n_results: int = 5):
     """Search Cloud Firestore using Vector Search (KNN)."""
@@ -59,12 +62,12 @@ def get_relevant_memories(query: str, n_results: int = 5):
         
         return [doc.to_dict().get("content") for doc in results]
     except Exception as e:
-        print(f"DEBUG: Cloud Memory search failed: {e}")
+        logger.error(f"Cloud Memory search failed: {e}")
         return []
 
 def delete_memory(text: str):
     """Find and delete a specific memory by its exact content match."""
-    print(f"DEBUG: Attempting to delete memory: {text}")
+    logger.info(f"Attempting to delete memory: {text}")
     try:
         collection = db.collection("memories")
         # Exact match delete
@@ -75,11 +78,11 @@ def delete_memory(text: str):
             deleted_count += 1
             
         if deleted_count > 0:
-            print(f"DEBUG: Deleted {deleted_count} memories.")
+            logger.info(f"Deleted {deleted_count} memories.")
             return True
             
         # If exact match fails, we try a semantic search to find the closest thing
-        print("DEBUG: No exact match found. Searching semantically to find item to delete...")
+        logger.info("No exact match found. Searching semantically to find item to delete...")
         query_vector = get_embedding(text)
         results = collection.find_nearest(
             vector_field="embedding",
@@ -90,10 +93,10 @@ def delete_memory(text: str):
         
         for doc in results:
             doc.reference.delete()
-            print(f"DEBUG: Deleted semantically similar memory: {doc.to_dict().get('content')}")
+            logger.info(f"Deleted semantically similar memory: {doc.to_dict().get('content')}")
             return True
             
         return False
     except Exception as e:
-        print(f"DEBUG: Deletion failed: {e}")
+        logger.error(f"Deletion failed: {e}")
         return False

@@ -7,6 +7,7 @@ from app.tools import (
     search_drive, read_drive_file, save_personal_fact, delete_personal_fact, search_memory
 )
 from app.memory import get_relevant_memories
+from app.logger import logger
 
 MODEL_ID = "gemini-2.5-flash"
 
@@ -44,16 +45,19 @@ def chat_with_assistant(user_message: str, history=None):
         contents=formatted_history + [types.Content(role="user", parts=[types.Part(text=router_prompt)])]
     )
     decision = route_res.text.strip()
-    print(f"DEBUG: ROUTER -> {decision}")
+    logger.info(f"ROUTER -> {decision}")
     
     is_web = "WEB" in decision
     search_terms = user_message
     if "QUERY:" in decision: search_terms = decision.split("QUERY:")[1].strip()
 
     last_tool = None
+    final_text = ""
+    final_history = []
+
     if is_web:
         # --- WEB SPECIALIST (Maps/Distance) ---
-        print(f"DEBUG: Distance Search for: {search_terms}")
+        logger.info(f"Distance Search for: {search_terms}")
         config = types.GenerateContentConfig(
             system_instruction=(
                 f"You are a web-connected assistant. Current time: {current_time}.\n"
@@ -78,6 +82,8 @@ def chat_with_assistant(user_message: str, history=None):
             call = response.candidates[0].content.parts[0].function_call
             tool_name = call.name
             last_tool = tool_name
+            logger.info(f"EXECUTION - '{tool_name}'")
+            
             if tool_name == "save_personal_fact": result = save_personal_fact(**call.args)
             elif tool_name == "delete_personal_fact": result = delete_personal_fact(**call.args)
             elif tool_name == "search_memory": result = search_memory(**call.args)
@@ -88,6 +94,7 @@ def chat_with_assistant(user_message: str, history=None):
             elif tool_name == "search_drive": result = search_drive(**call.args)
             elif tool_name == "read_drive_file": result = read_drive_file(**call.args)
             else: break
+            
             response = chat.send_message(types.Part(function_response=types.FunctionResponse(name=tool_name, response={"result": result})))
         
         return response.text, getattr(chat, "_curated_history", []), last_tool

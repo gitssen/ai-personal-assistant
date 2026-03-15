@@ -10,6 +10,7 @@ from googleapiclient.http import MediaIoBaseDownload
 from google import genai
 from google.genai import types
 from app.memory import save_preference, get_relevant_memories, delete_memory
+from app.logger import logger
 
 TOKEN_PATH = "tokens.json"
 
@@ -29,22 +30,19 @@ def get_google_creds():
     return creds
 
 def save_personal_fact(fact: str):
-    """Save a permanent fact about the user (preferences, identity, address, family) to Cloud Memory."""
-    print(f"DEBUG: Tool save_personal_fact called for: {fact}")
+    logger.info(f"Tool save_personal_fact called: {fact}")
     save_preference(fact)
-    return f"Success: I have remembered the fact: '{fact}'"
+    return f"Success: Remembered '{fact}'"
 
 def delete_personal_fact(fact: str):
-    """Delete an incorrect or outdated fact from the assistant's memory."""
-    print(f"DEBUG: Tool delete_personal_fact called for: {fact}")
+    logger.info(f"Tool delete_personal_fact called: {fact}")
     success = delete_memory(fact)
-    return f"Success: I have forgotten the fact: '{fact}'" if success else f"Error: I couldn't find that specific fact to delete."
+    return f"Success: Forgotten '{fact}'" if success else "Fact not found."
 
 def search_memory(query: str):
-    """Search the assistant's long-term cloud memory for personal facts, preferences, and history."""
-    print(f"DEBUG: Tool search_memory called for: {query}")
+    logger.info(f"Tool search_memory called: {query}")
     results = get_relevant_memories(query, n_results=5)
-    return "\n".join(results) if results else "No relevant memories found."
+    return "\n".join(results) if results else "No relevant memories."
 
 def get_email_body(payload):
     if 'parts' in payload:
@@ -57,7 +55,7 @@ def get_email_body(payload):
     return None
 
 def search_gmail(query: str, max_results: int = 5):
-    """Search for emails. Returns subject, sender, and IDs."""
+    logger.info(f"search_gmail: {query}")
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -69,17 +67,11 @@ def search_gmail(query: str, max_results: int = 5):
         headers = m['payload']['headers']
         subject = next((h['value'] for h in headers if h['name'] == 'Subject'), 'No Subject')
         sender = next((h['value'] for h in headers if h['name'] == 'From'), 'Unknown')
-        has_attachments = "No"
-        if 'parts' in m['payload']:
-            for part in m['payload']['parts']:
-                if part.get('filename'):
-                    has_attachments = "Yes"
-                    break
-        output.append(f"ID: {msg['id']}\nFrom: {sender}\nSubject: {subject}\nAttachments: {has_attachments}\nSnippet: {m.get('snippet')}\n---")
+        output.append(f"ID: {msg['id']}\nFrom: {sender}\nSubject: {subject}\nSnippet: {m.get('snippet')}\n---")
     return "\n".join(output) if output else "No emails found."
 
 def read_gmail_message(message_id: str):
-    """Read the FULL text content of an email thread."""
+    logger.info(f"read_gmail_message: {message_id}")
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -87,17 +79,17 @@ def read_gmail_message(message_id: str):
     return get_email_body(m['payload']) or "No text found."
 
 def list_gmail_attachments(message_id: str):
-    """List all attachments for a specific email message."""
+    logger.info(f"list_gmail_attachments: {message_id}")
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
     m = service.users().messages().get(userId='me', id=message_id).execute()
     parts = m.get('payload', {}).get('parts', [])
-    output = [f"Filename: {p['filename']}\nAttachment ID: {p['body']['attachmentId']}\nMimeType: {p['mimeType']}\n---" for p in parts if p.get('filename')]
+    output = [f"Filename: {p['filename']}\nID: {p['body']['attachmentId']}\nMime: {p['mimeType']}\n---" for p in parts if p.get('filename')]
     return "\n".join(output) if output else "No attachments."
 
 def read_gmail_attachment(message_id: str, attachment_id: str, filename: str, mime_type: str):
-    """Download and parse an email attachment using AI."""
+    logger.info(f"read_gmail_attachment: {filename}")
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('gmail', 'v1', credentials=creds)
@@ -107,9 +99,10 @@ def read_gmail_attachment(message_id: str, attachment_id: str, filename: str, mi
     try:
         response = client.models.generate_content(model="gemini-2.5-flash", contents=[types.Part.from_bytes(data=file_data, mime_type=mime_type), f"Summarize {filename}"])
         return f"SUMMARY OF {filename}:\n{response.text}"
-    except Exception as e: return f"Error: {str(e)}"
+    except Exception as e: return f"Error parsing attachment: {str(e)}"
 
 def search_drive(query: str, max_results: int = 5):
+    logger.info(f"search_drive: {query}")
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     safe_query = query.replace("'", "\\'")
@@ -120,22 +113,45 @@ def search_drive(query: str, max_results: int = 5):
     return "\n".join(output) if output else "No files found."
 
 def read_drive_file(file_id: str):
+    """Read any Drive file (Doc, Sheet, PDF, Image, OR Google Form) using AI parsing."""
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
     service = build('drive', 'v3', credentials=creds)
+    
     file_metadata = service.files().get(fileId=file_id, fields="name, mimeType").execute()
     mime_type = file_metadata.get('mimeType')
+    name = file_metadata.get('name')
+    
+    logger.info(f"Reading Drive file '{name}' ({mime_type})")
+    
     try:
-        if mime_type == 'application/vnd.google-apps.spreadsheet': request = service.files().export_media(fileId=file_id, mimeType='text/csv')
-        elif mime_type == 'application/vnd.google-apps.document': request = service.files().export_media(fileId=file_id, mimeType='text/plain')
-        else: request = service.files().get_media(fileId=file_id)
+        # SPECIAL CASE: Google Forms
+        if mime_type == 'application/vnd.google-apps.form':
+            form_service = build('forms', 'v1', credentials=creds)
+            form = form_service.forms().get(formId=file_id).execute()
+            return f"GOOGLE FORM CONTENT '{name}':\n{json.dumps(form, indent=2)}"
+
+        # Standard cases (Docs, Sheets, Binary)
+        if mime_type == 'application/vnd.google-apps.spreadsheet':
+            request = service.files().export_media(fileId=file_id, mimeType='text/csv')
+        elif mime_type == 'application/vnd.google-apps.document':
+            request = service.files().export_media(fileId=file_id, mimeType='text/plain')
+        else:
+            request = service.files().get_media(fileId=file_id)
+
         fh = io.BytesIO()
         downloader = MediaIoBaseDownload(fh, request)
         done = False
         while done is False: status, done = downloader.next_chunk()
         file_data = fh.getvalue()
-        if 'text/' in mime_type or 'csv' in mime_type or 'json' in mime_type: return f"CONTENT OF {file_metadata['name']}:\n{file_data.decode('utf-8')[:5000]}"
-        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-        response = client.models.generate_content(model="gemini-2.5-flash", contents=[types.Part.from_bytes(data=file_data, mime_type=mime_type), f"Analyze {file_metadata['name']}"])
-        return f"AI ANALYSIS:\n{response.text}"
-    except Exception as e: return f"Error: {str(e)}"
+
+        if 'text/' in mime_type or 'csv' in mime_type or 'json' in mime_type:
+            return f"CONTENT OF {name}:\n{file_data.decode('utf-8')[:5000]}"
+        else:
+            client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+            response = client.models.generate_content(model="gemini-2.5-flash", contents=[types.Part.from_bytes(data=file_data, mime_type=mime_type), f"Analyze {name}"])
+            return f"AI ANALYSIS OF '{name}':\n{response.text}"
+            
+    except Exception as e:
+        logger.error(f"Error in read_drive_file: {str(e)}")
+        return f"Error reading file '{name}': {str(e)}"
