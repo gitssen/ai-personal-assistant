@@ -1,32 +1,61 @@
 import os
+import json
+from google.cloud import storage
 from dotenv import load_dotenv
+
+# Load environment variables
 load_dotenv()
 
-from app.memory import save_preference, get_relevant_memories
-
-def test_memory():
-    print("--- TESTING CLOUD MEMORY ---")
+def test_gcs_sync():
+    print("🧪 Testing GCS Memory Sync...")
     
-    # 1. Save a sample preference
-    test_fact = "User is allergic to peanuts and loves spicy Mexican food."
-    try:
-        save_preference(test_fact)
-        print("SUCCESS: Preference saved to Firestore.")
-    except Exception as e:
-        print(f"FAILED: Could not save preference: {e}")
+    bucket_name = os.getenv("GCS_MEMORIES_BUCKET")
+    project_id = os.getenv("GOOGLE_PROJECT_ID")
+    token_path = "tokens.json"
+
+    if not bucket_name:
+        print("❌ Error: GCS_MEMORIES_BUCKET not found in .env")
         return
 
-    # 2. Retrieve the preference
-    print("\n--- RETRIEVING MEMORY ---")
-    query = "What food does the user like?"
+    if not os.path.exists(token_path):
+        print(f"❌ Error: {token_path} not found. Please log in to the app first.")
+        return
+
+    with open(token_path, 'r') as f:
+        email = json.load(f).get('email')
+    
+    print(f"👤 User: {email}")
+    print(f"🪣  Bucket: {bucket_name}")
+    print(f"🏗️  Project: {project_id}")
+
     try:
-        results = get_relevant_memories(query)
-        if results:
-            print(f"SUCCESS: Found relevant memories: {results}")
+        storage_client = storage.Client(project=project_id)
+        bucket = storage_client.bucket(bucket_name)
+        blob_name = f"raw_facts_{email}.json"
+        blob = bucket.blob(blob_name)
+
+        print(f"🔍 Checking for blob: {blob_name}...")
+        
+        if blob.exists():
+            print(f"✅ Blob found! Size: {blob.size} bytes")
+            local_file = "test_sync_results.json"
+            blob.download_to_filename(local_file)
+            print(f"💾 Downloaded to: {local_file}")
+            
+            with open(local_file, 'r') as f:
+                data = json.load(f)
+                print(f"📋 Found {len(data)} raw facts in cloud storage.")
+                if len(data) > 0:
+                    print(f"💡 Sample Fact: {data[0]['fact']}")
         else:
-            print("WARNING: No relevant memories found. (Did you create the Vector Index?)")
+            print(f"❓ Blob not found. Have you run the datamining job yet?")
+            print("   Listing all blobs in bucket to help debug:")
+            blobs = list(bucket.list_blobs(max_results=10))
+            for b in blobs:
+                print(f"   - {b.name}")
+
     except Exception as e:
-        print(f"FAILED: Could not retrieve memories: {e}")
+        print(f"💥 GCS Error: {str(e)}")
 
 if __name__ == "__main__":
-    test_memory()
+    test_gcs_sync()

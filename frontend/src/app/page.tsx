@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import { sendMessage, getAuthStatus, getLoginUrl, logout } from "@/lib/api";
 import { logger } from "@/lib/logger";
 import { motion, AnimatePresence } from "framer-motion";
@@ -211,8 +212,11 @@ export default function Home() {
                 </select>
               </div>
             </div>
-            <button onClick={() => { setMessages([]); setHistory([]); }} className="p-2 text-slate-400 hover:text-red-500 transition-colors" title="Clear Chat History"><Trash2 size={20} /></button>
-            <button onClick={handleLogout} className="p-2 text-slate-400 hover:text-red-500 transition-colors" title="Logout"><LogOut size={20} /></button>
+            <div className="flex items-center gap-3">
+              <Link href="/memories" className="p-2 text-slate-400 hover:text-blue-600 transition-colors" title="Review AI Memories"><Database size={20} /></Link>
+              <button onClick={() => { setMessages([]); setHistory([]); }} className="p-2 text-slate-400 hover:text-red-500 transition-colors" title="Clear Chat History"><Trash2 size={20} /></button>
+              <button onClick={handleLogout} className="p-2 text-slate-400 hover:text-red-500 transition-colors" title="Logout"><LogOut size={20} /></button>
+            </div>
           </div>
         </header>
 

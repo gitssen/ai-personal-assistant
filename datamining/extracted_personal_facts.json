@@ -1,0 +1,67 @@
+[
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Brother Genuine TN760 High...\" and 1 more item",
+    "message_id": "19ced52768b33309"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Ordered: \"Brother Genuine TN760 High...\" and 1 more item",
+    "message_id": "19ced52768b33309"
+  },
+  {
+    "fact": "The user likely owns a Brother printer compatible with TN760 toner.",
+    "source_subject": "Ordered: \"Brother Genuine TN760 High...\" and 1 more item",
+    "message_id": "19ced52768b33309"
+  },
+  {
+    "fact": "The user uses or likes Lemon Verbena scented hand soap.",
+    "source_subject": "Ordered: \"Brother Genuine TN760 High...\" and 1 more item",
+    "message_id": "19ced52768b33309"
+  },
+  {
+    "fact": "The user owns pets.",
+    "source_subject": "We're getting your Autoship order ready",
+    "message_id": "19ced104464dc6bc"
+  },
+  {
+    "fact": "The user uses Chewy.com's autoship service for pet supplies.",
+    "source_subject": "We're getting your Autoship order ready",
+    "message_id": "19ced104464dc6bc"
+  },
+  {
+    "fact": "The user owns a dog.",
+    "source_subject": "You\u2019re set with Autoship.",
+    "message_id": "19ced1032089ccf1"
+  },
+  {
+    "fact": "The user's dog weighs between 66.1 and 132 lbs.",
+    "source_subject": "You\u2019re set with Autoship.",
+    "message_id": "19ced1032089ccf1"
+  },
+  {
+    "fact": "The user purchases NexGard PLUS Chewables for their dog every 6 months.",
+    "source_subject": "You\u2019re set with Autoship.",
+    "message_id": "19ced1032089ccf1"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Welcome to Firebase",
+    "message_id": "19ceda1ac346bb4b"
+  },
+  {
+    "fact": "The user is a professional developer.",
+    "source_subject": "Welcome to Firebase",
+    "message_id": "19ceda1ac346bb4b"
+  },
+  {
+    "fact": "The user is interested in building AI-powered apps using Firebase.",
+    "source_subject": "Welcome to Firebase",
+    "message_id": "19ceda1ac346bb4b"
+  },
+  {
+    "fact": "The user owns a pet.",
+    "source_subject": "A payment method was added to your account.",
+    "message_id": "19ced1026ba65280"
+  }
+]

@@ -50,13 +50,16 @@ def chat_with_assistant(user_message: str, history=None):
 
     # 2. CONVERT HISTORY
     formatted_history = []
+    text_only_history = [] # For the Router
     if history:
         for entry in history:
             role = "model" if entry.get("role") == "assistant" else "user"
             parts = []
+            text_parts = []
             for p in entry.get("parts", []):
                 if "text" in p:
                     parts.append(types.Part(text=p["text"]))
+                    text_parts.append(types.Part(text=p["text"]))
                 elif "function_call" in p:
                     fc = p["function_call"]
                     parts.append(types.Part(function_call=types.FunctionCall(name=fc["name"], args=fc["args"])))
@@ -65,6 +68,7 @@ def chat_with_assistant(user_message: str, history=None):
                     parts.append(types.Part(function_response=types.FunctionResponse(name=fr["name"], response=fr["response"])))
             
             if parts: formatted_history.append(types.Content(role=role, parts=parts))
+            if text_parts: text_only_history.append(types.Content(role=role, parts=text_parts))
 
     # 3. ROUTER
     router_prompt = (
@@ -73,9 +77,10 @@ def chat_with_assistant(user_message: str, history=None):
         f"Decide ROUTE (PERSONAL/WEB) and SEARCH_TERMS.\n"
         f"Note: Use the memories above to identify people/pets mentioned."
     )
+    # Use text_only_history for the router to avoid confusion with tool calls
     route_res = client.models.generate_content(
         model=MODEL_ID, 
-        contents=formatted_history + [types.Content(role="user", parts=[types.Part(text=router_prompt)])]
+        contents=text_only_history + [types.Content(role="user", parts=[types.Part(text=router_prompt)])]
     )
     
     if not route_res.text:

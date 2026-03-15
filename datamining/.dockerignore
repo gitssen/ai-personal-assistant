@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+venv
+.env
+Dockerfile
+env.yaml
+extracted_personal_facts.json
+processed_ids.json

@@ -1,0 +1,4842 @@
+[
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Over Due Piano Rental Account: Saurav Sen",
+    "message_id": "19ce34d7f11f436d"
+  },
+  {
+    "fact": "The user rents a piano, suggesting an interest in playing the piano.",
+    "source_subject": "Over Due Piano Rental Account: Saurav Sen",
+    "message_id": "19ce34d7f11f436d"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Re: Over Due Piano Rental Account: Saurav Sen",
+    "message_id": "19ce357548a6ce94"
+  },
+  {
+    "fact": "The user rents a piano, indicating an interest in music or playing the piano.",
+    "source_subject": "Re: Over Due Piano Rental Account: Saurav Sen",
+    "message_id": "19ce357548a6ce94"
+  },
+  {
+    "fact": "The user is likely located in the San Mateo / Bay Area / South Bay region, as they are renting a piano from a local business in that area.",
+    "source_subject": "Re: Over Due Piano Rental Account: Saurav Sen",
+    "message_id": "19ce357548a6ce94"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "You've got 9 credits!",
+    "message_id": "19ce1fd979e5016b"
+  },
+  {
+    "fact": "User's email address is sauravsen23@gmail.com.",
+    "source_subject": "You've got 9 credits!",
+    "message_id": "19ce1fd979e5016b"
+  },
+  {
+    "fact": "User's email address is sauravsen23@gmail.com",
+    "source_subject": "Your Google Play Order Receipt from Mar 13, 2026",
+    "message_id": "19ce9fb9b7917d3c"
+  },
+  {
+    "fact": "User subscribes to Amazon Prime (Amazon Shopping)",
+    "source_subject": "Your Google Play Order Receipt from Mar 13, 2026",
+    "message_id": "19ce9fb9b7917d3c"
+  },
+  {
+    "fact": "User's account name is sauravsen.",
+    "source_subject": "Payment Scheduled",
+    "message_id": "19ce105a5de1e3c9"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Earn 100,000 Membership Rewards\u00ae points after you upgrade to the Platinum Card\u00ae",
+    "message_id": "19cdf2a9887b2526"
+  },
+  {
+    "fact": "The user likes the movie \"Dhurandhar The Revenge (Hindi with English Subtitles)\".",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19cdfc4f90d94d6a"
+  },
+  {
+    "fact": "The user prefers movies in \"Hindi Spoken with English Subtitles Standard Format Luxury Lounger\".",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19cdfc4f90d94d6a"
+  },
+  {
+    "fact": "The user plans to visit Cinemark Century San Mateo 12 located at 320 East 2nd Ave San Mateo, CA 94401.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19cdfc4f90d94d6a"
+  },
+  {
+    "fact": "The user has an activity planned for Thursday, March 19, 2026 at 8:30 PM.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19cdfc4f90d94d6a"
+  },
+  {
+    "fact": "User shops at Whole Foods Market in San Mateo.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User has a preference for organic food.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User prefers zero-sugar beverages.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User purchases chicken bone broth.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User purchases chicken (boneless skinless thighs, whole legs).",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User purchases organic garbanzo beans and organic dark red kidney beans.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User purchases vine on tomatoes, cilantro, and yellow potatoes.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User purchases organic large grade A eggs.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "User purchases organic plain whole milk Greek yogurt.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19cddf526231145d"
+  },
+  {
+    "fact": "Is a Rivian owner",
+    "source_subject": "Your Service Recap",
+    "message_id": "19cdde4f402e1d3f"
+  },
+  {
+    "fact": "The user is a parent/guardian.",
+    "source_subject": "Ching-Pei Hu sent an update about Math Adoption - Parent Information Session on 3/11",
+    "message_id": "19cd88f2ea47a9a7"
+  },
+  {
+    "fact": "The user is affiliated with the Belmont-Redwood Shores Elementary School District.",
+    "source_subject": "Ching-Pei Hu sent an update about Math Adoption - Parent Information Session on 3/11",
+    "message_id": "19cd88f2ea47a9a7"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Hi!",
+    "message_id": "19ccaf865883de26"
+  },
+  {
+    "fact": "The user's full name is Saurav Sen.",
+    "source_subject": "Hi!",
+    "message_id": "19ccaf865883de26"
+  },
+  {
+    "fact": "The user is a Sr. Staff Software Engineer at Facebook.",
+    "source_subject": "Hi!",
+    "message_id": "19ccaf865883de26"
+  },
+  {
+    "fact": "The user or someone in their household is a 2024/2025 or 2025/2026 member of the Northern California Volleyball Association (NCVA).",
+    "source_subject": "RESEND: NCVA Power League \u2013 Recap March 7 & 8",
+    "message_id": "19cd9aee87b3e498"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Confirmation of your election change",
+    "message_id": "19cbe4c6c218f88a"
+  },
+  {
+    "fact": "The user owns a vehicle with the last 6 digits 068188 (Rivian).",
+    "source_subject": "Your Work Estimate for Service",
+    "message_id": "19cc5528396517ed"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Hi!",
+    "message_id": "19cbb84beb86ad1c"
+  },
+  {
+    "fact": "The user is a Sr. Staff Software Engineer at Facebook.",
+    "source_subject": "Hi!",
+    "message_id": "19cbb84beb86ad1c"
+  },
+  {
+    "fact": "The user is a Kaiser Permanente member.",
+    "source_subject": "Coming soon: A better online experience",
+    "message_id": "19cc05e2398cdc97"
+  },
+  {
+    "fact": "The user has health care needs.",
+    "source_subject": "Coming soon: A better online experience",
+    "message_id": "19cc05e2398cdc97"
+  },
+  {
+    "fact": "The user may manage health care for family members.",
+    "source_subject": "Coming soon: A better online experience",
+    "message_id": "19cc05e2398cdc97"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19cb961535fc97b0"
+  },
+  {
+    "fact": "The user's physical address is 2331 Wooster Avenue.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19cb961535fc97b0"
+  },
+  {
+    "fact": "The user purchases Swiffer Wetjet Wood Floor Cleaner Solution Refill, suggesting they have wood floors.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19cb961535fc97b0"
+  },
+  {
+    "fact": "The user purchases Aquaphor Baby Wash and Shampoo, suggesting they have a baby or care for one.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19cb961535fc97b0"
+  },
+  {
+    "fact": "sauravsen23@gmail.com",
+    "source_subject": "See Wolf in person",
+    "message_id": "19cb9a7098925e02"
+  },
+  {
+    "fact": "The user or someone in their household is a member of the Northern California Volleyball Association (NCVA).",
+    "source_subject": "NCVA Power League \u2013 Recap Feb 28 & Mar 1",
+    "message_id": "19cb6c9f92c366da"
+  },
+  {
+    "fact": "The user or someone in their household has an interest in volleyball.",
+    "source_subject": "NCVA Power League \u2013 Recap Feb 28 & Mar 1",
+    "message_id": "19cb6c9f92c366da"
+  },
+  {
+    "fact": "The user or someone in their household is a 2024/2025 or 2025/2026 member of the NCVA.",
+    "source_subject": "NCVA Power League \u2013 Recap Feb 28 & Mar 1",
+    "message_id": "19cb6c9f92c366da"
+  },
+  {
+    "fact": "The user or someone in their household has a connection to Northern California.",
+    "source_subject": "NCVA Power League \u2013 Recap Feb 28 & Mar 1",
+    "message_id": "19cb6c9f92c366da"
+  },
+  {
+    "fact": "User's name: SAURAV SEN",
+    "source_subject": "Confirmation of your election change",
+    "message_id": "19cb459a9eaa6aee"
+  },
+  {
+    "fact": "User is a participant in the Meta Platforms, Inc. 401(k) Plan",
+    "source_subject": "Confirmation of your election change",
+    "message_id": "19cb459a9eaa6aee"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Delivered: \"1 Pack Fresh Linen 2oz...\"",
+    "message_id": "19cb10944ba7d4c0"
+  },
+  {
+    "fact": "User's location is Belmont, CA.",
+    "source_subject": "Delivered: \"1 Pack Fresh Linen 2oz...\"",
+    "message_id": "19cb10944ba7d4c0"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Adya",
+    "message_id": "19cb6d1cb0199984"
+  },
+  {
+    "fact": "The user is connected to an individual named Adya.",
+    "source_subject": "Adya",
+    "message_id": "19cb6d1cb0199984"
+  },
+  {
+    "fact": "Adya is a student at United Studios of Self Defense Belmont.",
+    "source_subject": "Adya",
+    "message_id": "19cb6d1cb0199984"
+  },
+  {
+    "fact": "The user is associated with the location United Studios of Self Defense Belmont at 1011 Alameda de las Pulgas, Belmont Ca 94002.",
+    "source_subject": "Adya",
+    "message_id": "19cb6d1cb0199984"
+  },
+  {
+    "fact": "Adya's enrollment at United Studios of Self Defense Belmont was on hold from December until the end of January.",
+    "source_subject": "Adya",
+    "message_id": "19cb6d1cb0199984"
+  },
+  {
+    "fact": "The user has a child named Adya.",
+    "source_subject": "Mr. Nakamura added a new event to Adya's school",
+    "message_id": "19cb3f2c1f936e50"
+  },
+  {
+    "fact": "Adya attends Cipriani Elementary School.",
+    "source_subject": "Mr. Nakamura added a new event to Adya's school",
+    "message_id": "19cb3f2c1f936e50"
+  },
+  {
+    "fact": "The user has a family.",
+    "source_subject": "Mr. Nakamura added a new event to Adya's school",
+    "message_id": "19cb3f2c1f936e50"
+  },
+  {
+    "fact": "There is an upcoming event for Adya, the Cipriani Dance Party, on March 6, 2026, from 6:30 PM to 8:30 PM PST.",
+    "source_subject": "Mr. Nakamura added a new event to Adya's school",
+    "message_id": "19cb3f2c1f936e50"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Re: Saurav Sen & OpenAI - Applied Engineering",
+    "message_id": "19caf3c52798b6c1"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Heads up Saurav! You have new alerts on your Experian credit file",
+    "message_id": "19cab34f88b48f20"
+  },
+  {
+    "fact": "The user purchased a Zelena Emerald Pendant.",
+    "source_subject": "Your Shane Co. Receipt - Order #0054567273",
+    "message_id": "19cab2bd514ae141"
+  },
+  {
+    "fact": "User purchased a sensory squeeze toy (Schylling NeeDoh Nice Cube), suggesting an interest in or need for sensory items.",
+    "source_subject": "Delivery estimate update for your Amazon.com order #114-3101662-3061819",
+    "message_id": "19ca5959934275af"
+  },
+  {
+    "fact": "The user is connected to a person named Adya.",
+    "source_subject": "Adya",
+    "message_id": "19c97dfd5d98e2d5"
+  },
+  {
+    "fact": "Adya is involved in a program (possibly martial arts).",
+    "source_subject": "Adya",
+    "message_id": "19c97dfd5d98e2d5"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your YouTube receipt",
+    "message_id": "19c8373f4e87130f"
+  },
+  {
+    "fact": "The user likes the movie 'The Sixth Sense'.",
+    "source_subject": "Your YouTube receipt",
+    "message_id": "19c8373f4e87130f"
+  },
+  {
+    "fact": "User rented the movie 'The Sixth Sense'.",
+    "source_subject": "Your Google Play Order Receipt from Feb 21, 2026",
+    "message_id": "19c8373e32bcbb8b"
+  },
+  {
+    "fact": "Is a ParentSquare user.",
+    "source_subject": "Apply Today:  District Advisory Committee - Middle School Marketing and Enrollment",
+    "message_id": "19c8db41876eba0f"
+  },
+  {
+    "fact": "Is located in Bel.",
+    "source_subject": "Apply Today:  District Advisory Committee - Middle School Marketing and Enrollment",
+    "message_id": "19c8db41876eba0f"
+  },
+  {
+    "fact": "Is associated with the Belmont-Redwood Shores Elementary School District.",
+    "source_subject": "Apply Today:  District Advisory Committee - Middle School Marketing and Enrollment",
+    "message_id": "19c8db41876eba0f"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user's email address is sauravsen23@gmail.com.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user works at Meta.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user has advisory accounts with Morgan Stanley.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user's investment strategy is 'moderate aggressive'.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user has a discounted grandfathered rate of 1.25% with their financial advisor.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user is in the PT (Pacific Time) timezone.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user has been busy recently.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user needs to schedule a financial review after March 15th.",
+    "source_subject": "RE: [EXTERNAL] Re: Morgan Stanley Check-In",
+    "message_id": "19c9b69d2c391d94"
+  },
+  {
+    "fact": "The user shops at Whole Foods Market in San Mateo.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user likes Poppi Raspberry Rose Prebiotic Soda.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user eats organic boneless skinless chicken thighs.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user buys organic white artisan bread.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user eats whole chicken legs.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user drinks Alexandre Family Farms Organic 6% Cream Top Whole Milk.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user likes Stonyfield Farm Organic Strawberry Banana Yogurt.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user likes Boomchickapop Sweet and Salty Kettle Corn.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user eats Pecan Crusted Chicken Breast Cutlets.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user drinks Alexandre Family Farms Organic A2 A2 Grass Fed Milk.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user drinks Ritual Roasters Single Origin Espresso.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "The user frequently purchases organic products.",
+    "source_subject": "Your Whole Foods Market Receipt",
+    "message_id": "19c8712f7d2fb064"
+  },
+  {
+    "fact": "User enjoys going to the movies/cinema.",
+    "source_subject": "Your AMC Order Number 1115690811 from 2/20/2026",
+    "message_id": "19c7bd4c9cfdd142"
+  },
+  {
+    "fact": "The user or someone in their household is a 2024/2025 or 2025/2026 member of the Northern California Volleyball Association (NCVA).",
+    "source_subject": "NCVA Team & Player of the Week | Feb 14 - 16 Weekend",
+    "message_id": "19c77eb267625375"
+  },
+  {
+    "fact": "March tuition is due on February 25th.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19c77efcd50588a0"
+  },
+  {
+    "fact": "The user likes movies.",
+    "source_subject": "Your AMC Order Number 1115673832 from 2/20/2026",
+    "message_id": "19c7bb17c1689c55"
+  },
+  {
+    "fact": "Alyssa is a friend/acquaintance",
+    "source_subject": "Alyssa s mom is dropping me home",
+    "message_id": "19c68f0f5b870bbb"
+  },
+  {
+    "fact": "User is interested in plants or home decor, evidenced by the purchase of a plant basket with a stand.",
+    "source_subject": "Delivery estimate update for your Amazon.com order #111-4829884-3289845",
+    "message_id": "19c68a5b8115b353"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Hello from Apple in San Diego / Austin - Backend/Cloud/Distributed Systems",
+    "message_id": "19c733adb3130671"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"Cosori Electric Kettle, No...\" and 1 more item",
+    "message_id": "19c6864f5507e722"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Delivered: \"Cosori Electric Kettle, No...\" and 1 more item",
+    "message_id": "19c6864f5507e722"
+  },
+  {
+    "fact": "The user likely consumes hot beverages, indicated by the purchase of an electric kettle.",
+    "source_subject": "Delivered: \"Cosori Electric Kettle, No...\" and 1 more item",
+    "message_id": "19c6864f5507e722"
+  },
+  {
+    "fact": "The user has a preference for kitchen appliances with 'no plastic contact with water', specifically for their kettle.",
+    "source_subject": "Delivered: \"Cosori Electric Kettle, No...\" and 1 more item",
+    "message_id": "19c6864f5507e722"
+  },
+  {
+    "fact": "The user purchased a heated ice cream scoop, suggesting they either enjoy ice cream or need an easier way to scoop it (possibly for seniors or children).",
+    "source_subject": "Delivered: \"Cosori Electric Kettle, No...\" and 1 more item",
+    "message_id": "19c6864f5507e722"
+  },
+  {
+    "fact": "Sender's name is Gaurav Sen.",
+    "source_subject": "Yohan's 3d printer model",
+    "message_id": "19c644ec51f11ee5"
+  },
+  {
+    "fact": "User has an interest in 3D printing.",
+    "source_subject": "Yohan's 3d printer model",
+    "message_id": "19c644ec51f11ee5"
+  },
+  {
+    "fact": "User knows someone named Yohan.",
+    "source_subject": "Yohan's 3d printer model",
+    "message_id": "19c644ec51f11ee5"
+  },
+  {
+    "fact": "User has an interest in engineering.",
+    "source_subject": "Yohan's 3d printer model",
+    "message_id": "19c644ec51f11ee5"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"Intex Mid-Rise Air Mattress...\"",
+    "message_id": "19c63da31e796113"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Delivered: \"Intex Mid-Rise Air Mattress...\"",
+    "message_id": "19c63da31e796113"
+  },
+  {
+    "fact": "The user recently purchased an Intex Mid-Rise Air Mattress, suggesting interests in travel, camping, or hosting guests.",
+    "source_subject": "Delivered: \"Intex Mid-Rise Air Mattress...\"",
+    "message_id": "19c63da31e796113"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Saurav Elevate your career at Uber as a Senior Staff Software Engineer (L6) with big impact",
+    "message_id": "19c593db639e3810"
+  },
+  {
+    "fact": "The user is a Sr. Staff Software Engineer at Facebook.",
+    "source_subject": "Saurav Elevate your career at Uber as a Senior Staff Software Engineer (L6) with big impact",
+    "message_id": "19c593db639e3810"
+  },
+  {
+    "fact": "User is a ParentSquare user",
+    "source_subject": "Brssd Superintendent sent an update about Board Update: Middle School Configuration and Next Steps",
+    "message_id": "19c57e222263320c"
+  },
+  {
+    "fact": "User is associated with Belmont-Redwood Shores Elementary School District",
+    "source_subject": "Brssd Superintendent sent an update about Board Update: Middle School Configuration and Next Steps",
+    "message_id": "19c57e222263320c"
+  },
+  {
+    "fact": "Shyamal's physical address is 419 Poppy Hill rd, Corralitos, ca 95076.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Shyamal lives in Corralitos, CA.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Shyamal has a partner or another person living with him, as indicated by 'our place' and 'you both'.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Shyamal knows a person named Saurav, who has not yet visited his place.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Shyamal is an uncle to Gaurav Sen.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Gaurav Sen has kids.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Gaurav Sen's kids play baseball.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Gaurav Sen lives in the Seattle, WA area (based on flight departures).",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Gaurav Sen travels to San Jose, CA, and Santa Cruz, CA for visits.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Shyamal hosts dinners at his home.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "Shyamal hosts sleepovers at his home (though Gaurav decided against it for this trip).",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c679f0af7ed1f9"
+  },
+  {
+    "fact": "The user's account name is 'sauravsen'.",
+    "source_subject": "Payment Scheduled",
+    "message_id": "19c5109104c867c9"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your DuckDuckGo, Duck.ai (optional) subscription benefits are ending soon",
+    "message_id": "19c3cb51a148111f"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"La Roche-Posay Anthelios...\" and 2 more items",
+    "message_id": "19c46dbfadcf1b62"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"La Roche-Posay Anthelios...\" and 2 more items",
+    "message_id": "19c46dbfadcf1b62"
+  },
+  {
+    "fact": "The user likely has a baby or young child (based on the purchase of baby sunscreen and baby wash/shampoo).",
+    "source_subject": "Shipped: \"La Roche-Posay Anthelios...\" and 2 more items",
+    "message_id": "19c46dbfadcf1b62"
+  },
+  {
+    "fact": "The user has wood floors (based on the purchase of wood floor cleaner solution).",
+    "source_subject": "Shipped: \"La Roche-Posay Anthelios...\" and 2 more items",
+    "message_id": "19c46dbfadcf1b62"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Weiman Stainless Steel...\"",
+    "message_id": "19c337bf82032850"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Ordered: \"Weiman Stainless Steel...\"",
+    "message_id": "19c337bf82032850"
+  },
+  {
+    "fact": "The user ordered 'Weiman Stainless Steel Cleaner and Polish', suggesting an interest in cleaning or maintaining stainless steel appliances.",
+    "source_subject": "Ordered: \"Weiman Stainless Steel...\"",
+    "message_id": "19c337bf82032850"
+  },
+  {
+    "fact": "The user's name is Gaurav Sen.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user refers to Shyamal Chaudhury as 'Shyam Uncle' or 'Shymal Uncle'.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user has kids.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user's kids have a baseball game.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user lives in or departs from Seattle, WA.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user plans to meet up in Santa Cruz.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user plans to fly into and out of San Jose, CA (SJC).",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user will be flying with Alaska Airlines.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user's outbound flight details are Alaska Flight: 1192, departing Seattle, WA on Sat, Apr 19, 2025 at 7:55 PM and arriving San Jose, CA on Sat, Apr 19, 2025 at 10:03 PM.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user's inbound flight details are Alaska Flight: 1081, departing San Jose, CA on Fri, Apr 25, 2025 at 1:00 PM and arriving Seattle, WA on Fri, Apr 25, 2025 at 3:15 PM.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user initially planned to visit Shyamal Chaudhury from April 15th evening to April 18th morning.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user will be visiting Shyamal Chaudhury at 419 Poppy Hill rd, Corralitos, ca 95076.",
+    "source_subject": "Re: <change in dates>Spring break",
+    "message_id": "19c631f43087700d"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Registration Confirmation To West Coast Volleyball Association",
+    "message_id": "19c38d64972ac65a"
+  },
+  {
+    "fact": "The user's address is 2331 WOOSTER AVE BELMONT, CA 94002 US.",
+    "source_subject": "Registration Confirmation To West Coast Volleyball Association",
+    "message_id": "19c38d64972ac65a"
+  },
+  {
+    "fact": "The user's email address is sauravsen23@gmail.com.",
+    "source_subject": "Registration Confirmation To West Coast Volleyball Association",
+    "message_id": "19c38d64972ac65a"
+  },
+  {
+    "fact": "The user's phone number is +14084219494.",
+    "source_subject": "Registration Confirmation To West Coast Volleyball Association",
+    "message_id": "19c38d64972ac65a"
+  },
+  {
+    "fact": "The user has an interest in volleyball, indicated by their registration with the West Coast Volleyball Association.",
+    "source_subject": "Registration Confirmation To West Coast Volleyball Association",
+    "message_id": "19c38d64972ac65a"
+  },
+  {
+    "fact": "User's email address is sauravsen23@gmail.com",
+    "source_subject": "Netflix: Your sign-in code",
+    "message_id": "19c2f1f5861a82c9"
+  },
+  {
+    "fact": "User has a Netflix membership",
+    "source_subject": "Netflix: Your sign-in code",
+    "message_id": "19c2f1f5861a82c9"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Order Confirmation for Saurav from Sweet Street Desserts",
+    "message_id": "19c2696a35186d37"
+  },
+  {
+    "fact": "The user ordered desserts from Sweet Street Desserts, indicating a potential like for desserts.",
+    "source_subject": "Order Confirmation for Saurav from Sweet Street Desserts",
+    "message_id": "19c2696a35186d37"
+  },
+  {
+    "fact": "The user paid with a Visa card ending in 6428.",
+    "source_subject": "Order Confirmation for Saurav from Sweet Street Desserts",
+    "message_id": "19c2696a35186d37"
+  },
+  {
+    "fact": "The user's physical address is 2331 Wooster Ave, Belmont, CA 94002, USA.",
+    "source_subject": "Order Confirmation for Saurav from Sweet Street Desserts",
+    "message_id": "19c2696a35186d37"
+  },
+  {
+    "fact": "The user ordered desserts from Sweet Street Desserts.",
+    "source_subject": "Details of your no-contact delivery from Sweet Street Desserts",
+    "message_id": "19c26c1fdf7b7348"
+  },
+  {
+    "fact": "The user uses DoorDash for delivery services.",
+    "source_subject": "Details of your no-contact delivery from Sweet Street Desserts",
+    "message_id": "19c26c1fdf7b7348"
+  },
+  {
+    "fact": "The user owns a Rivian R1S or R1T vehicle.",
+    "source_subject": "Enjoy your 60-day trial of Autonomy+",
+    "message_id": "19c25c5a2068964c"
+  },
+  {
+    "fact": "The user has a 60-day trial of Autonomy+ active until April 4.",
+    "source_subject": "Enjoy your 60-day trial of Autonomy+",
+    "message_id": "19c25c5a2068964c"
+  },
+  {
+    "fact": "The user may have a daily commute.",
+    "source_subject": "Enjoy your 60-day trial of Autonomy+",
+    "message_id": "19c25c5a2068964c"
+  },
+  {
+    "fact": "The user may take days-long road trips.",
+    "source_subject": "Enjoy your 60-day trial of Autonomy+",
+    "message_id": "19c25c5a2068964c"
+  },
+  {
+    "fact": "User's email address: sauravsen23@gmail.com",
+    "source_subject": "Your Google Play Order Receipt from Feb 3, 2026",
+    "message_id": "19c22f559c29284b"
+  },
+  {
+    "fact": "User's payment method last 4 digits: Visa-6428",
+    "source_subject": "Your Google Play Order Receipt from Feb 3, 2026",
+    "message_id": "19c22f559c29284b"
+  },
+  {
+    "fact": "User has a DuckDuckGo subscription (interest in privacy-focused services)",
+    "source_subject": "Your Google Play Order Receipt from Feb 3, 2026",
+    "message_id": "19c22f559c29284b"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Fwd: Order #494328 confirmed",
+    "message_id": "19c15ae0a6ddc741"
+  },
+  {
+    "fact": "The user has an email address: sauravsen23@gmail.com.",
+    "source_subject": "Fwd: Order #494328 confirmed",
+    "message_id": "19c15ae0a6ddc741"
+  },
+  {
+    "fact": "The user is picking up an order from Dandelion Chocolate located at 2600 16th Street, San Francisco, 94103, United States.",
+    "source_subject": "Fwd: Order #494328 confirmed",
+    "message_id": "19c15ae0a6ddc741"
+  },
+  {
+    "fact": "The user likes chocolate, specifically Chocolate G\u00e2teau Basque and G\u00e2teau Duo.",
+    "source_subject": "Fwd: Order #494328 confirmed",
+    "message_id": "19c15ae0a6ddc741"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Delivered: 2 \"NOSTIFY Wooden Swing Seat,...\"",
+    "message_id": "19c11f00fe3f9450"
+  },
+  {
+    "fact": "User's location is Belmont, CA.",
+    "source_subject": "Delivered: 2 \"NOSTIFY Wooden Swing Seat,...\"",
+    "message_id": "19c11f00fe3f9450"
+  },
+  {
+    "fact": "User purchased 'Wooden Swing Seats for Kids', suggesting they may have children or buy items for children.",
+    "source_subject": "Delivered: 2 \"NOSTIFY Wooden Swing Seat,...\"",
+    "message_id": "19c11f00fe3f9450"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"ScarAway Advanced Clear...\" and 2 more items",
+    "message_id": "19c0f0e8c56c6e52"
+  },
+  {
+    "fact": "The user lives in BELMONT, CA.",
+    "source_subject": "Delivered: \"ScarAway Advanced Clear...\" and 2 more items",
+    "message_id": "19c0f0e8c56c6e52"
+  },
+  {
+    "fact": "The user uses ScarAway Advanced Clear Silicone Scar Sheets for scar treatment.",
+    "source_subject": "Delivered: \"ScarAway Advanced Clear...\" and 2 more items",
+    "message_id": "19c0f0e8c56c6e52"
+  },
+  {
+    "fact": "The user has an interest in painting or art, as indicated by the purchase of acrylic paints.",
+    "source_subject": "Delivered: \"ScarAway Advanced Clear...\" and 2 more items",
+    "message_id": "19c0f0e8c56c6e52"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: Saurav, Quick intro \u2014 SkyPilot",
+    "message_id": "19c1600170f2f3d2"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Your Amazon.com order of \"ScarAway Advanced Clear...\"",
+    "message_id": "19c0d8e70544bc94"
+  },
+  {
+    "fact": "The user's address is 2331 Wooster Avenue.",
+    "source_subject": "Your Amazon.com order of \"ScarAway Advanced Clear...\"",
+    "message_id": "19c0d8e70544bc94"
+  },
+  {
+    "fact": "The user purchased \"ScarAway Advanced Clear...\", which indicates an interest in scar treatment or prevention (health-related).",
+    "source_subject": "Your Amazon.com order of \"ScarAway Advanced Clear...\"",
+    "message_id": "19c0d8e70544bc94"
+  },
+  {
+    "fact": "The user or someone in their household is a member of the Northern California Volleyball Association (NCVA) for the 2024/2025 or 2025/2026 season.",
+    "source_subject": "\ud83d\udea8Important Reminders: Event Conduct Policies & Playing Rule Review",
+    "message_id": "19c119078c382ceb"
+  },
+  {
+    "fact": "The user or someone in their household has an interest in volleyball.",
+    "source_subject": "\ud83d\udea8Important Reminders: Event Conduct Policies & Playing Rule Review",
+    "message_id": "19c119078c382ceb"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Order #494328 confirmed",
+    "message_id": "19c0d32ad2e9512d"
+  },
+  {
+    "fact": "An associated name is Sanghita Majumder, linked via the billing address.",
+    "source_subject": "Order #494328 confirmed",
+    "message_id": "19c0d32ad2e9512d"
+  },
+  {
+    "fact": "The user's address is 2331 Wooster Avenue, Belmont CA 94002, United States.",
+    "source_subject": "Order #494328 confirmed",
+    "message_id": "19c0d32ad2e9512d"
+  },
+  {
+    "fact": "The user purchased Chocolate G\u00e2teau Basque and G\u00e2teau Duo, indicating a preference for chocolate/desserts.",
+    "source_subject": "Order #494328 confirmed",
+    "message_id": "19c0d32ad2e9512d"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Saurav, Quick intro \u2014 SkyPilot",
+    "message_id": "19c0c01e05e091ec"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Delivered: \"EHEYCIGA Orthopedic Dog...\"",
+    "message_id": "19bf048e81e29ec5"
+  },
+  {
+    "fact": "User lives in Belmont, CA.",
+    "source_subject": "Delivered: \"EHEYCIGA Orthopedic Dog...\"",
+    "message_id": "19bf048e81e29ec5"
+  },
+  {
+    "fact": "User likely owns an extra large dog.",
+    "source_subject": "Delivered: \"EHEYCIGA Orthopedic Dog...\"",
+    "message_id": "19bf048e81e29ec5"
+  },
+  {
+    "fact": "The user purchased a Zelena Emerald Pendant, indicating a liking for fine jewelry.",
+    "source_subject": "Your Shane Co. Receipt - Order #0054513553",
+    "message_id": "19c0c2d6c1b27a95"
+  },
+  {
+    "fact": "The user paid for a purchase using an Amex card ending in 8113.",
+    "source_subject": "Your Shane Co. Receipt - Order #0054513553",
+    "message_id": "19c0c2d6c1b27a95"
+  },
+  {
+    "fact": "User's name is Saurav",
+    "source_subject": "Heads up Saurav! You have new alerts on your Experian credit file",
+    "message_id": "19be85e31d8ab0ac"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19bf0af695f01790"
+  },
+  {
+    "fact": "Saurav has a recurring payment for Bright Horizons at San Mateo.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19bf0af695f01790"
+  },
+  {
+    "fact": "Saurav has a connection to Bright Horizons in San Mateo, likely related to family or childcare services.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19bf0af695f01790"
+  },
+  {
+    "fact": "The next payment date for Bright Horizons at San Mateo is 1/25/2026.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19bf0af695f01790"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"BOUBONI 20 Pcs Black Felt...\"",
+    "message_id": "19bddf210fc5ab3e"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"BOUBONI 20 Pcs Black Felt...\"",
+    "message_id": "19bddf210fc5ab3e"
+  },
+  {
+    "fact": "The user has an interest in crafts, DIY, sewing, or patchwork.",
+    "source_subject": "Shipped: \"BOUBONI 20 Pcs Black Felt...\"",
+    "message_id": "19bddf210fc5ab3e"
+  },
+  {
+    "fact": "The user pays tuition to Bright Horizons at San Mateo.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19be70220acdab5f"
+  },
+  {
+    "fact": "The user has a recurring tuition payment due on January 25th for February's tuition.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19be70220acdab5f"
+  },
+  {
+    "fact": "User's name is Saurav Sen",
+    "source_subject": "Electronic Client Organizer for Tax Year 2025 for SEN, SAURAV & SANGHITA",
+    "message_id": "19bdcf36dfa0c47e"
+  },
+  {
+    "fact": "User's name is Sanghita Majumder",
+    "source_subject": "Electronic Client Organizer for Tax Year 2025 for SEN, SAURAV & SANGHITA",
+    "message_id": "19bdcf36dfa0c47e"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"BOUBONI 20 Pcs Black Felt...\"",
+    "message_id": "19bd738d3a2a3df5"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Ordered: \"BOUBONI 20 Pcs Black Felt...\"",
+    "message_id": "19bd738d3a2a3df5"
+  },
+  {
+    "fact": "The user has an interest in crafts, DIY, handcraft, or sewing.",
+    "source_subject": "Ordered: \"BOUBONI 20 Pcs Black Felt...\"",
+    "message_id": "19bd738d3a2a3df5"
+  },
+  {
+    "fact": "The user's email address is sauravsen23@gmail.com.",
+    "source_subject": "Netflix: Your sign-in code",
+    "message_id": "19bc8a52850cc296"
+  },
+  {
+    "fact": "The user has a Netflix membership.",
+    "source_subject": "Netflix: Your sign-in code",
+    "message_id": "19bc8a52850cc296"
+  },
+  {
+    "fact": "The user is a ParentSquare user associated with Ralston Middle School.",
+    "source_subject": "Midterm Update - New date Friday, January 16",
+    "message_id": "19bb46f262f6c138"
+  },
+  {
+    "fact": "User's name is likely Saurav Sen (from account name 'sauravsen').",
+    "source_subject": "Payment Scheduled",
+    "message_id": "19bb1640136a508e"
+  },
+  {
+    "fact": "The user has a 6th-grade student at Ralston Middle School.",
+    "source_subject": "Career Fair and 6th Grade Career Lesson Successes!",
+    "message_id": "19bf11c199e06899"
+  },
+  {
+    "fact": "The user's name is Gaurav Sen.",
+    "source_subject": "Re: Santa Cruz visit",
+    "message_id": "19baee7c77264023"
+  },
+  {
+    "fact": "The user has a relative/friend named Shyamal Uncle.",
+    "source_subject": "Re: Santa Cruz visit",
+    "message_id": "19baee7c77264023"
+  },
+  {
+    "fact": "The user plans to visit Santa Cruz.",
+    "source_subject": "Re: Santa Cruz visit",
+    "message_id": "19baee7c77264023"
+  },
+  {
+    "fact": "The user plans to visit on Feb 16th and stay until Feb 17th.",
+    "source_subject": "Re: Santa Cruz visit",
+    "message_id": "19baee7c77264023"
+  },
+  {
+    "fact": "The user is unavailable on Feb 20th and Feb 21st.",
+    "source_subject": "Re: Santa Cruz visit",
+    "message_id": "19baee7c77264023"
+  },
+  {
+    "fact": "The user will be traveling with a group of 8 people, consisting of 4 adults and 4 kids.",
+    "source_subject": "Re: Santa Cruz visit",
+    "message_id": "19baee7c77264023"
+  },
+  {
+    "fact": "User's name is Gaurav Sen.",
+    "source_subject": "Santa Cruz visit",
+    "message_id": "19baee4c72c5f155"
+  },
+  {
+    "fact": "User has an uncle named Shyamal.",
+    "source_subject": "Santa Cruz visit",
+    "message_id": "19baee4c72c5f155"
+  },
+  {
+    "fact": "User is planning a visit to Santa Cruz.",
+    "source_subject": "Santa Cruz visit",
+    "message_id": "19baee4c72c5f155"
+  },
+  {
+    "fact": "The visit is planned for February 16th to 17th.",
+    "source_subject": "Santa Cruz visit",
+    "message_id": "19baee4c72c5f155"
+  },
+  {
+    "fact": "User's group consists of 8 people (4 adults, 4 kids).",
+    "source_subject": "Santa Cruz visit",
+    "message_id": "19baee4c72c5f155"
+  },
+  {
+    "fact": "User is looking for accommodation for 8 people in Santa Cruz, potentially an Airbnb or Shyamal Uncle's place.",
+    "source_subject": "Santa Cruz visit",
+    "message_id": "19baee4c72c5f155"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Fortnite eGift Card ...\"",
+    "message_id": "19ba0cfde3966066"
+  },
+  {
+    "fact": "The user has an interest in Fortnite or video games (indicated by the purchase of a Fortnite eGift Card).",
+    "source_subject": "Ordered: \"Fortnite eGift Card ...\"",
+    "message_id": "19ba0cfde3966066"
+  },
+  {
+    "fact": "The user is a ParentSquare user in Belmont-Redwood Shores Elementary School District.",
+    "source_subject": "MLK Holiday - The Read-a-thon Starts Today - with Reading from our Superintendent",
+    "message_id": "19bc9831b62d113e"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Ordered: \"Art of Problem Solving...\"",
+    "message_id": "19b9ee4654e44678"
+  },
+  {
+    "fact": "User's location is Belmont, CA.",
+    "source_subject": "Ordered: \"Art of Problem Solving...\"",
+    "message_id": "19b9ee4654e44678"
+  },
+  {
+    "fact": "User is interested in \"Art of Problem Solving Series Prealgebra\" books, suggesting an interest in mathematics or problem-solving.",
+    "source_subject": "Ordered: \"Art of Problem Solving...\"",
+    "message_id": "19b9ee4654e44678"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Heads up Saurav! You have new alerts on your Experian credit file",
+    "message_id": "19ba00a7f71ac63c"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Your Gift Cards were sent!",
+    "message_id": "19ba0d09d72b515b"
+  },
+  {
+    "fact": "The user purchased a Fortnite eGift Card.",
+    "source_subject": "Your Gift Cards were sent!",
+    "message_id": "19ba0d09d72b515b"
+  },
+  {
+    "fact": "The user sent a gift card to the phone number +14085059344.",
+    "source_subject": "Your Gift Cards were sent!",
+    "message_id": "19ba0d09d72b515b"
+  },
+  {
+    "fact": "Adya's name is Adya Sen.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Saurav is likely a parent or guardian of Adya.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya is enrolled in a Pre-Algebra class.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya's Pre-Algebra class is on Wednesdays from 2:00-3:45 PM PST.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya enjoys her Pre-Algebra class and finds it a good fit.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya had a fun time during her class trial.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya fit in well with her class group, laughing and joking.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya's Canvas username is AdyaSen1.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Adya's Canvas default password is EMC12345.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9e465faad3874"
+  },
+  {
+    "fact": "Christopher Detzer",
+    "source_subject": "Re: Tax Season",
+    "message_id": "19bb3b2dc6530df9"
+  },
+  {
+    "fact": "Lives at 350 Oakland Ave, Oakland, CA 94611",
+    "source_subject": "Re: Tax Season",
+    "message_id": "19bb3b2dc6530df9"
+  },
+  {
+    "fact": "Mailing address is 360 Grand Ave #414, Oakland, CA 94610",
+    "source_subject": "Re: Tax Season",
+    "message_id": "19bb3b2dc6530df9"
+  },
+  {
+    "fact": "Located in Oakland, CA",
+    "source_subject": "Re: Tax Season",
+    "message_id": "19bb3b2dc6530df9"
+  },
+  {
+    "fact": "Tax Season is an important recurring date",
+    "source_subject": "Re: Tax Season",
+    "message_id": "19bb3b2dc6530df9"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivery update: \"Art of Problem Solving...\"",
+    "message_id": "19b9a0f9f6e3ed62"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Delivery update: \"Art of Problem Solving...\"",
+    "message_id": "19b9a0f9f6e3ed62"
+  },
+  {
+    "fact": "The user has an interest in mathematics or learning (inferred from purchasing 'Art of Problem Solving Series Prealgebra 2 Books Set').",
+    "source_subject": "Delivery update: \"Art of Problem Solving...\"",
+    "message_id": "19b9a0f9f6e3ed62"
+  },
+  {
+    "fact": "The user has a child named Adya.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Adya's implied full name is Adya Sen.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Adya has a strength in math.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Adya enjoyed her Pre-Algebra trial class at Engaging Math Circles.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Adya is sociable and fits in well with groups.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Adya's Pre-Algebra class is scheduled for Wednesdays from 2:00-3:45 PST.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Adya is registered for classes at Engaging Math Circles for the 2025-2026 academic year.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "The user or Adya is likely in the PST time zone, or attends classes in that time zone.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9b55cd53d98fd"
+  },
+  {
+    "fact": "Saurav Sen is the parent or guardian of Adya.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Saurav Sen's email address is sauravsen23@gmail.com.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya is a student.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya liked the Pre-Algebra class trial.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya is strong in math.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya's current school work includes Area/Volumes of 2/3D objects, ratios, percentages, and basic statistics.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya is happy to continue in the Wednesday math group.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya is registered for classes at Engaging Math Circles for the 2025-2026 academic year.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya's Pre-Algebra class is on Wednesdays from 2:00-3:45 PST.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya is sociable.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "Adya is likely in the PST timezone.",
+    "source_subject": "Re: EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b9eb79fed763d8"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b951c3fb8cf763"
+  },
+  {
+    "fact": "Saurav Sen has a child named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b951c3fb8cf763"
+  },
+  {
+    "fact": "Adya is a student.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b951c3fb8cf763"
+  },
+  {
+    "fact": "Adya has mid-term exams this week.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b951c3fb8cf763"
+  },
+  {
+    "fact": "Adya is enrolled in or considering Prealgebra classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b951c3fb8cf763"
+  },
+  {
+    "fact": "Adya was previously enrolled in or evaluated for 'Circle 6' classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b951c3fb8cf763"
+  },
+  {
+    "fact": "Saurav Sen is the parent or guardian of Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b9502991d2101d"
+  },
+  {
+    "fact": "Adya is a student.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b9502991d2101d"
+  },
+  {
+    "fact": "Adya is enrolled in Prealgebra classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b9502991d2101d"
+  },
+  {
+    "fact": "Adya was previously enrolled in Circle 6 classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b9502991d2101d"
+  },
+  {
+    "fact": "Adya has mid-term exams during the week of January 6, 2026.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b9502991d2101d"
+  },
+  {
+    "fact": "Adya is described as a strong, self-motivated student.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b9502991d2101d"
+  },
+  {
+    "fact": "Saurav has a child named Adya.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav's child, Adya, is taking math classes, specifically Pre-Algebra.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav's child, Adya, knows ratios, percentages, Surface Area/Volumes of Cubes/Cones, 2d parallelograms, and Circles.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav's child, Adya, has knowledge gaps in math that need to be closed.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav chatted with Stephanie about switching his child, Adya, to Pre-Algebra.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav's child, Adya, has great potential and a sharp mind for math.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav's child, Adya, is capable of taking Pre-Algebra classes.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "Saurav is considering accelerating his child, Adya's, learning toward AP-level classes.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b951c66bdd8183"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "The user has a child named Adya.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "The user's child, Adya, is taking math classes.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "The user's child, Adya, knows ratios and percentages.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "The user's child, Adya, has been doing Surface Area/Volumes of Cubes/Cones, 2d parallelograms, and Circles.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "The user's child, Adya, is being considered for Pre-Algebra.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "Stephanie is involved in the user's child's class placement.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b94ee72a261d43"
+  },
+  {
+    "fact": "The user has a child named Adya.",
+    "source_subject": "EMC check-in with parents",
+    "message_id": "19b94e8c4cf38cd0"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Art of Problem Solving...\"",
+    "message_id": "19b93fd7c8afde9e"
+  },
+  {
+    "fact": "The user resides in Belmont, CA.",
+    "source_subject": "Ordered: \"Art of Problem Solving...\"",
+    "message_id": "19b93fd7c8afde9e"
+  },
+  {
+    "fact": "The user has an interest in 'Art of Problem Solving' or 'Prealgebra', suggested by the book purchase.",
+    "source_subject": "Ordered: \"Art of Problem Solving...\"",
+    "message_id": "19b93fd7c8afde9e"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Saurav's email address is sauravsen23@gmail.com.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Saurav has a child named Adya.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Adya is taking Pre-Algebra math classes at Engaging Math Circles (EMC).",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Adya's math class (Circle 6) is held on Mondays at 4:30.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Adya is proficient in math topics including ratios, percentages, Surface Area/Volumes of Cubes/Cones, 2d parallelograms, and Circles.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Stephanie helped switch Adya to Pre-Algebra.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Elena Chernousova is Adya's EMC teacher for Circle 6.",
+    "source_subject": "Re: EMC check-in with parents",
+    "message_id": "19b95005bbb674bb"
+  },
+  {
+    "fact": "Saurav has a child named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fd676c4d9d4"
+  },
+  {
+    "fact": "Adya's teacher is named Elena.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fd676c4d9d4"
+  },
+  {
+    "fact": "Adya enjoys her math class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fd676c4d9d4"
+  },
+  {
+    "fact": "Adya has mid-term exams this week.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fd676c4d9d4"
+  },
+  {
+    "fact": "Adya is enrolled in a Prealgebra class at Engaging Math Circles.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fd676c4d9d4"
+  },
+  {
+    "fact": "Adya attends the 'Circle 6 Mon 4:30' class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fd676c4d9d4"
+  },
+  {
+    "fact": "The user's name is Adya.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Adya's last name might be Sen (inferred from username AdyaSen1).",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Adya is registered for a Pre-Algebra class.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Adya's Pre-Algebra class is scheduled for Wednesdays from 2:00-3:45 PM PST.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Andy is Adya's instructor.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Adya's Canvas username is AdyaSen1.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Adya's default Canvas password is EMC12345.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Adya's class operates in the Pacific Standard Time (PST) zone.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b93fb1550a69e7"
+  },
+  {
+    "fact": "Saurav is a parent.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93cf378688428"
+  },
+  {
+    "fact": "Adya is Saurav's child/dependent.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93cf378688428"
+  },
+  {
+    "fact": "Adya is a student at Engaging Math Circles (EMC).",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93cf378688428"
+  },
+  {
+    "fact": "Adya is enrolled in or considering Prealgebra/Circle 6 math classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93cf378688428"
+  },
+  {
+    "fact": "Adya enjoyed her first class at EMC.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93cf378688428"
+  },
+  {
+    "fact": "Adya practices homework and quizzes to catch up.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93cf378688428"
+  },
+  {
+    "fact": "Saurav's email address is sauravsen23@gmail.com.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Saurav has a dependent or child named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya is a student.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya has mid-terms this week.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya needs to prepare for her mid-terms.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya is described as a 'very strong, self-motivated student'.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya is taking Prealgebra.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya's teacher is named Elena.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya is enrolled in 'Circle 6 Mon 4:30-6:15'.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "Adya enjoyed her first class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93fa41655b2c2"
+  },
+  {
+    "fact": "The user purchased multivitamins for dogs and cats, indicating they own or care for at least one dog or cat.",
+    "source_subject": "Refund on order 113-7686916-1383436",
+    "message_id": "19b902b3c843ebbf"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19b8c74dcba63c42"
+  },
+  {
+    "fact": "The user's address is 2331 Wooster Avenue.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19b8c74dcba63c42"
+  },
+  {
+    "fact": "The user subscribes to Swiffer Wetjet Wood Floor Cleaner Solution, suggesting they have wood floors or use such a product.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19b8c74dcba63c42"
+  },
+  {
+    "fact": "The user subscribes to Aquaphor Baby Wash and Shampoo, suggesting they have a baby or are associated with caring for a baby.",
+    "source_subject": "Review your upcoming delivery",
+    "message_id": "19b8c74dcba63c42"
+  },
+  {
+    "fact": "Saurav's name is Saurav Sen.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Saurav's email address is sauravsen23@gmail.com.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Saurav has a child or dependent named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Adya's teacher is Elena.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Alan provided notes on Adya during her evaluation session.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Adya attends math classes at Engaging Math Circles.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Adya is enrolled in a Prealgebra class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Adya's class is scheduled for Wednesdays.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Adya enjoyed her first math class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "Adya is described as a 'very strong, self-motivated student'.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b93f5d2a4d7d5b"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Saurav has a child named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya's teacher is Elena.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya is enrolled in 'Circle 6' math classes at Engaging Math Circles.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya enjoyed her first math class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya is a quick learner with great instinctive number sense and an ability to adjust to new mathematical concepts.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya had not worked with negative numbers prior to her recent class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya's first official (paid) math lesson is on January 5, 2026.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya's math classes are scheduled for Mondays from 4:30 PM to 6:15 PM, a time that works well for her.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya needs to practice past homework and quizzes to catch up.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya uses Canvas for her coursework.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Adya is expected to be in pre-algebra.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "Engaging Math Circles (EMC) has a Winter Break from December 22 to January 4.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b918aff7b59858"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "change reservation",
+    "message_id": "19b81e9c61d3f477"
+  },
+  {
+    "fact": "User's name is s s",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b82c457c3464ae"
+  },
+  {
+    "fact": "User's PlayStation Online ID is insensed",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b82c457c3464ae"
+  },
+  {
+    "fact": "User plays Fortnite",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b82c457c3464ae"
+  },
+  {
+    "fact": "User uses PlayStation",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b82c457c3464ae"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"HL Small Submersible Led...\"",
+    "message_id": "19b817c069696348"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Shipped: \"HL Small Submersible Led...\"",
+    "message_id": "19b817c069696348"
+  },
+  {
+    "fact": "The user purchased 'HL Small Submersible Led Lights with Remote,Mini LED Light,Waterproof Tea Light,Underwater Lights,Flameless Candles'.",
+    "source_subject": "Shipped: \"HL Small Submersible Led...\"",
+    "message_id": "19b817c069696348"
+  },
+  {
+    "fact": "The user may have an interest in decorating for events like parties, weddings, or Halloween.",
+    "source_subject": "Shipped: \"HL Small Submersible Led...\"",
+    "message_id": "19b817c069696348"
+  },
+  {
+    "fact": "The user may have items such as vases, fish tanks, or hot tubs.",
+    "source_subject": "Shipped: \"HL Small Submersible Led...\"",
+    "message_id": "19b817c069696348"
+  },
+  {
+    "fact": "The user may own pets.",
+    "source_subject": "Shipped: \"HL Small Submersible Led...\"",
+    "message_id": "19b817c069696348"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Your Etsy Order Shipped (Receipt #3937251373)",
+    "message_id": "19b812f8ee958343"
+  },
+  {
+    "fact": "The user's physical address is 2331 WOOSTER AVE, BELMONT, CA, 94002 United States.",
+    "source_subject": "Your Etsy Order Shipped (Receipt #3937251373)",
+    "message_id": "19b812f8ee958343"
+  },
+  {
+    "fact": "The user likes or has a hobby related to dragons (evidenced by the purchase of 'Salmon_Hood Dragon Stickers').",
+    "source_subject": "Your Etsy Order Shipped (Receipt #3937251373)",
+    "message_id": "19b812f8ee958343"
+  },
+  {
+    "fact": "The user likes or has an interest in Smaug/Tolkien (evidenced by the purchase of 'Smaug mini sticker sheet').",
+    "source_subject": "Your Etsy Order Shipped (Receipt #3937251373)",
+    "message_id": "19b812f8ee958343"
+  },
+  {
+    "fact": "The user returned a Spyder Mens Sherpa Fur Hoodie - Full Zip Up Lightweight Soft Sherpa Lined Waffle Knit Sweatshirt Jacket.",
+    "source_subject": "Refund on order 111-2577260-4954602",
+    "message_id": "19b901c38d79b4fc"
+  },
+  {
+    "fact": "The user previously ordered a men's hoodie.",
+    "source_subject": "Refund on order 111-2577260-4954602",
+    "message_id": "19b901c38d79b4fc"
+  },
+  {
+    "fact": "The user previously ordered a size medium hoodie.",
+    "source_subject": "Refund on order 111-2577260-4954602",
+    "message_id": "19b901c38d79b4fc"
+  },
+  {
+    "fact": "The user previously ordered a petrol blue hoodie.",
+    "source_subject": "Refund on order 111-2577260-4954602",
+    "message_id": "19b901c38d79b4fc"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your YouTube TV membership has been canceled",
+    "message_id": "19b8aa3ca3530e0c"
+  },
+  {
+    "fact": "The user cancelled their YouTube TV Base Plan, indicating a dislike or cessation of use.",
+    "source_subject": "Your YouTube TV membership has been canceled",
+    "message_id": "19b8aa3ca3530e0c"
+  },
+  {
+    "fact": "The user has a child or student named Adya.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b817e7c0668e60"
+  },
+  {
+    "fact": "The user is involved in teaching Adya mathematics.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b817e7c0668e60"
+  },
+  {
+    "fact": "The user is actively involved in creating and reviewing educational tests and materials.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b817e7c0668e60"
+  },
+  {
+    "fact": "The user's child or student, Adya, attends an institution referred to as 'CC'.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b817e7c0668e60"
+  },
+  {
+    "fact": "The user's name is Nikhil.",
+    "source_subject": "Hotel Pine Bungalows sent you a message",
+    "message_id": "19b800e85a984719"
+  },
+  {
+    "fact": "Nikhil has a reservation at Pine Bungalows.",
+    "source_subject": "Hotel Pine Bungalows sent you a message",
+    "message_id": "19b800e85a984719"
+  },
+  {
+    "fact": "Nikhil has paid a deposit for a hotel stay (Confirmation#2360463966).",
+    "source_subject": "Hotel Pine Bungalows sent you a message",
+    "message_id": "19b800e85a984719"
+  },
+  {
+    "fact": "Saurav Sen has a child named Adya.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fe0dbaa86ec9"
+  },
+  {
+    "fact": "Saurav Sen is involved in Adya's education, specifically teaching her math concepts like volume of cones and pyramids.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fe0dbaa86ec9"
+  },
+  {
+    "fact": "Saurav Sen creates educational tests.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fe0dbaa86ec9"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Item cancelled successfully: \"BLBAISH 6/12 Pack Fish Tank...\"",
+    "message_id": "19b7c0a1814a0a2e"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Item cancelled successfully: \"BLBAISH 6/12 Pack Fish Tank...\"",
+    "message_id": "19b7c0a1814a0a2e"
+  },
+  {
+    "fact": "The user has an interest in fish tanks/aquariums.",
+    "source_subject": "Item cancelled successfully: \"BLBAISH 6/12 Pack Fish Tank...\"",
+    "message_id": "19b7c0a1814a0a2e"
+  },
+  {
+    "fact": "Andrew Tschesnok's cell phone number is 917-251-3468.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd9473b32c82"
+  },
+  {
+    "fact": "Andrew Tschesnok has a child named Max.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd9473b32c82"
+  },
+  {
+    "fact": "Saurav Sen's email address is sauravsen23@gmail.com.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd9473b32c82"
+  },
+  {
+    "fact": "Saurav Sen has a child named Adya.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd9473b32c82"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Amazon.com order of Dumb & Dumber.",
+    "message_id": "19b778a317fb12df"
+  },
+  {
+    "fact": "The user purchased the movie 'Dumb & Dumber'.",
+    "source_subject": "Amazon.com order of Dumb & Dumber.",
+    "message_id": "19b778a317fb12df"
+  },
+  {
+    "fact": "The user uses Amazon Prime Video.",
+    "source_subject": "Amazon.com order of Dumb & Dumber.",
+    "message_id": "19b778a317fb12df"
+  },
+  {
+    "fact": "The user's first name is Saurav.",
+    "source_subject": "A new device is using your account",
+    "message_id": "19b7d72a45204e05"
+  },
+  {
+    "fact": "The user's email address is sauravsen23@gmail.com.",
+    "source_subject": "A new device is using your account",
+    "message_id": "19b7d72a45204e05"
+  },
+  {
+    "fact": "The user has a Netflix membership.",
+    "source_subject": "A new device is using your account",
+    "message_id": "19b7d72a45204e05"
+  },
+  {
+    "fact": "The user's Netflix account was accessed from California, United States.",
+    "source_subject": "A new device is using your account",
+    "message_id": "19b7d72a45204e05"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b7717c59ab344c"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Delivered: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b7717c59ab344c"
+  },
+  {
+    "fact": "The user purchased a COOFANDY Men Winter Cotton Hooded Sweatshirt Fleece Lined Casual Hoodies Pullover Thick Drawstring Solid Hoodie Shirts Blue Purple.",
+    "source_subject": "Delivered: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b7717c59ab344c"
+  },
+  {
+    "fact": "The user's name is Andrew Tschesnok.",
+    "source_subject": "Midterm exams.",
+    "message_id": "19b776d761eed680"
+  },
+  {
+    "fact": "The user's cell number is 917-251-3468.",
+    "source_subject": "Midterm exams.",
+    "message_id": "19b776d761eed680"
+  },
+  {
+    "fact": "The user knows someone named Max.",
+    "source_subject": "Midterm exams.",
+    "message_id": "19b776d761eed680"
+  },
+  {
+    "fact": "The user created practice tests for Max's midterm exams.",
+    "source_subject": "Midterm exams.",
+    "message_id": "19b776d761eed680"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Getting started with YouTube TV",
+    "message_id": "19b7ac0a17b8bdcf"
+  },
+  {
+    "fact": "User's YouTube TV trial starts on Jan 1, 2026.",
+    "source_subject": "Getting started with YouTube TV",
+    "message_id": "19b7ac0a17b8bdcf"
+  },
+  {
+    "fact": "User's YouTube TV recurring charge starts on Jan 22, 2026.",
+    "source_subject": "Getting started with YouTube TV",
+    "message_id": "19b7ac0a17b8bdcf"
+  },
+  {
+    "fact": "User paid for YouTube TV with an Amex card ending in 5001.",
+    "source_subject": "Getting started with YouTube TV",
+    "message_id": "19b7ac0a17b8bdcf"
+  },
+  {
+    "fact": "User likes live TV, popular cable networks, cloud DVR, and live streaming (as evidenced by subscribing to YouTube TV).",
+    "source_subject": "Getting started with YouTube TV",
+    "message_id": "19b7ac0a17b8bdcf"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"HL Small Submersible Led...\"",
+    "message_id": "19b76bd5b166b1d2"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Ordered: \"HL Small Submersible Led...\"",
+    "message_id": "19b76bd5b166b1d2"
+  },
+  {
+    "fact": "The user ordered 'HL Small Submersible Led Lights' which suggests an interest in home decor, parties, events, or specific uses like fish tanks or hot tubs.",
+    "source_subject": "Ordered: \"HL Small Submersible Led...\"",
+    "message_id": "19b76bd5b166b1d2"
+  },
+  {
+    "fact": "Andrew Tschesnok has a child named Max.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd8e2ea2916a"
+  },
+  {
+    "fact": "Andrew Tschesnok's occupation is Founder.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd8e2ea2916a"
+  },
+  {
+    "fact": "Andrew Tschesnok's cell phone number is 917-251-3468.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd8e2ea2916a"
+  },
+  {
+    "fact": "Andrew Tschesnok's hobby involves creating educational tests, particularly for geometry concepts like volume of cones and pyramids.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd8e2ea2916a"
+  },
+  {
+    "fact": "Andrew Tschesnok designs test questions to include plausible alternative answers that anticipate common student errors.",
+    "source_subject": "Re: Midterm exams.",
+    "message_id": "19b7fd8e2ea2916a"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Hotel Pine Bungalows sent you a message",
+    "message_id": "19b75363fd71d194"
+  },
+  {
+    "fact": "The user has an upcoming hotel reservation at Pine Bungalows in Jasper, AB, Canada.",
+    "source_subject": "Hotel Pine Bungalows sent you a message",
+    "message_id": "19b75363fd71d194"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Return request confirmed for COOFANDY Men Cotton Fleece...",
+    "message_id": "19b72567f623d863"
+  },
+  {
+    "fact": "The user purchased a 'COOFANDY Men Cotton Fleece Hooded...' item.",
+    "source_subject": "Return request confirmed for COOFANDY Men Cotton Fleece...",
+    "message_id": "19b72567f623d863"
+  },
+  {
+    "fact": "User's name is Saurav",
+    "source_subject": "Your trial for DuckDuckGo, Duck.ai (optional) will end on Jan 1, 2026",
+    "message_id": "19b7170149e6c42f"
+  },
+  {
+    "fact": "User has a subscription to DuckDuckGo, Duck.ai",
+    "source_subject": "Your trial for DuckDuckGo, Duck.ai (optional) will end on Jan 1, 2026",
+    "message_id": "19b7170149e6c42f"
+  },
+  {
+    "fact": "User uses Google Play for managing subscriptions",
+    "source_subject": "Your trial for DuckDuckGo, Duck.ai (optional) will end on Jan 1, 2026",
+    "message_id": "19b7170149e6c42f"
+  },
+  {
+    "fact": "User has a recurring payment date of January 1st for a subscription",
+    "source_subject": "Your trial for DuckDuckGo, Duck.ai (optional) will end on Jan 1, 2026",
+    "message_id": "19b7170149e6c42f"
+  },
+  {
+    "fact": "The user's email address is sauravsen23@gmail.com.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user's first name is Saurav.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user's full name is saurav sen.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user is traveling to Calgary, AB, Canada.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user is departing from San Francisco, CA.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user is traveling with sanghita majumder.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user is traveling with adya sen.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user is traveling with prisha sen.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "The user will be traveling from July 18 to July 25.",
+    "source_subject": "Fwd: Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b716b8b42b7a3f"
+  },
+  {
+    "fact": "User's name is Saurav Sen.",
+    "source_subject": "Fwd: Expedia car rental confirmation - Sat, Jul 18 - (Itinerary # 73338600440870)",
+    "message_id": "19b716af0f06aead"
+  },
+  {
+    "fact": "User is traveling to Calgary, Alberta, Canada.",
+    "source_subject": "Fwd: Expedia car rental confirmation - Sat, Jul 18 - (Itinerary # 73338600440870)",
+    "message_id": "19b716af0f06aead"
+  },
+  {
+    "fact": "User will be in Calgary from July 18 to July 25.",
+    "source_subject": "Fwd: Expedia car rental confirmation - Sat, Jul 18 - (Itinerary # 73338600440870)",
+    "message_id": "19b716af0f06aead"
+  },
+  {
+    "fact": "The user purchased a flight to/from Calgary, AB, Canada.",
+    "source_subject": "Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b71669d1bfd2c9"
+  },
+  {
+    "fact": "The user has a flight scheduled for July 18.",
+    "source_subject": "Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b71669d1bfd2c9"
+  },
+  {
+    "fact": "The user uses Expedia for flight bookings.",
+    "source_subject": "Expedia flight purchase confirmation - Calgary, AB, Canada (YYC-Calgary Intl.) - Sat, Jul 18 - (Itinerary # 73338599143073)",
+    "message_id": "19b71669d1bfd2c9"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Shipped: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b6f211270e284e"
+  },
+  {
+    "fact": "User lives in Belmont, CA.",
+    "source_subject": "Shipped: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b6f211270e284e"
+  },
+  {
+    "fact": "User purchased a COOFANDY Men Winter Cotton Hooded Sweatshirt Fleece Lined Casual Hoodies Pullover Thick Drawstring Solid Hoodie Shirts Blue Purple, indicating a preference for this type of clothing.",
+    "source_subject": "Shipped: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b6f211270e284e"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b6d5570aa14764"
+  },
+  {
+    "fact": "The user's address or shipping location is Belmont, CA.",
+    "source_subject": "Ordered: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b6d5570aa14764"
+  },
+  {
+    "fact": "The user purchased a COOFANDY Men Winter Cotton Hooded Sweatshirt Fleece Lined Casual Hoodie Pullover in Blue Purple.",
+    "source_subject": "Ordered: \"COOFANDY Men Winter Cotton...\"",
+    "message_id": "19b6d5570aa14764"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"Govee RGBIC LED Strip...\"",
+    "message_id": "19b6d5e32a127d2d"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Delivered: \"Govee RGBIC LED Strip...\"",
+    "message_id": "19b6d5e32a127d2d"
+  },
+  {
+    "fact": "The user has an interest in home decor or smart lighting, as they purchased Govee RGBIC LED Strip Lights.",
+    "source_subject": "Delivered: \"Govee RGBIC LED Strip...\"",
+    "message_id": "19b6d5e32a127d2d"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "The email mentions a person named Nikhil.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "Saurav Sen is traveling with 3 other adults and 3 children.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "Saurav Sen is traveling to Jasper, AB, Canada.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "Saurav Sen will be staying at Pine Bungalows, located at 2 Cottonwood Creek Rd, Jasper, AB, T0E 1E0 Canada.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "Saurav Sen's trip dates are from July 21 to July 24.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "Saurav Sen booked 2 rooms for the trip, including an East Cabin.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "Saurav Sen is an Expedia customer and earns OneKeyCash rewards.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "A payment of CA$2,910.04 for the trip is due on July 21, 2026.",
+    "source_subject": "Fwd: Expedia travel confirmation - Tue, Jul 21 - (Itinerary # 73338602260888)",
+    "message_id": "19b716b366dc8cba"
+  },
+  {
+    "fact": "The user's name is saurav.",
+    "source_subject": "Your Bright Horizons Verification Code",
+    "message_id": "19b6c27346a65954"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Delivered: \"COOFANDY Mens Cotton Fleece...\"",
+    "message_id": "19b6d523a9ed20d0"
+  },
+  {
+    "fact": "User lives in Belmont, CA.",
+    "source_subject": "Delivered: \"COOFANDY Mens Cotton Fleece...\"",
+    "message_id": "19b6d523a9ed20d0"
+  },
+  {
+    "fact": "User purchased a deep red men's cotton fleece hoodie.",
+    "source_subject": "Delivered: \"COOFANDY Mens Cotton Fleece...\"",
+    "message_id": "19b6d523a9ed20d0"
+  },
+  {
+    "fact": "Planning a trip to Canada",
+    "source_subject": "Spreadsheet shared with you: \"Canada trip\"",
+    "message_id": "19b6a8da90886a15"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"Rael Pimple Patches -...\"",
+    "message_id": "19b6a4f6bec6c3ad"
+  },
+  {
+    "fact": "The user lives in BELMONT, CA.",
+    "source_subject": "Delivered: \"Rael Pimple Patches -...\"",
+    "message_id": "19b6a4f6bec6c3ad"
+  },
+  {
+    "fact": "The user purchased 'Rael Pimple Patches', suggesting an interest in skincare or a concern about acne/blemishes.",
+    "source_subject": "Delivered: \"Rael Pimple Patches -...\"",
+    "message_id": "19b6a4f6bec6c3ad"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Govee RGBIC LED Strip...\"",
+    "message_id": "19b69dab5ae99aaa"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Shipped: \"Govee RGBIC LED Strip...\"",
+    "message_id": "19b69dab5ae99aaa"
+  },
+  {
+    "fact": "The user purchased Govee RGBIC LED Strip Lights, indicating an interest in home decor, smart lighting, or electronics.",
+    "source_subject": "Shipped: \"Govee RGBIC LED Strip...\"",
+    "message_id": "19b69dab5ae99aaa"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"KAIWEETS Voltage...\"",
+    "message_id": "19b683746472b477"
+  },
+  {
+    "fact": "The user's location is BELMONT, CA.",
+    "source_subject": "Shipped: \"KAIWEETS Voltage...\"",
+    "message_id": "19b683746472b477"
+  },
+  {
+    "fact": "The user has an interest in electrical tools or DIY, as indicated by the purchase of a KAIWEETS Voltage Tester.",
+    "source_subject": "Shipped: \"KAIWEETS Voltage...\"",
+    "message_id": "19b683746472b477"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Kasa Smart Light Switch...\" and 1 more item",
+    "message_id": "19b660a40a2c9225"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Ordered: \"Kasa Smart Light Switch...\" and 1 more item",
+    "message_id": "19b660a40a2c9225"
+  },
+  {
+    "fact": "The user has an interest in smart home technology, electronics, or DIY electrical projects (based on purchased items).",
+    "source_subject": "Ordered: \"Kasa Smart Light Switch...\" and 1 more item",
+    "message_id": "19b660a40a2c9225"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Rael Pimple Patches ...\"",
+    "message_id": "19b6665b22016138"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Ordered: \"Rael Pimple Patches ...\"",
+    "message_id": "19b6665b22016138"
+  },
+  {
+    "fact": "The user purchased Rael Pimple Patches, indicating a concern about acne or blemishes.",
+    "source_subject": "Ordered: \"Rael Pimple Patches ...\"",
+    "message_id": "19b6665b22016138"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Update",
+    "message_id": "19b669afb8d091c4"
+  },
+  {
+    "fact": "Saurav had a RIVI repaired.",
+    "source_subject": "Update",
+    "message_id": "19b669afb8d091c4"
+  },
+  {
+    "fact": "The repair was performed at San Mateo.",
+    "source_subject": "Update",
+    "message_id": "19b669afb8d091c4"
+  },
+  {
+    "fact": "The RIVI repair happened about six months ago.",
+    "source_subject": "Update",
+    "message_id": "19b669afb8d091c4"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Taily Multivitamin with...\"",
+    "message_id": "19b65edfd27e066c"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Ordered: \"Taily Multivitamin with...\"",
+    "message_id": "19b65edfd27e066c"
+  },
+  {
+    "fact": "The user likely owns a dog or a cat (or both), as they ordered pet multivitamins for dogs and cats.",
+    "source_subject": "Ordered: \"Taily Multivitamin with...\"",
+    "message_id": "19b65edfd27e066c"
+  },
+  {
+    "fact": "User has a pet (dog or cat).",
+    "source_subject": "Successful cancellation of item(s) from your Amazon.com order #(111-0239520-2892214)",
+    "message_id": "19b65fd86270d94e"
+  },
+  {
+    "fact": "The user has a PlayStation Plus subscription, indicating an interest in gaming.",
+    "source_subject": "PlayStation Plus | We\u2019re sorry to see you go",
+    "message_id": "19b56801ab0e1c8d"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"COOFANDY Mens Cotton Fleece...\"",
+    "message_id": "19b5ec426c6f8cf7"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"COOFANDY Mens Cotton Fleece...\"",
+    "message_id": "19b5ec426c6f8cf7"
+  },
+  {
+    "fact": "The user ordered a Deep Red hoodie, suggesting a preference for this style or color of clothing.",
+    "source_subject": "Shipped: \"COOFANDY Mens Cotton Fleece...\"",
+    "message_id": "19b5ec426c6f8cf7"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Lotus Foods Organic White...\"",
+    "message_id": "19b512a481301175"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Ordered: \"Lotus Foods Organic White...\"",
+    "message_id": "19b512a481301175"
+  },
+  {
+    "fact": "The user likes/purchased Lotus Foods Organic White Jasmine Rice.",
+    "source_subject": "Ordered: \"Lotus Foods Organic White...\"",
+    "message_id": "19b512a481301175"
+  },
+  {
+    "fact": "The user's name is s s.",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b5656b8575f366"
+  },
+  {
+    "fact": "The user's PlayStation Online ID is insensed.",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b5656b8575f366"
+  },
+  {
+    "fact": "The user plays Fortnite.",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b5656b8575f366"
+  },
+  {
+    "fact": "The user uses PlayStation services.",
+    "source_subject": "Thank You For Your Purchase",
+    "message_id": "19b5656b8575f366"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Save this Clipper card number for your records",
+    "message_id": "19b49295c59ad7e0"
+  },
+  {
+    "fact": "Saurav uses Google Wallet.",
+    "source_subject": "Save this Clipper card number for your records",
+    "message_id": "19b49295c59ad7e0"
+  },
+  {
+    "fact": "Saurav uses a Clipper transit card, suggesting they utilize public transportation.",
+    "source_subject": "Save this Clipper card number for your records",
+    "message_id": "19b49295c59ad7e0"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19b4f1b142781bf7"
+  },
+  {
+    "fact": "The user has a recurring payment for Bright Horizons at San Mateo.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19b4f1b142781bf7"
+  },
+  {
+    "fact": "The user has a recurring payment scheduled for 12/25/2025.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19b4f1b142781bf7"
+  },
+  {
+    "fact": "User's name is Saurav",
+    "source_subject": "Return received for Spyder Mens Sherpa Fur Hoodie ....",
+    "message_id": "19b47db6043f6844"
+  },
+  {
+    "fact": "User's name: Saurav Sen",
+    "source_subject": "Your Google Play Order Receipt from Dec 25, 2025",
+    "message_id": "19b57b0503a3a1d3"
+  },
+  {
+    "fact": "User's email address: sauravsen23@gmail.com",
+    "source_subject": "Your Google Play Order Receipt from Dec 25, 2025",
+    "message_id": "19b57b0503a3a1d3"
+  },
+  {
+    "fact": "User has an interest in DuckDuckGo, as indicated by subscribing to its trial",
+    "source_subject": "Your Google Play Order Receipt from Dec 25, 2025",
+    "message_id": "19b57b0503a3a1d3"
+  },
+  {
+    "fact": "The user has $40.96 in Google Store credit as of 12/22/25.",
+    "source_subject": "Final call: Special offers end soon",
+    "message_id": "19b473ece83ee7cf"
+  },
+  {
+    "fact": "The user is a Google One member.",
+    "source_subject": "Final call: Special offers end soon",
+    "message_id": "19b473ece83ee7cf"
+  },
+  {
+    "fact": "Name: Neha",
+    "source_subject": "Delivered: 1 item | Order # 202-8642496-6167562",
+    "message_id": "19b464979a409f1b"
+  },
+  {
+    "fact": "Physical address/location: SAFFRON WALDEN",
+    "source_subject": "Delivered: 1 item | Order # 202-8642496-6167562",
+    "message_id": "19b464979a409f1b"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your digital key is waiting",
+    "message_id": "19b41c171321aa8f"
+  },
+  {
+    "fact": "Saurav owns a Rivian R1S.",
+    "source_subject": "Your digital key is waiting",
+    "message_id": "19b41c171321aa8f"
+  },
+  {
+    "fact": "The VIN of Saurav's Rivian R1S ends in 8188.",
+    "source_subject": "Your digital key is waiting",
+    "message_id": "19b41c171321aa8f"
+  },
+  {
+    "fact": "Name: Saurav",
+    "source_subject": "Delivered: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b429762452462c"
+  },
+  {
+    "fact": "Location: Belmont, CA",
+    "source_subject": "Delivered: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b429762452462c"
+  },
+  {
+    "fact": "Interest: 3D printing (implied by purchased item)",
+    "source_subject": "Delivered: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b429762452462c"
+  },
+  {
+    "fact": "Name: Neha",
+    "source_subject": "Out for delivery: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b45939bfb512dd"
+  },
+  {
+    "fact": "Location: Saffron Walden",
+    "source_subject": "Out for delivery: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b45939bfb512dd"
+  },
+  {
+    "fact": "Interest: LEGO Minecraft (or similar building sets/gaming)",
+    "source_subject": "Out for delivery: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b45939bfb512dd"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Your Prime membership has ended",
+    "message_id": "19b3f029e5df6a1d"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Your Prime membership cancellation",
+    "message_id": "19b3f029cfa6f19b"
+  },
+  {
+    "fact": "User's name is Saurav Sen",
+    "source_subject": "Welcome to Prime!",
+    "message_id": "19b3e900a8233ba0"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b3e8cb0cb5b2cf"
+  },
+  {
+    "fact": "A person named Neha is associated with the user/order.",
+    "source_subject": "Ordered: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b3e8cb0cb5b2cf"
+  },
+  {
+    "fact": "A delivery location associated with the user/order is Saffron Walden.",
+    "source_subject": "Ordered: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b3e8cb0cb5b2cf"
+  },
+  {
+    "fact": "The user or someone associated with them (possibly an 8+ year old child) has an interest in LEGO, Minecraft, or gaming.",
+    "source_subject": "Ordered: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b3e8cb0cb5b2cf"
+  },
+  {
+    "fact": "There is an 8+ year old child associated with the user/order.",
+    "source_subject": "Ordered: \u2018LEGO Minecraft The...\u2019",
+    "message_id": "19b3e8cb0cb5b2cf"
+  },
+  {
+    "fact": "The user's name is John Doe.",
+    "source_subject": "LEGO\u00ae Store Receipt LEGO0050680997 from 20.12.2025 ",
+    "message_id": "19b3d93654e246d5"
+  },
+  {
+    "fact": "The user's shipping address is 123 Maple Street, Anytown, CA 90210, United States.",
+    "source_subject": "LEGO\u00ae Store Receipt LEGO0050680997 from 20.12.2025 ",
+    "message_id": "19b3d93654e246d5"
+  },
+  {
+    "fact": "The user likes LEGO products.",
+    "source_subject": "LEGO\u00ae Store Receipt LEGO0050680997 from 20.12.2025 ",
+    "message_id": "19b3d93654e246d5"
+  },
+  {
+    "fact": "The user's family is enrolled at Bright Horizons at San Mateo.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19b46d5abd43aac7"
+  },
+  {
+    "fact": "The user's family pays tuition to Bright Horizons.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19b46d5abd43aac7"
+  },
+  {
+    "fact": "The user's family has a tuition payment for January 2026 services due on December 25, 2025.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19b46d5abd43aac7"
+  },
+  {
+    "fact": "The user's family may be subject to a $100 re-registration charge for Bright Horizons.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19b46d5abd43aac7"
+  },
+  {
+    "fact": "The user's family will be subject to a new rate for Bright Horizons services in 2026.",
+    "source_subject": "Bright Horizons at San Mateo - Statement",
+    "message_id": "19b46d5abd43aac7"
+  },
+  {
+    "fact": "The user has an Amex card ending in 5001.",
+    "source_subject": "You're ready to use virtual cards",
+    "message_id": "19b3d301d3facca9"
+  },
+  {
+    "fact": "The user uses Chrome.",
+    "source_subject": "You're ready to use virtual cards",
+    "message_id": "19b3d301d3facca9"
+  },
+  {
+    "fact": "The user uses Android devices.",
+    "source_subject": "You're ready to use virtual cards",
+    "message_id": "19b3d301d3facca9"
+  },
+  {
+    "fact": "The user has a Google Account.",
+    "source_subject": "You're ready to use virtual cards",
+    "message_id": "19b3d301d3facca9"
+  },
+  {
+    "fact": "The user shops online.",
+    "source_subject": "You're ready to use virtual cards",
+    "message_id": "19b3d301d3facca9"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Caliart Acrylic Paint Set...\"",
+    "message_id": "19b3d2c355073bc0"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Ordered: \"Caliart Acrylic Paint Set...\"",
+    "message_id": "19b3d2c355073bc0"
+  },
+  {
+    "fact": "The user has an interest in art/painting, as they ordered an acrylic paint set.",
+    "source_subject": "Ordered: \"Caliart Acrylic Paint Set...\"",
+    "message_id": "19b3d2c355073bc0"
+  },
+  {
+    "fact": "The user has a Peacock account.",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c93c7a9fb81a"
+  },
+  {
+    "fact": "A device signed into the user's Peacock account from Belmont, United States.",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c93c7a9fb81a"
+  },
+  {
+    "fact": "Lives in Belmont, United States",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c97aa3f1bbe7"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Advance refund issued for ZryXal iPad Pro 11 Inch Case....",
+    "message_id": "19b356ce77f68a11"
+  },
+  {
+    "fact": "The user owns or is interested in an iPad Pro 11 inch.",
+    "source_subject": "Advance refund issued for ZryXal iPad Pro 11 Inch Case....",
+    "message_id": "19b356ce77f68a11"
+  },
+  {
+    "fact": "Saurav's name is Saurav.",
+    "source_subject": "Shipped: \"ELEGOO UNO R3 Smart Robot...\"",
+    "message_id": "19b363dd9c8b6d2c"
+  },
+  {
+    "fact": "Saurav lives in Belmont, CA.",
+    "source_subject": "Shipped: \"ELEGOO UNO R3 Smart Robot...\"",
+    "message_id": "19b363dd9c8b6d2c"
+  },
+  {
+    "fact": "Saurav has an interest in robotics, STEM, coding, and engineering toys (based on a recent purchase).",
+    "source_subject": "Shipped: \"ELEGOO UNO R3 Smart Robot...\"",
+    "message_id": "19b363dd9c8b6d2c"
+  },
+  {
+    "fact": "User has a Peacock account.",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c9df4ec84068"
+  },
+  {
+    "fact": "User's Peacock account activity was detected from Belmont, United States.",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c9df4ec84068"
+  },
+  {
+    "fact": "User's Peacock account was accessed by an Android Connected TV.",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c9df4ec84068"
+  },
+  {
+    "fact": "Lives in Belmont, United States",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c95be216013f"
+  },
+  {
+    "fact": "Has a Peacock streaming account",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c95be216013f"
+  },
+  {
+    "fact": "Owns a Roku Box",
+    "source_subject": "A new device is signed in to your Peacock account",
+    "message_id": "19b3c95be216013f"
+  },
+  {
+    "fact": "The user purchased products from The Shade Store.",
+    "source_subject": "LEGAL NOTICE OF CLASS ACTION SETTLEMENT \u2013 Moran Lopez et al. v. The Shade Store, LLC",
+    "message_id": "19b3809116d65af5"
+  },
+  {
+    "fact": "The user's purchases from The Shade Store occurred between May 15, 2020, and July 1, 2025.",
+    "source_subject": "LEGAL NOTICE OF CLASS ACTION SETTLEMENT \u2013 Moran Lopez et al. v. The Shade Store, LLC",
+    "message_id": "19b3809116d65af5"
+  },
+  {
+    "fact": "The products purchased by the user from The Shade Store were for delivery in California, Washington, Oregon, New York, Pennsylvania, or Maryland.",
+    "source_subject": "LEGAL NOTICE OF CLASS ACTION SETTLEMENT \u2013 Moran Lopez et al. v. The Shade Store, LLC",
+    "message_id": "19b3809116d65af5"
+  },
+  {
+    "fact": "The user is a Settlement Class Member in the class action lawsuit Moran Lopez et al. v. The Shade Store, LLC.",
+    "source_subject": "LEGAL NOTICE OF CLASS ACTION SETTLEMENT \u2013 Moran Lopez et al. v. The Shade Store, LLC",
+    "message_id": "19b3809116d65af5"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Advance refund issued for Desire Deluxe - Girls Gifts Hair....",
+    "message_id": "19b356cac4bd116e"
+  },
+  {
+    "fact": "The user (or someone they buy for) is interested in 'girls gifts' and 'hair chalk'.",
+    "source_subject": "Advance refund issued for Desire Deluxe - Girls Gifts Hair....",
+    "message_id": "19b356cac4bd116e"
+  },
+  {
+    "fact": "The user (or someone they buy for) may be interested in 'nail art' and 'drawing' related to children's gifts (ages 7-12).",
+    "source_subject": "Advance refund issued for Desire Deluxe - Girls Gifts Hair....",
+    "message_id": "19b356cac4bd116e"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Dropoff confirmed for ZryXal iPad Pro 11 Inch Case...",
+    "message_id": "19b34fde6784e1fd"
+  },
+  {
+    "fact": "Saurav owns or uses an iPad Pro 11 Inch.",
+    "source_subject": "Dropoff confirmed for ZryXal iPad Pro 11 Inch Case...",
+    "message_id": "19b34fde6784e1fd"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Dropoff confirmed for Spyder Mens Sherpa Fur Hoodie ...",
+    "message_id": "19b34fe1f0810488"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Axirata 2-Pack DIY Journal...\"",
+    "message_id": "19b30a307a9c18f4"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"Axirata 2-Pack DIY Journal...\"",
+    "message_id": "19b30a307a9c18f4"
+  },
+  {
+    "fact": "The user (or someone they are purchasing for) likes DIY journal kits, crafts, scrapbooking, or diaries, or the user is purchasing for a girl aged 6-14.",
+    "source_subject": "Shipped: \"Axirata 2-Pack DIY Journal...\"",
+    "message_id": "19b30a307a9c18f4"
+  },
+  {
+    "fact": "The user may have pets.",
+    "source_subject": "Shipped: \"Axirata 2-Pack DIY Journal...\"",
+    "message_id": "19b30a307a9c18f4"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Dropoff confirmed for Desire Deluxe - Girls Gifts Hair...",
+    "message_id": "19b34fda87f47fbb"
+  },
+  {
+    "fact": "The user has an interest in purchasing gifts for girls or children, specifically items like hair chalk, nail art kits for ages 7-12, or drawing books for kids.",
+    "source_subject": "Dropoff confirmed for Desire Deluxe - Girls Gifts Hair...",
+    "message_id": "19b34fda87f47fbb"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Heads up Saurav! You have new alerts on your Experian credit file",
+    "message_id": "19b2f156387c9408"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Return request confirmed for ZryXal iPad Pro 11 Inch Case...",
+    "message_id": "19b2dee66699a1df"
+  },
+  {
+    "fact": "The user is returning an iPad Pro 11 Inch Case, suggesting they likely own an iPad Pro 11 Inch.",
+    "source_subject": "Return request confirmed for ZryXal iPad Pro 11 Inch Case...",
+    "message_id": "19b2dee66699a1df"
+  },
+  {
+    "fact": "The user's email address is sauravsen23@gmail.com.",
+    "source_subject": "\ud83c\udf9f\ufe0f Your exclusive FIFA World Cup 2026\u2122 ticket offer",
+    "message_id": "19b2e0e8cdb722fe"
+  },
+  {
+    "fact": "The user is likely interested in the FIFA World Cup or soccer.",
+    "source_subject": "\ud83c\udf9f\ufe0f Your exclusive FIFA World Cup 2026\u2122 ticket offer",
+    "message_id": "19b2e0e8cdb722fe"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Order Confirmation for Saurav from Mendocino Farms",
+    "message_id": "19b2db5b906b7d15"
+  },
+  {
+    "fact": "The user's physical address is 2331 Wooster Ave, Belmont, CA 94002, USA.",
+    "source_subject": "Order Confirmation for Saurav from Mendocino Farms",
+    "message_id": "19b2db5b906b7d15"
+  },
+  {
+    "fact": "The user orders food from Mendocino Farms.",
+    "source_subject": "Order Confirmation for Saurav from Mendocino Farms",
+    "message_id": "19b2db5b906b7d15"
+  },
+  {
+    "fact": "The sender's name is Maia Bromberg.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg works at Ralston Middle School.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg teaches in Room 21.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg's favorite unit is the Data unit.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg loves Data Science.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg loves the critical thinking required in the Data unit.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg loves her job.",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "Maia Bromberg loves spending her days with her students (children).",
+    "source_subject": "December Math Update",
+    "message_id": "19b2e7355a91f638"
+  },
+  {
+    "fact": "The user is a ParentSquare user in Ralston Middle School.",
+    "source_subject": "Happy Holidays From Mrs. Blackwell",
+    "message_id": "19b2dded2e332edb"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Saurav Sen has a child named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Adya is enrolled in a class called 'Circle 6 Mon 4:30-6:15'.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Adya enjoyed her first class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "The class time works well for Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Adya is a quick learner with great instinctive number sense.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Adya has not worked with negative numbers or exponent rules prior to recent lessons but picked them up quickly.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Adya's first official paid lesson is scheduled for January 5, 2026.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Adya will have a Canvas account for coursework.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28a0475b39b57"
+  },
+  {
+    "fact": "Saurav has a child/family member named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya is a student at Engaging Math Circles (EMC).",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya attends Circle 6 math class on Mondays from 4:30-6:15 PM.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya's first official (paid) lesson at EMC is January 5, 2026.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya is a quick learner with good instinctive number sense, particularly in math.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya enjoys her math classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya needs to catch up on topics such as operations with negative integers, multiplying/dividing by fractions, and simplifying expressions with variables.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya had not worked with negative numbers prior to her evaluation.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b288ee63c6dced"
+  },
+  {
+    "fact": "Adya is the name of a student.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Saurav Sen is likely Adya's parent or guardian.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya enjoyed her first math class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya is enrolled in Engaging Math Circles (EMC) in Circle 6.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya is a quick learner.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya has instinctive number sense.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya can adjust to new mathematical structures and concepts quickly.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya is learning about negative numbers and exponent rules.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya uses Canvas for her coursework.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "Adya's first official (paid) math lesson is on January 5, 2026.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b28985243fab01"
+  },
+  {
+    "fact": "The user has a student.",
+    "source_subject": "Nutrition Update",
+    "message_id": "19b281d40c601647"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Nutrition Update",
+    "message_id": "19b281d40c601647"
+  },
+  {
+    "fact": "The user is associated with the Belmont-Redwood Shores Elementary School District.",
+    "source_subject": "Nutrition Update",
+    "message_id": "19b281d40c601647"
+  },
+  {
+    "fact": "Saurav is managing the enrollment of Adya in math classes.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Saurav met with Engaging Math Circles (EMC).",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya is enrolled in 'Circle 6 Mon 4:30-6:15' at Engaging Math Circles (EMC).",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya's first official paid math lesson is on January 5, 2026.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya enjoyed her first math class.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya is a quick learner in math.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya has good instinctive number sense.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya adapts well to new mathematical structures and concepts.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya quickly learned negative numbers and exponent rules.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya is joining the Circle 6 class mid-year for the 2025-2026 school year.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Adya needs to catch up on math topics: operations with negative integers, multiplying/dividing by fractions, and simplifying expressions with variables.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b2882c30e54b5a"
+  },
+  {
+    "fact": "Saurav Sen's email address is sauravsen23@gmail.com.",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b22297de874c9e"
+  },
+  {
+    "fact": "Saurav Sen is associated with the address 2331 Wooster Ave Belmont, CA 94002.",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b22297de874c9e"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffbba6c1c055"
+  },
+  {
+    "fact": "The user has a child named Adya.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffbba6c1c055"
+  },
+  {
+    "fact": "Adya will be on vacation for the next few weeks.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffbba6c1c055"
+  },
+  {
+    "fact": "The user is a single parent for 6 weeks.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffbba6c1c055"
+  },
+  {
+    "fact": "The user and Adya will be tentatively back in the 3rd week of January.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffbba6c1c055"
+  },
+  {
+    "fact": "The user has a child or dependent named Adya.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya is a student registered for classes at Engaging Math Circles.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya is enrolled in the 'Circle 6' class.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's class takes place on Mondays from 4:30-6:15 PST.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's instructor is Elena.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's team mascot is Narwhal.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's Canvas username is AdyaSen1.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's default Canvas password is EMC12345.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's academic year for these classes runs from August 18, 2025, to June 14, 2026.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "Adya's class is in the Pacific Standard Time (PST) zone.",
+    "source_subject": "EMC - Welcome to Class Adya! Important Information inside!",
+    "message_id": "19b288dd17fbf1e3"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Saurav has a child named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Adya is a student.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Adya is a very quick learner.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Adya has great instinctive number sense.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Adya is able to adjust to new mathematical structures/concepts.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Adya had no prior experience with negative numbers before today.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Exponent rules were a new concept for Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "Adya is joining the math class mid-year (2025-2026 school year).",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b251b54f0eb0a6"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b1fcd1a5432604"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Ordered: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b1fcd1a5432604"
+  },
+  {
+    "fact": "The user has an interest in 3D printing.",
+    "source_subject": "Ordered: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b1fcd1a5432604"
+  },
+  {
+    "fact": "Sender's name: Saurav",
+    "source_subject": "Adya on vacation.",
+    "message_id": "19b1fc64363d17a7"
+  },
+  {
+    "fact": "Saurav is a single parent for 6 weeks.",
+    "source_subject": "Adya on vacation.",
+    "message_id": "19b1fc64363d17a7"
+  },
+  {
+    "fact": "Adya is likely Saurav's child.",
+    "source_subject": "Adya on vacation.",
+    "message_id": "19b1fc64363d17a7"
+  },
+  {
+    "fact": "User's name is Saurav Sen.",
+    "source_subject": "Payee Added in Online Banking",
+    "message_id": "19b1f42d729eda6e"
+  },
+  {
+    "fact": "User's email is sauravsen23@gmail.com.",
+    "source_subject": "Payee Added in Online Banking",
+    "message_id": "19b1f42d729eda6e"
+  },
+  {
+    "fact": "Adya is Saurav's child.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffa4a9ffd19c"
+  },
+  {
+    "fact": "Saurav is a single parent.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffa4a9ffd19c"
+  },
+  {
+    "fact": "Saurav will be a single parent for 6 weeks.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffa4a9ffd19c"
+  },
+  {
+    "fact": "Adya will be on vacation for the next few weeks.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffa4a9ffd19c"
+  },
+  {
+    "fact": "Saurav and Adya will be back from vacation in the 3rd week of January.",
+    "source_subject": "Re: Adya on vacation.",
+    "message_id": "19b1ffa4a9ffd19c"
+  },
+  {
+    "fact": "Saurav Sen's email address is sauravsen23@gmail.com.",
+    "source_subject": "Re: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1f45390613867"
+  },
+  {
+    "fact": "Saurav Sen is associated with the address 2331 Wooster Ave Belmont, CA 94002.",
+    "source_subject": "Re: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1f45390613867"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b1fc24f34eb097"
+  },
+  {
+    "fact": "The user has a child or student named Adya.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b1fc24f34eb097"
+  },
+  {
+    "fact": "Adya is registered for the Circle 6 class on Mondays.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b1fc24f34eb097"
+  },
+  {
+    "fact": "The relevant time zone for the user's activities is Pacific Time.",
+    "source_subject": "Re: EMC evaluation follow up - Adya",
+    "message_id": "19b1fc24f34eb097"
+  },
+  {
+    "fact": "The user is a ParentSquare user in Ralston Middle School.",
+    "source_subject": "Ralston Reporter - Week of December 15, 2025",
+    "message_id": "19b1e635daad317b"
+  },
+  {
+    "fact": "The user is associated with the property at 2331 Wooster Ave Belmont, CA 94002.",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1eb18d262d1e3"
+  },
+  {
+    "fact": "The user was out of the country prior to July 31, 2025.",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1eb18d262d1e3"
+  },
+  {
+    "fact": "The user's name (or a name associated with the order) is Shinjita Acharya.",
+    "source_subject": "Update on your Apple order: W1489338000",
+    "message_id": "19b1a5fac146c644"
+  },
+  {
+    "fact": "Shinjita Acharya's email is shinjita_acharya@apple.com.",
+    "source_subject": "Update on your Apple order: W1489338000",
+    "message_id": "19b1a5fac146c644"
+  },
+  {
+    "fact": "The pickup contact's name is Saurav Sen.",
+    "source_subject": "Update on your Apple order: W1489338000",
+    "message_id": "19b1a5fac146c644"
+  },
+  {
+    "fact": "Saurav Sen's email is sauravsen23@gmail.com.",
+    "source_subject": "Update on your Apple order: W1489338000",
+    "message_id": "19b1a5fac146c644"
+  },
+  {
+    "fact": "The user (or someone associated with the order) is purchasing an 11-inch iPad Pro Wi\u2011Fi 256GB with standard glass - Space Black.",
+    "source_subject": "Update on your Apple order: W1489338000",
+    "message_id": "19b1a5fac146c644"
+  },
+  {
+    "fact": "User's name is Shinjita Acharya.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User's mobile number is 650 439 6985.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User's email is shinjita_acharya@apple.com.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User works in product design.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User owns an iPad Pro 11-inch (2nd Generation).",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "The serial number of user's iPad Pro is DMPCX1M5PTRF.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User's payment method ends in 6428.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User is trading in a device for an estimated refund of $255.00.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "User placed an order on December 13, 2025.",
+    "source_subject": "Fwd: Your trade-in is in the works.",
+    "message_id": "19b1a62ebc06e5e7"
+  },
+  {
+    "fact": "The email is addressed to Saurav.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya is recommended for Circle 6 for the 2025-2026 school year.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya is a quick learner.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya has great instinctive number sense.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya has the ability to adjust to new mathematical structures and concepts.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya had not worked with negative numbers before the day of the meeting.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya picked up the concept of negative numbers and exponent rules quickly.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya's current knowledge base suggests she would have a little catching up to do if joining Circle 6 mid-year.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "Adya needs to build mastery in operations with negative integers, multiplying/dividing by fractions, and simplifying expressions with variables.",
+    "source_subject": "EMC evaluation follow up - Adya",
+    "message_id": "19b1a4c6c2815412"
+  },
+  {
+    "fact": "User's name: Saurav",
+    "source_subject": "CrazyGames now has access to Adya\u2019s Google Account",
+    "message_id": "19b195ae814e5583"
+  },
+  {
+    "fact": "Family member's name: Adya",
+    "source_subject": "CrazyGames now has access to Adya\u2019s Google Account",
+    "message_id": "19b195ae814e5583"
+  },
+  {
+    "fact": "User's email: sauravsen23@gmail.com",
+    "source_subject": "CrazyGames now has access to Adya\u2019s Google Account",
+    "message_id": "19b195ae814e5583"
+  },
+  {
+    "fact": "Saurav Sen's name is Saurav Sen",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Saurav Sen is associated with the address 2331 Wooster Ave Belmont, CA 94002",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Saurav Sen travels and was out of the country",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Saurav Sen uses Bank of America for transfers",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Wade Hammond's name is Wade Hammond",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Wade Hammond's bank is Bank of America in Newark, CA",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Wade Hammond's bank routing number is 121000358",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Wade Hammond's bank account number is 1059816500",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "Wade Hammond's business address is 36660 Newark Blvd. Suite C, Newark, CA 94560",
+    "source_subject": "RE: 2331 Wooster Ave Belmont, CA 94002 j5641 surveying invoice past due",
+    "message_id": "19b1ebe21a4d29fc"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Out for delivery: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19b1939473222ba5"
+  },
+  {
+    "fact": "The user is located in BELMONT, CA.",
+    "source_subject": "Out for delivery: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19b1939473222ba5"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Saurav, their new favorite device is inside. Act fast!",
+    "message_id": "19b19150d0a6a688"
+  },
+  {
+    "fact": "Saurav has at least one child.",
+    "source_subject": "Saurav, their new favorite device is inside. Act fast!",
+    "message_id": "19b19150d0a6a688"
+  },
+  {
+    "fact": "The user's name is Saurav Sen.",
+    "source_subject": "Adya signed in on a new device",
+    "message_id": "19b18ac8751a0077"
+  },
+  {
+    "fact": "Saurav Sen has a child named Adya Sen.",
+    "source_subject": "Adya signed in on a new device",
+    "message_id": "19b18ac8751a0077"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19b15b2969d4ba8a"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19b15b2969d4ba8a"
+  },
+  {
+    "fact": "The user likes/purchased a Spyder Mens Sherpa Fur Hoodie - Full Zip Up Lightweight Soft Sherpa Lined Waffle Knit Sweatshirt Jacket for Men, Size Medium, Petrol Blue.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19b15b2969d4ba8a"
+  },
+  {
+    "fact": "The user likes the movie 'Predator: Badlands'.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19b193a6ed6a87da"
+  },
+  {
+    "fact": "The user has plans to attend Cinemark Century Redwood Downtown 20 and XD.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19b193a6ed6a87da"
+  },
+  {
+    "fact": "The user's planned activity is located at 825 Middlefield Rd Redwood City, CA 94063.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19b193a6ed6a87da"
+  },
+  {
+    "fact": "The user has plans on Saturday, December 13, 2025, at 5:20 PM.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19b193a6ed6a87da"
+  },
+  {
+    "fact": "The user purchased 2 movie tickets.",
+    "source_subject": "Cinemark Purchase Confirmation",
+    "message_id": "19b193a6ed6a87da"
+  },
+  {
+    "fact": "The user ordered food from Tabla (Formerly Hyderabadi Biryani House).",
+    "source_subject": "Details of your no-contact delivery from Tabla (Formerly Hyderabadi Biryani House)",
+    "message_id": "19b157aedaf3b94f"
+  },
+  {
+    "fact": "The user's name is Shinjita Acharya.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The user's mobile number is 650 439 6985.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The user's email address is shinjita_acharya@apple.com.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The user's profession is Product design.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The user is purchasing an 11-inch iPad Pro Wi\u2011Fi 256GB.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The user is trading in an iPad Pro 11-inch (2nd Generation).",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "Saurav Sen is a contact person for the user's order (pickup contact, billing contact, shipping recipient).",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "Saurav Sen's email address is sauravsen23@gmail.com.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "Saurav Sen's shipping address is 2331 Wooster Ave, Belmont CA 94002-1553, United States.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "Saurav Sen's billing address is 2331 Wooster Ave, Belmont CA 94002, United States.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The pickup location for the user's order is Apple Hillsdale, 60 31st Avenue, San Mateo, CA 94403.",
+    "source_subject": "Fwd: We're processing your order W1489338000",
+    "message_id": "19b1a51edf9ed568"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Order Confirmation for Saurav from Tabla (Formerly Hyderabadi Biryani House)",
+    "message_id": "19b1557fde03a5f4"
+  },
+  {
+    "fact": "The user ordered food from Tabla (Formerly Hyderabadi Biryani House).",
+    "source_subject": "Order Confirmation for Saurav from Tabla (Formerly Hyderabadi Biryani House)",
+    "message_id": "19b1557fde03a5f4"
+  },
+  {
+    "fact": "The user's delivery address is 2331 Wooster Ave, Belmont, CA 94002, USA.",
+    "source_subject": "Order Confirmation for Saurav from Tabla (Formerly Hyderabadi Biryani House)",
+    "message_id": "19b1557fde03a5f4"
+  },
+  {
+    "fact": "User has a Bank of America debit card.",
+    "source_subject": "Your Bank of America\u00ae debit card",
+    "message_id": "19b12e777bc1e480"
+  },
+  {
+    "fact": "User's email address is sauravsen23@gmail.com.",
+    "source_subject": "Your Bank of America\u00ae debit card",
+    "message_id": "19b12e777bc1e480"
+  },
+  {
+    "fact": "User's account name is sauravsen.",
+    "source_subject": "Payment Scheduled",
+    "message_id": "19b11bd4cb04dcf0"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Hvididan Girls Wide Leg...\"",
+    "message_id": "19b118c3c610e863"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Shipped: \"Hvididan Girls Wide Leg...\"",
+    "message_id": "19b118c3c610e863"
+  },
+  {
+    "fact": "The user ordered 'Hvididan Girls Wide Leg Sweatpants with Side Stripes High Waist Baggy Track Sweat Pants for Kids to Teens Purple Size 11-12'.",
+    "source_subject": "Shipped: \"Hvididan Girls Wide Leg...\"",
+    "message_id": "19b118c3c610e863"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Roku Ultra - Ultimate...\" and 1 more item",
+    "message_id": "19b0be9779ee441d"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"Roku Ultra - Ultimate...\" and 1 more item",
+    "message_id": "19b0be9779ee441d"
+  },
+  {
+    "fact": "The user has an interest in gaming (PlayStation).",
+    "source_subject": "Shipped: \"Roku Ultra - Ultimate...\" and 1 more item",
+    "message_id": "19b0be9779ee441d"
+  },
+  {
+    "fact": "The user has an interest in streaming/home entertainment (Roku).",
+    "source_subject": "Shipped: \"Roku Ultra - Ultimate...\" and 1 more item",
+    "message_id": "19b0be9779ee441d"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b0ec187e94ab20"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b0ec187e94ab20"
+  },
+  {
+    "fact": "The user has an interest in 3D printing, specifically Bambu Lab 3D printers and DIY 3D printer accessories.",
+    "source_subject": "Shipped: \"Remote Control RGB LED Lamp...\"",
+    "message_id": "19b0ec187e94ab20"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your return drop off confirmation for Spyder Mens Zip up Hoodie ....",
+    "message_id": "19b0a694819a9bd5"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your return drop off confirmation for Spyder Mens Zip up Hoodie ....",
+    "message_id": "19b0a68660b3af44"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your return drop off confirmation for Hvididan Girls Wide Leg....",
+    "message_id": "19b0a67bd2df41f8"
+  },
+  {
+    "fact": "The user uses AAA for their insurance needs.",
+    "source_subject": "One-time verification code",
+    "message_id": "19b090289579ad5b"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Return request confirmed for Hvididan Girls Wide Leg...",
+    "message_id": "19b0a5389edbdef1"
+  },
+  {
+    "fact": "The user purchased Hvididan Girls Wide Leg Sweatpants.",
+    "source_subject": "Return request confirmed for Hvididan Girls Wide Leg...",
+    "message_id": "19b0a5389edbdef1"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "A simpler, safer way to manage your kids\u2019 spending",
+    "message_id": "19b04267e48d5de6"
+  },
+  {
+    "fact": "The user has kids.",
+    "source_subject": "A simpler, safer way to manage your kids\u2019 spending",
+    "message_id": "19b04267e48d5de6"
+  },
+  {
+    "fact": "The user is interested in offers, promotions, and updates on Google Wallet features.",
+    "source_subject": "A simpler, safer way to manage your kids\u2019 spending",
+    "message_id": "19b04267e48d5de6"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Principal's Coffee Reminder",
+    "message_id": "19b0b5d83f7bd852"
+  },
+  {
+    "fact": "The user is associated with Ralston Middle School.",
+    "source_subject": "Principal's Coffee Reminder",
+    "message_id": "19b0b5d83f7bd852"
+  },
+  {
+    "fact": "The user is addressed as part of 'Ralston Families'.",
+    "source_subject": "Principal's Coffee Reminder",
+    "message_id": "19b0b5d83f7bd852"
+  },
+  {
+    "fact": "User's name is Saurav Sen.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "User's email is sauravsen23@gmail.com.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "User's phone number is 4084219494.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "User has one child.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "User's child is a daughter.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "User's daughter is in 6th grade.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "User's daughter is in advanced math.",
+    "source_subject": "Re: EMC.SCHOOL Schedule Free Evaluation Form",
+    "message_id": "19b00ccd40302f66"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Reminder: Upcoming changes to sanghita's role in your family group",
+    "message_id": "19b0059de7149137"
+  },
+  {
+    "fact": "The user has a family member named Sanghita.",
+    "source_subject": "Reminder: Upcoming changes to sanghita's role in your family group",
+    "message_id": "19b0059de7149137"
+  },
+  {
+    "fact": "The user has a family group.",
+    "source_subject": "Reminder: Upcoming changes to sanghita's role in your family group",
+    "message_id": "19b0059de7149137"
+  },
+  {
+    "fact": "The user has children.",
+    "source_subject": "Reminder: Upcoming changes to sanghita's role in your family group",
+    "message_id": "19b0059de7149137"
+  },
+  {
+    "fact": "The user purchased a Spyder Mens Sherpa Fur Hoodie in Size Large and Petrol Blue.",
+    "source_subject": "Refund on order 111-4662602-6468222",
+    "message_id": "19b00a042814f32f"
+  },
+  {
+    "fact": "The user uses a Visa credit card that expires in September 2029.",
+    "source_subject": "Refund on order 111-4662602-6468222",
+    "message_id": "19b00a042814f32f"
+  },
+  {
+    "fact": "The user uses gift cards for purchases.",
+    "source_subject": "Refund on order 111-4662602-6468222",
+    "message_id": "19b00a042814f32f"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Thank you Ralston Families for a Wonderful Holiday Cookie Bake \ud83c\udf6a\ud83c\udf6a\ud83c\udf6a",
+    "message_id": "19b00ad885ced5d8"
+  },
+  {
+    "fact": "The user is associated with Ralston Middle School.",
+    "source_subject": "Thank you Ralston Families for a Wonderful Holiday Cookie Bake \ud83c\udf6a\ud83c\udf6a\ud83c\udf6a",
+    "message_id": "19b00ad885ced5d8"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Hvididan Girls Wide Leg...\"",
+    "message_id": "19affc4f0851c2eb"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Shipped: \"Hvididan Girls Wide Leg...\"",
+    "message_id": "19affc4f0851c2eb"
+  },
+  {
+    "fact": "The user purchased 'Girls Wide Leg Sweatpants... for Kids to Teens Black Size 13-14', suggesting they have a child or a teen girl in their life.",
+    "source_subject": "Shipped: \"Hvididan Girls Wide Leg...\"",
+    "message_id": "19affc4f0851c2eb"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Chaperones for 6th Grade Field Trip in January",
+    "message_id": "19aff9a57a99b6ac"
+  },
+  {
+    "fact": "The user is associated with Ralston Middle School.",
+    "source_subject": "Chaperones for 6th Grade Field Trip in January",
+    "message_id": "19aff9a57a99b6ac"
+  },
+  {
+    "fact": "The user is likely a parent of a 6th-grade student.",
+    "source_subject": "Chaperones for 6th Grade Field Trip in January",
+    "message_id": "19aff9a57a99b6ac"
+  },
+  {
+    "fact": "User's name is Saurav",
+    "source_subject": "Delivered: \"Spyder Mens Zip up Hoodie -...\"",
+    "message_id": "19af9e2e851ecaea"
+  },
+  {
+    "fact": "User's location is Belmont, CA",
+    "source_subject": "Delivered: \"Spyder Mens Zip up Hoodie -...\"",
+    "message_id": "19af9e2e851ecaea"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19afa6c7c50239f2"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19afa6c7c50239f2"
+  },
+  {
+    "fact": "The user purchased a Spyder Mens Sherpa Fur Hoodie.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19afa6c7c50239f2"
+  },
+  {
+    "fact": "The user purchased a hoodie in Petrol Blue.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19afa6c7c50239f2"
+  },
+  {
+    "fact": "The user wears a size Large in hoodies.",
+    "source_subject": "Delivery update: \"Spyder Mens Sherpa Fur...\"",
+    "message_id": "19afa6c7c50239f2"
+  },
+  {
+    "fact": "The user has an interest in chess.",
+    "source_subject": "Your Google Play Order Cancellation Receipt from Nov 24, 2025",
+    "message_id": "19af415f20868fb9"
+  },
+  {
+    "fact": "The user plays chess online (likely through Chess.com).",
+    "source_subject": "Your Google Play Order Cancellation Receipt from Nov 24, 2025",
+    "message_id": "19af415f20868fb9"
+  },
+  {
+    "fact": "Name: Chandana",
+    "source_subject": "Delivered: 1 item | Order # 406-6681469-1145103",
+    "message_id": "19aed6f689888d54"
+  },
+  {
+    "fact": "Physical address/Location: KOLKATA, WEST BENGAL",
+    "source_subject": "Delivered: 1 item | Order # 406-6681469-1145103",
+    "message_id": "19aed6f689888d54"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Spyder Mens Zip up Hoodie -...\"",
+    "message_id": "19af2e07abed9304"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Shipped: \"Spyder Mens Zip up Hoodie -...\"",
+    "message_id": "19af2e07abed9304"
+  },
+  {
+    "fact": "The user purchased a 'Spyder Mens Zip up Hoodie - Athletic Tech Double Knit Full Zip Gym & Workout Hoodies for Men with Side Pockets, Size Medium, Brown Stone', suggesting an interest in athletic wear and possibly gym/workout activities. This also indicates the user's size preference (medium) and likely gender (male).",
+    "source_subject": "Shipped: \"Spyder Mens Zip up Hoodie -...\"",
+    "message_id": "19af2e07abed9304"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your order from Palette Tea Garden (order #a9bf89a0)",
+    "message_id": "19af16e2d9c6c2f6"
+  },
+  {
+    "fact": "The user ordered from Palette Tea Garden.",
+    "source_subject": "Your order from Palette Tea Garden (order #a9bf89a0)",
+    "message_id": "19af16e2d9c6c2f6"
+  },
+  {
+    "fact": "The user ordered Black Pepper Wagyu Bao.",
+    "source_subject": "Your order from Palette Tea Garden (order #a9bf89a0)",
+    "message_id": "19af16e2d9c6c2f6"
+  },
+  {
+    "fact": "The user ordered Orange Chicken.",
+    "source_subject": "Your order from Palette Tea Garden (order #a9bf89a0)",
+    "message_id": "19af16e2d9c6c2f6"
+  },
+  {
+    "fact": "The user's pickup address is 48 Hillsdale Mall, San Mateo, CA 94403, USA.",
+    "source_subject": "Your order from Palette Tea Garden (order #a9bf89a0)",
+    "message_id": "19af16e2d9c6c2f6"
+  },
+  {
+    "fact": "The user purchased an INIU Portable Charger (Order ID: 113-1412055-1214666).",
+    "source_subject": "ATTENTION: Important Safety Notice about your Past Amazon Order",
+    "message_id": "19af4f543adfce52"
+  },
+  {
+    "fact": "The user's name is Chandana.",
+    "source_subject": "Arriving Today: A one-time password is required for your Amazon delivery",
+    "message_id": "19ae7a3f328677ab"
+  },
+  {
+    "fact": "The user's location is KOLKATA, WEST BENGAL.",
+    "source_subject": "Arriving Today: A one-time password is required for your Amazon delivery",
+    "message_id": "19ae7a3f328677ab"
+  },
+  {
+    "fact": "The user has a baby or is expecting one, as they ordered a 'Baybee Bath Tub for Baby 0-5 Years'.",
+    "source_subject": "Arriving Today: A one-time password is required for your Amazon delivery",
+    "message_id": "19ae7a3f328677ab"
+  },
+  {
+    "fact": "The user ordered a pink baby bathtub, potentially indicating a preference for the color pink or that the baby is a girl.",
+    "source_subject": "Arriving Today: A one-time password is required for your Amazon delivery",
+    "message_id": "19ae7a3f328677ab"
+  },
+  {
+    "fact": "The user purchased an INIU Portable Charger, Slimmest 10000mAh 5V/3A Power Bank, USB C in&out High-Speed Charging Battery Pack, External Phone Powerbank Compatible with iPhone 16 15 14 13 12 Samsung S22 S21 Google iPad etc.",
+    "source_subject": "ATTENTION: Important Safety Notice about your Past Amazon Order",
+    "message_id": "19ae2023114d774d"
+  },
+  {
+    "fact": "The user has an associated Order ID: 113-1412055-1214666.",
+    "source_subject": "ATTENTION: Important Safety Notice about your Past Amazon Order",
+    "message_id": "19ae2023114d774d"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Booking Confirmation (#11249779) from Cin\u00e9polis",
+    "message_id": "19ae162fbf15dc7f"
+  },
+  {
+    "fact": "User likes the movie \"Zootopia 2\".",
+    "source_subject": "Booking Confirmation (#11249779) from Cin\u00e9polis",
+    "message_id": "19ae162fbf15dc7f"
+  },
+  {
+    "fact": "User attended Cin\u00e9polis at 8 Hillsdale Mall, 60 31st Ave, San Mateo, California, 94403.",
+    "source_subject": "Booking Confirmation (#11249779) from Cin\u00e9polis",
+    "message_id": "19ae162fbf15dc7f"
+  },
+  {
+    "fact": "User has a loyalty account with Cin\u00e9polis.",
+    "source_subject": "Booking Confirmation (#11249779) from Cin\u00e9polis",
+    "message_id": "19ae162fbf15dc7f"
+  },
+  {
+    "fact": "User is traveling from San Francisco to Singapore on December 2, 2025.",
+    "source_subject": "Fwd: SQ031 02 Dec 2025 Flight Update",
+    "message_id": "19adf6041ff337b6"
+  },
+  {
+    "fact": "The user purchased Dragonfruit cold process soap.",
+    "source_subject": "Receipt for order #56032",
+    "message_id": "19adbc50dcf1b5c2"
+  },
+  {
+    "fact": "The user purchased Honey Honey cold process soap.",
+    "source_subject": "Receipt for order #56032",
+    "message_id": "19adbc50dcf1b5c2"
+  },
+  {
+    "fact": "The user's name is Mrs. Sanghita Majumder.",
+    "source_subject": "Fwd: Your booking confirmation DRPE2U",
+    "message_id": "19adf60f91b3b120"
+  },
+  {
+    "fact": "The user's email address is nottinghill48@gmail.com.",
+    "source_subject": "Fwd: Your booking confirmation DRPE2U",
+    "message_id": "19adf60f91b3b120"
+  },
+  {
+    "fact": "The user is traveling from San Francisco (SFO).",
+    "source_subject": "Fwd: Your booking confirmation DRPE2U",
+    "message_id": "19adf60f91b3b120"
+  },
+  {
+    "fact": "The user is traveling to Kolkata (CCU).",
+    "source_subject": "Fwd: Your booking confirmation DRPE2U",
+    "message_id": "19adf60f91b3b120"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Delivered: \"Garmin Forerunner 165,...\" and 2 more items",
+    "message_id": "19ad29d347ae14f5"
+  },
+  {
+    "fact": "User lives in Belmont, CA.",
+    "source_subject": "Delivered: \"Garmin Forerunner 165,...\" and 2 more items",
+    "message_id": "19ad29d347ae14f5"
+  },
+  {
+    "fact": "User has an interest in 3D printing.",
+    "source_subject": "Delivered: \"Garmin Forerunner 165,...\" and 2 more items",
+    "message_id": "19ad29d347ae14f5"
+  },
+  {
+    "fact": "User has an interest in skincare, specifically for acne-prone/sensitive skin.",
+    "source_subject": "Delivered: \"Garmin Forerunner 165,...\" and 2 more items",
+    "message_id": "19ad29d347ae14f5"
+  },
+  {
+    "fact": "User has an interest in running and fitness tracking (Garmin smartwatch).",
+    "source_subject": "Delivered: \"Garmin Forerunner 165,...\" and 2 more items",
+    "message_id": "19ad29d347ae14f5"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"BubbleBum Inflatable...\"",
+    "message_id": "19ad299c0376f496"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"BubbleBum Inflatable...\"",
+    "message_id": "19ad299c0376f496"
+  },
+  {
+    "fact": "The user purchased a booster car seat, suggesting they have a child or are buying for a child between 4-11 years old.",
+    "source_subject": "Shipped: \"BubbleBum Inflatable...\"",
+    "message_id": "19ad299c0376f496"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Ordered: \"Icon Sports Official US...\"",
+    "message_id": "19ac66f9ce5df741"
+  },
+  {
+    "fact": "User's location is Belmont, CA.",
+    "source_subject": "Ordered: \"Icon Sports Official US...\"",
+    "message_id": "19ac66f9ce5df741"
+  },
+  {
+    "fact": "User ordered a US Men's National Soccer Team Game Day Shirt, indicating a potential interest in soccer or the US national team.",
+    "source_subject": "Ordered: \"Icon Sports Official US...\"",
+    "message_id": "19ac66f9ce5df741"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Ralston Reporter - Week of December 1, 2025",
+    "message_id": "19ad6684138ad1b3"
+  },
+  {
+    "fact": "The user is associated with Ralston Middle School.",
+    "source_subject": "Ralston Reporter - Week of December 1, 2025",
+    "message_id": "19ad6684138ad1b3"
+  },
+  {
+    "fact": "User has a hobby: Chess",
+    "source_subject": "Your refund request from Google Play is being reviewed",
+    "message_id": "19ac377cd924b056"
+  },
+  {
+    "fact": "The user has an interest in chess, as evidenced by their 'Chess - Play and Learn Online' subscription.",
+    "source_subject": "Your Chess - Play and Learn Online subscription will be canceled",
+    "message_id": "19ac373bcc343f2a"
+  },
+  {
+    "fact": "User bought PETG filament by mistake instead of PLA filament.",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19ac3edf698134f0"
+  },
+  {
+    "fact": "User's hobby involves 3D printing (uses 'filament').",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19ac3edf698134f0"
+  },
+  {
+    "fact": "User's address is 2331 Wooster Ave, Belmont, CA 94002, USA.",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19ac3edf698134f0"
+  },
+  {
+    "fact": "The user's hobby is 3D printing (indicated by buying PETg and PLA filament).",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19ab9411e2e584f8"
+  },
+  {
+    "fact": "The user's address is 2331 WOOSTER AVE, Belmont, CA-94002, USA.",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19ab9411e2e584f8"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19ab56b145d35269"
+  },
+  {
+    "fact": "The user has a recurring payment for Bright Horizons at San Mateo.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19ab56b145d35269"
+  },
+  {
+    "fact": "The next payment is scheduled for 11/25/2025.",
+    "source_subject": "Your Recurring Payment Reminder",
+    "message_id": "19ab56b145d35269"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Delivered: \"AggFencer 8inch x 25ft...\"",
+    "message_id": "19aa958256488df9"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Delivered: \"AggFencer 8inch x 25ft...\"",
+    "message_id": "19aa958256488df9"
+  },
+  {
+    "fact": "The user purchased 'AggFencer 8inch x 25ft Hardware Cloth 1/4 inch Chicken Wire Fencing 23Ga', suggesting an interest in gardening, poultry, or animal enclosure projects.",
+    "source_subject": "Delivered: \"AggFencer 8inch x 25ft...\"",
+    "message_id": "19aa958256488df9"
+  },
+  {
+    "fact": "The user purchased an 'Amazon Kindle Kids 16GB'.",
+    "source_subject": "Here's your promotional credit from your recent Amazon order",
+    "message_id": "19ab258f381eaa8e"
+  },
+  {
+    "fact": "The user prefers PLA filament over PETG filament.",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19aa4972fb3525a6"
+  },
+  {
+    "fact": "The user's address is 2331 WOOSTER AVE belmont ca-94002 usa.",
+    "source_subject": "Your ticket has a new reply:GENERAL_Bought the wrong product_US_US251121165002_WEB_5570",
+    "message_id": "19aa4972fb3525a6"
+  },
+  {
+    "fact": "The user is planning a trip to Everest Base Camp.",
+    "source_subject": "Re: Trip to Everest Base Camp in April",
+    "message_id": "19a90693c2c83d1a"
+  },
+  {
+    "fact": "The user's trip to Everest Base Camp is in April.",
+    "source_subject": "Re: Trip to Everest Base Camp in April",
+    "message_id": "19a90693c2c83d1a"
+  },
+  {
+    "fact": "The user is considering a chopper return plan or a normal trekking back plan for the Everest Base Camp trip.",
+    "source_subject": "Re: Trip to Everest Base Camp in April",
+    "message_id": "19a90693c2c83d1a"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: Trip to Everest Base Camp in April",
+    "message_id": "19a904bdd2747b81"
+  },
+  {
+    "fact": "Saurav is interested in doing the Everest Base Camp Trek Chopper Return.",
+    "source_subject": "Re: Trip to Everest Base Camp in April",
+    "message_id": "19a904bdd2747b81"
+  },
+  {
+    "fact": "Saurav is planning to go on the Everest Base Camp Trek in April.",
+    "source_subject": "Re: Trip to Everest Base Camp in April",
+    "message_id": "19a904bdd2747b81"
+  },
+  {
+    "fact": "The user is a ParentSquare user in Ralston Middle School.",
+    "source_subject": "Ralston Ave Delays This Afternoon",
+    "message_id": "19a93205298497e8"
+  },
+  {
+    "fact": "The user is likely a parent or guardian of a student at Ralston Middle School, given the mention of 'school pick-up hours'.",
+    "source_subject": "Ralston Ave Delays This Afternoon",
+    "message_id": "19a93205298497e8"
+  },
+  {
+    "fact": "User is a ParentSquare user.",
+    "source_subject": "Ralston Updates",
+    "message_id": "19a93b6cacdc2e8e"
+  },
+  {
+    "fact": "User is associated with Ralston Middle School.",
+    "source_subject": "Ralston Updates",
+    "message_id": "19a93b6cacdc2e8e"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Heads up Saurav! You have new alerts on your Experian credit file",
+    "message_id": "19a89446eec378f6"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"AggFencer 8inch x 25ft...\"",
+    "message_id": "19a8664794ccd145"
+  },
+  {
+    "fact": "The user's location is Belmont, CA.",
+    "source_subject": "Ordered: \"AggFencer 8inch x 25ft...\"",
+    "message_id": "19a8664794ccd145"
+  },
+  {
+    "fact": "The user purchased 'AggFencer 8inch x 25ft Hardware Cloth 1/4 inch Chicken Wire Fencing', suggesting an interest in gardening, farming, or pet enclosure (e.g., chickens).",
+    "source_subject": "Ordered: \"AggFencer 8inch x 25ft...\"",
+    "message_id": "19a8664794ccd145"
+  },
+  {
+    "fact": "User's name is Saurav.",
+    "source_subject": "Delivered: \"SUNLU Upgrade PLA+2.0...\"",
+    "message_id": "19a858e86dbd3e87"
+  },
+  {
+    "fact": "User's location is Belmont, CA.",
+    "source_subject": "Delivered: \"SUNLU Upgrade PLA+2.0...\"",
+    "message_id": "19a858e86dbd3e87"
+  },
+  {
+    "fact": "User has a hobby of 3D printing.",
+    "source_subject": "Delivered: \"SUNLU Upgrade PLA+2.0...\"",
+    "message_id": "19a858e86dbd3e87"
+  },
+  {
+    "fact": "The user is a ParentSquare user in Ralston Middle School.",
+    "source_subject": "Delays on Ralston This Morning",
+    "message_id": "19a9224f76237aff"
+  },
+  {
+    "fact": "User is a ParentSquare user in Ralston Middle School.",
+    "source_subject": "Message from Belmont PD: Possible Ralston Ave Closure in the Morning",
+    "message_id": "19a900301eb0faa4"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"AMOLEN Matte PLA 3D Printer...\"",
+    "message_id": "19a7ff3f3d9746ce"
+  },
+  {
+    "fact": "The user is located in Belmont, CA.",
+    "source_subject": "Ordered: \"AMOLEN Matte PLA 3D Printer...\"",
+    "message_id": "19a7ff3f3d9746ce"
+  },
+  {
+    "fact": "The user has an interest in 3D printing (ordered 3D printer filament).",
+    "source_subject": "Ordered: \"AMOLEN Matte PLA 3D Printer...\"",
+    "message_id": "19a7ff3f3d9746ce"
+  },
+  {
+    "fact": "User's email address is sauravsen23@gmail.com",
+    "source_subject": "Your Google Play Order Receipt from Nov 13, 2025",
+    "message_id": "19a80007f1b2588a"
+  },
+  {
+    "fact": "User has an Amazon Prime subscription",
+    "source_subject": "Your Google Play Order Receipt from Nov 13, 2025",
+    "message_id": "19a80007f1b2588a"
+  },
+  {
+    "fact": "The user owns a dog.",
+    "source_subject": "Your package has arrived!",
+    "message_id": "19a764242955e185"
+  },
+  {
+    "fact": "The user's dog requires ear medication (Mometamax Otic Suspension).",
+    "source_subject": "Your package has arrived!",
+    "message_id": "19a764242955e185"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Ordered: \"EDISHINE Wooden LED Corner...\"",
+    "message_id": "19a67334654cfb64"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Ordered: \"EDISHINE Wooden LED Corner...\"",
+    "message_id": "19a67334654cfb64"
+  },
+  {
+    "fact": "The user ordered an EDISHINE Wooden LED Corner Floor Lamp.",
+    "source_subject": "Ordered: \"EDISHINE Wooden LED Corner...\"",
+    "message_id": "19a67334654cfb64"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Re: Adya got shots today",
+    "message_id": "19a736d985f19803"
+  },
+  {
+    "fact": "Saurav mentions a person named Adya.",
+    "source_subject": "Re: Adya got shots today",
+    "message_id": "19a736d985f19803"
+  },
+  {
+    "fact": "Adya received shots.",
+    "source_subject": "Re: Adya got shots today",
+    "message_id": "19a736d985f19803"
+  },
+  {
+    "fact": "Adya's arm is hurting.",
+    "source_subject": "Re: Adya got shots today",
+    "message_id": "19a736d985f19803"
+  },
+  {
+    "fact": "Adya will miss a class.",
+    "source_subject": "Re: Adya got shots today",
+    "message_id": "19a736d985f19803"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "waffles\u2019s precription item is approved",
+    "message_id": "19a664a15b4d7c87"
+  },
+  {
+    "fact": "The user has a pet named Waffles.",
+    "source_subject": "waffles\u2019s precription item is approved",
+    "message_id": "19a664a15b4d7c87"
+  },
+  {
+    "fact": "Waffles is a dog.",
+    "source_subject": "waffles\u2019s precription item is approved",
+    "message_id": "19a664a15b4d7c87"
+  },
+  {
+    "fact": "Waffles has a health condition requiring a prescription for Mometamax Gentamicin Mometasone Clotrimazole Otic Suspension.",
+    "source_subject": "waffles\u2019s precription item is approved",
+    "message_id": "19a664a15b4d7c87"
+  },
+  {
+    "fact": "User's name is Saurav Sen.",
+    "source_subject": "Your package is on the way!",
+    "message_id": "19a69d5ee3ca800d"
+  },
+  {
+    "fact": "User shops at Chewy.com, implying an interest in or ownership of pets.",
+    "source_subject": "Your package is on the way!",
+    "message_id": "19a69d5ee3ca800d"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Ralston Reporter - Week of November 10, 2025",
+    "message_id": "19a6be14003659ab"
+  },
+  {
+    "fact": "The user is associated with Ralston Middle School.",
+    "source_subject": "Ralston Reporter - Week of November 10, 2025",
+    "message_id": "19a6be14003659ab"
+  },
+  {
+    "fact": "The user likely has a 7th-grade student at Ralston Middle School.",
+    "source_subject": "Ralston Reporter - Week of November 10, 2025",
+    "message_id": "19a6be14003659ab"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "Shipped: \"Wahl USA Dry Skin & Itch...\"",
+    "message_id": "19a5e2a10d867e30"
+  },
+  {
+    "fact": "The user lives in Belmont, CA.",
+    "source_subject": "Shipped: \"Wahl USA Dry Skin & Itch...\"",
+    "message_id": "19a5e2a10d867e30"
+  },
+  {
+    "fact": "The user owns a dog.",
+    "source_subject": "Shipped: \"Wahl USA Dry Skin & Itch...\"",
+    "message_id": "19a5e2a10d867e30"
+  },
+  {
+    "fact": "The user's dog has dry skin and/or an itch.",
+    "source_subject": "Shipped: \"Wahl USA Dry Skin & Itch...\"",
+    "message_id": "19a5e2a10d867e30"
+  },
+  {
+    "fact": "The user has a pet dog named Waffles.",
+    "source_subject": "Thanks for your Chewy order!",
+    "message_id": "19a5bdaf1da85cca"
+  },
+  {
+    "fact": "Waffles requires Mometamax (Gentamicin / Mometasone / Clotrimazole) Otic Suspension for dogs, suggesting a health condition.",
+    "source_subject": "Thanks for your Chewy order!",
+    "message_id": "19a5bdaf1da85cca"
+  },
+  {
+    "fact": "The user's pet is treated at Crystal Springs Pet Hospital - San Mateo, implying the user lives in or near San Mateo, CA.",
+    "source_subject": "Thanks for your Chewy order!",
+    "message_id": "19a5bdaf1da85cca"
+  },
+  {
+    "fact": "User shops at Chewy.com, suggesting an interest in pets or pet care.",
+    "source_subject": "Your package is on the way!",
+    "message_id": "19a65317b8ec982f"
+  },
+  {
+    "fact": "The user has pets.",
+    "source_subject": "We're getting your Autoship order ready",
+    "message_id": "19a5f41a10d5c53d"
+  },
+  {
+    "fact": "The user uses an autoship service from Chewy for recurring pet supply orders.",
+    "source_subject": "We're getting your Autoship order ready",
+    "message_id": "19a5f41a10d5c53d"
+  },
+  {
+    "fact": "The user's hobbies include pet care/ownership.",
+    "source_subject": "We're getting your Autoship order ready",
+    "message_id": "19a5f41a10d5c53d"
+  },
+  {
+    "fact": "The user's name is Saurav.",
+    "source_subject": "New Vetsource password",
+    "message_id": "19a5bd721702375b"
+  },
+  {
+    "fact": "The user is likely a pet owner, as they have an account with a pet hospital home delivery service.",
+    "source_subject": "New Vetsource password",
+    "message_id": "19a5bd721702375b"
+  },
+  {
+    "fact": "Saurav Sen has kids.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "Saurav Sen's Venmo handle is @saurav-sen.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "The last 4 digits of Saurav Sen's phone number are 9494.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "Deborah Blackwell is a coach.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "Deborah Blackwell is affiliated with brssd.org.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "Deborah Blackwell cherishes her team and championship.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "Rosita Cheung has a child.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a5c16424705efc"
+  },
+  {
+    "fact": "Likes pets or pet supplies",
+    "source_subject": "Your Chewy.com account",
+    "message_id": "19a5bd8a9f9d0007"
+  },
+  {
+    "fact": "Saurav",
+    "source_subject": "Message for Saurav: Discover long-term interest savings with your dashboard",
+    "message_id": "19a5a87f51f55689"
+  },
+  {
+    "fact": "The user is a parent.",
+    "source_subject": "Ralston Science Fair - Mentoring Session #1",
+    "message_id": "19a59ca860fb21cc"
+  },
+  {
+    "fact": "The user has a child in 6th, 7th, or 8th grade.",
+    "source_subject": "Ralston Science Fair - Mentoring Session #1",
+    "message_id": "19a59ca860fb21cc"
+  },
+  {
+    "fact": "The user is a ParentSquare user.",
+    "source_subject": "Ralston Science Fair - Mentoring Session #1",
+    "message_id": "19a59ca860fb21cc"
+  },
+  {
+    "fact": "The user is affiliated with Ralston Middle School.",
+    "source_subject": "Ralston Science Fair - Mentoring Session #1",
+    "message_id": "19a59ca860fb21cc"
+  },
+  {
+    "fact": "The user is likely located in the America/Los_Angeles time zone.",
+    "source_subject": "Ralston Science Fair - Mentoring Session #1",
+    "message_id": "19a59ca860fb21cc"
+  },
+  {
+    "fact": "The user's name is Deborah Blackwell.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user is a coach.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user coaches a team that won a championship.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user cherished her team and their championship.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user liked the pictures (presumably of the team/championship).",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user organizes pizza parties.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user's email domain is brssd.org.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user works with Saurav Sen.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user communicates with Rosita Cheung.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user's activities involve a gym.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "The user's activities involve an office.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59bf94e6bde7b"
+  },
+  {
+    "fact": "Lillian Kas",
+    "source_subject": "Delivery Status Notification (Failure)",
+    "message_id": "19a59a4b444bc054"
+  },
+  {
+    "fact": "BRSSD.org",
+    "source_subject": "Delivery Status Notification (Failure)",
+    "message_id": "19a59a4b444bc054"
+  },
+  {
+    "fact": "Saurav Sen",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Deborah Blackwell",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Rosita Cheung",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Deborah Blackwell is a coach.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Deborah Blackwell organizes pizza parties.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Deborah Blackwell cherishes team pictures and championships.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Saurav Sen coordinates pizza delivery for an event.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Saurav Sen uses or is asked for Venmo/PayPal.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Rosita Cheung is interested in a team's playoff schedule.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  },
+  {
+    "fact": "Rosita Cheung is interested in a team's practice schedule.",
+    "source_subject": "Re: Game schedule and practices",
+    "message_id": "19a59cb3a6e26354"
+  }
+]

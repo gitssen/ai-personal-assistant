@@ -23,7 +23,7 @@ frontend/logs/*
 
 # Sensitive Data
 backend/tokens.json
-backend/chroma_data/
+datamining/tokens.json
 
 # OS Files
 .DS_Store
