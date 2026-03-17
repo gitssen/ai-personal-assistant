@@ -7,8 +7,9 @@ export async function sendMessage(message: string, history: any[] = []) {
     body: JSON.stringify({ message, history }),
   });
   if (!response.ok) throw new Error("Failed to send message");
-  return response.json();
+  return response;
 }
+
 
 export async function getAuthStatus() {
   const response = await fetch(`${API_BASE}/auth/status`);

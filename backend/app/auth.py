@@ -39,7 +39,7 @@ def get_client_config():
     }
 
 @router.get("/login")
-async def login():
+def login():
     config = get_client_config()
     flow = Flow.from_client_config(config, scopes=SCOPES, redirect_uri=config["web"]["redirect_uris"][0])
     authorization_url, state = flow.authorization_url(access_type='offline', include_granted_scopes='true', prompt='select_account consent')
@@ -47,7 +47,7 @@ async def login():
     return {"url": authorization_url}
 
 @router.get("/callback")
-async def callback(request: Request):
+def callback(request: Request):
     state = request.query_params.get("state")
     code = request.query_params.get("code")
     code_verifier = auth_state_store.get(state)
@@ -61,7 +61,6 @@ async def callback(request: Request):
         credentials = flow.credentials
         
         # Get user email
-        import requests
         res = requests.get(f"https://www.googleapis.com/oauth2/v1/userinfo?access_token={credentials.token}")
         email = res.json().get("email")
 
@@ -80,7 +79,7 @@ async def callback(request: Request):
         raise HTTPException(status_code=400, detail=str(e))
 
 @router.get("/status")
-async def auth_status():
+def auth_status():
     if not os.path.exists(TOKEN_PATH): return {"authenticated": False}
     with open(TOKEN_PATH, 'r') as f:
         email = json.load(f).get('email')
@@ -89,7 +88,7 @@ async def auth_status():
     return {"authenticated": True, "onboarded": onboarded, "email": email}
 
 @router.get("/memories/raw")
-async def get_raw_memories(offset: int = 0, limit: int = 50):
+def get_raw_memories(offset: int = 0, limit: int = 50):
     """Reads extracted_personal_facts.json with pagination support."""
     if not os.path.exists(TOKEN_PATH): raise HTTPException(status_code=401)
     with open(TOKEN_PATH, 'r') as f: email = json.load(f).get('email')
@@ -215,7 +214,7 @@ async def get_raw_memories(offset: int = 0, limit: int = 50):
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/memories/import")
-async def import_memories(data: dict):
+def import_memories(data: dict):
     """Saves a list of user-approved facts into long-term cloud memory."""
     facts = data.get("facts", [])
     if not facts: return {"success": True, "count": 0}

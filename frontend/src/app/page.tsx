@@ -6,6 +6,7 @@ import { sendMessage, getAuthStatus, getLoginUrl, logout } from "@/lib/api";
 import { logger } from "@/lib/logger";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { Send, User, Bot, Sparkles, Database, Search, Mail, FileText, Calendar, Trash2, Palette, ChevronRight, Check, LogOut } from "lucide-react";
 
 export default function Home() {
@@ -77,16 +78,65 @@ export default function Home() {
     setMessages(prev => [...prev, { role: "user", content: userMsg }]);
     setInput("");
     setLoading(true);
+
     try {
-      const data = await sendMessage(userMsg, history);
-      setMessages(prev => [...prev, { role: "assistant", content: data.response, task: data.task }]);
-      setHistory(data.history);
+      const response = await sendMessage(userMsg, history);
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      
+      let assistantMsg = "";
+      let lastTask = "";
+      let buffer = ""; // Buffer for partial lines
+      
+      // Add initial assistant message placeholder
+      setMessages(prev => [...prev, { role: "assistant", content: "", task: "" }]);
+
+      while (true) {
+        const { done, value } = await reader!.read();
+        if (done) break;
+        
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+        buffer = lines.pop() || ""; // Keep the last partial line in the buffer
+        
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          try {
+            const data = JSON.parse(line);
+            if (data.text) {
+              assistantMsg += data.text;
+              updateLastMessage(assistantMsg, lastTask);
+            }
+            if (data.task) {
+              lastTask = data.task;
+              updateLastMessage(assistantMsg, lastTask);
+            }
+            if (data.history) {
+              setHistory(data.history);
+            }
+          } catch (e) {
+            console.error("Failed to parse line", line, e);
+          }
+        }
+      }
     } catch (e) {
       setMessages(prev => [...prev, { role: "assistant", content: "**Error:** AI connection lost." }]);
     } finally {
       setLoading(false);
     }
   };
+
+  const updateLastMessage = (content: string, task: string) => {
+    setMessages(prev => {
+      const next = [...prev];
+      if (next.length > 0) {
+        next[next.length - 1] = { ...next[next.length - 1], content, task };
+      }
+      return next;
+    });
+  };
+
+
 
   const getTaskIcon = (task?: string) => {
     if (!task) return <Sparkles size={12} />;
@@ -236,7 +286,9 @@ export default function Home() {
                     {m.role === "user" ? <User size={16} /> : <Bot size={16} />}
                   </div>
                   <div className={`max-w-[85%] rounded-2xl px-5 py-3 shadow-sm ${m.role === "user" ? "glass-card-user rounded-tr-none" : "glass-card-ai rounded-tl-none font-medium"}`}>
-                    <div className="prose prose-sm max-w-none text-inherit leading-relaxed break-words"><ReactMarkdown>{m.content}</ReactMarkdown></div>
+                    <div className="prose prose-sm dark:prose-invert max-w-none text-inherit leading-relaxed break-words">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
+                    </div>
                     {m.task && (
                       <div className="mt-2 pt-2 border-t border-white/10 flex items-center gap-2 text-[10px] font-black opacity-50 uppercase tracking-[0.1em]">
                         {getTaskIcon(m.task)} {m.task.replace(/_/g, ' ')}

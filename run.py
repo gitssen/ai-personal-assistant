@@ -60,9 +60,14 @@ def main():
         sys.exit(1)
 
     # 1. Start Backend using venv uvicorn
-    print(f"[*] Starting Backend on port {BACKEND_PORT}...")
+    # PRODUCTION TUNING: Use multiple workers and disable reload if in production
+    is_prod = os.getenv("ENV") == "production"
+    workers = ["--workers", "4"] if is_prod else []
+    reload = ["--reload"] if not is_prod else []
+    
+    print(f"[*] Starting Backend on port {BACKEND_PORT} (Prod: {is_prod})...")
     backend_proc = subprocess.Popen(
-        [VENV_UVICORN, "app.main:app", "--port", str(BACKEND_PORT), "--reload"],
+        [VENV_UVICORN, "app.main:app", "--port", str(BACKEND_PORT)] + workers + reload,
         cwd=BACKEND_DIR,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT
