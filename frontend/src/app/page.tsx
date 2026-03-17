@@ -140,7 +140,7 @@ export default function Home() {
 
   const getTaskIcon = (task?: string) => {
     if (!task) return <Sparkles size={12} />;
-    if (task.includes("gmail")) return <Mail size={12} />;
+    if (task.includes("gmail") || task.includes("draft")) return <Mail size={12} />;
     if (task.includes("drive")) return <FileText size={12} />;
     if (task.includes("calendar")) return <Calendar size={12} />;
     if (task.includes("search")) return <Search size={12} />;

@@ -5,7 +5,7 @@ import json
 import time
 from datetime import datetime
 from app.tools import (
-    search_gmail, read_gmail_message, list_gmail_attachments, read_gmail_attachment,
+    search_gmail, read_gmail_message, create_gmail_draft, list_gmail_attachments, read_gmail_attachment,
     search_drive, read_drive_file, list_calendar_events, create_calendar_event,
     update_calendar_event, delete_calendar_event,
     save_personal_fact, delete_personal_fact, search_memory
@@ -158,9 +158,10 @@ async def chat_with_assistant(user_message: str, history=None):
             f"1. SEARCH FIRST: If you do not find the answer in the provided 'User Memories', you MUST proactively use tools (Gmail, Drive, Calendar) to find the answer.\n"
             f"2. VERIFY: Cross-verify memory with Gmail/Drive/Calendar if possible.\n"
             f"3. THOROUGH: Search all relevant tools.\n"
-            f"4. RICH TEXT: ALWAYS use Markdown to format your response (bolding, bullet points, and tables for lists)."
+            f"4. RICH TEXT: ALWAYS use Markdown to format your response (bolding, bullet points, and tables for lists).\n"
+            f"5. DRAFTING: You can now create Gmail drafts. IF the user asks to write an email, you MUST call 'create_gmail_draft' immediately. DO NOT just show the draft text in your chat response without calling the tool first. Call the tool, wait for the result, then tell the user you have saved the draft."
         ),
-        tools=[search_gmail, read_gmail_message, list_gmail_attachments, read_gmail_attachment, search_drive, read_drive_file, list_calendar_events, create_calendar_event, update_calendar_event, delete_calendar_event, save_personal_fact, delete_personal_fact, search_memory],
+        tools=[search_gmail, read_gmail_message, create_gmail_draft, list_gmail_attachments, read_gmail_attachment, search_drive, read_drive_file, list_calendar_events, create_calendar_event, update_calendar_event, delete_calendar_event, save_personal_fact, delete_personal_fact, search_memory],
         safety_settings=safety_settings
     )
     
@@ -171,6 +172,7 @@ async def chat_with_assistant(user_message: str, history=None):
         call = response.candidates[0].content.parts[0].function_call
         tool_name = call.name
         last_tool = tool_name
+        logger.info(f"TOOL CALL: {tool_name} with args {call.args}")
         yield json.dumps({"task": last_tool}) + "\n"
         
         # Mapping tool results
@@ -183,6 +185,7 @@ async def chat_with_assistant(user_message: str, history=None):
         elif tool_name == "search_memory": result = search_memory(**call.args)
         elif tool_name == "search_gmail": result = search_gmail(**call.args)
         elif tool_name == "read_gmail_message": result = read_gmail_message(**call.args)
+        elif tool_name == "create_gmail_draft": result = create_gmail_draft(**call.args)
         elif tool_name == "list_gmail_attachments": result = list_gmail_attachments(**call.args)
         elif tool_name == "read_gmail_attachment": result = read_gmail_attachment(**call.args)
         elif tool_name == "search_drive": result = search_drive(**call.args)

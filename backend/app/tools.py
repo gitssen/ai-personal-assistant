@@ -64,6 +64,37 @@ def get_email_body(payload):
         if data: return base64.urlsafe_b64decode(data).decode('utf-8')
     return None
 
+from email.message import EmailMessage
+
+def create_gmail_draft(subject: str, body: str, to: str = None):
+    """Creates a draft email in the user's Gmail account. subject is the email subject, body is the content, and to is the optional recipient email."""
+    logger.info(f"🚀 EXECUTING GMAIL DRAFT TOOL: To={to}, Subject={subject}")
+    try:
+        creds = get_google_creds()
+        if not creds: return "Error: Not authenticated"
+        service = build('gmail', 'v1', credentials=creds)
+        
+        message = EmailMessage()
+        message.set_content(body)
+        if to:
+            message['To'] = to
+        message['Subject'] = subject
+        
+        # encoded message
+        encoded_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
+        
+        create_message = {
+            'message': {
+                'raw': encoded_message
+            }
+        }
+        
+        draft = service.users().drafts().create(userId='me', body=create_message).execute()
+        return f"Draft created successfully. Draft ID: {draft['id']}"
+    except Exception as e:
+        logger.error(f"Gmail Draft Error: {str(e)}")
+        return f"Error creating draft: {str(e)}"
+
 def search_gmail(query: str, max_results: int = 5):
     creds = get_google_creds()
     if not creds: return "Error: Not authenticated"
